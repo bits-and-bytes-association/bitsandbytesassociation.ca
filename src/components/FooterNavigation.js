@@ -8,7 +8,7 @@ export default function FooterNavigation() {
   /**
    * Footer navigation column component
    * @param {string} header  Header text for the column
-   * @param {object} links   Object with link display and href props
+   * @param {object} links   Object with link label and href props
    * @returns  The footer navigation column.
    */
   const FooterNavColumn = ({ header, links }) => (
@@ -21,7 +21,7 @@ export default function FooterNavigation() {
       {links.map((link, i) => (
         <li className="flex-initial" key={i}>
           <Link href={link.href} className="text-gray-300 linear duration-200">
-            {link.display}
+            {link.label}
           </Link>
         </li>
       ))}
@@ -34,31 +34,31 @@ export default function FooterNavigation() {
         <FooterNavColumn
           header="Club"
           links={[
-            { display: 'Mission Statement', href: '#' },
-            { display: 'Current Board', href: '#' },
-            { display: 'Past Executives', href: '#' },
+            { label: 'Mission Statement', href: '#' },
+            { label: 'Current Board', href: '#' },
+            { label: 'Past Executives', href: '#' },
           ]}
         />
         <FooterNavColumn
           header="Involvement"
           links={[
-            { display: 'Events', href: '#' },
-            { display: 'Volunteer', href: '#' },
-            { display: 'GitHub', href: '#' },
+            { label: 'Events', href: '#' },
+            { label: 'Volunteer', href: '#' },
+            { label: 'GitHub', href: '#' },
           ]}
         />
         <FooterNavColumn
           header="Socials"
           links={[
-            { display: 'Discord', href: '#' },
-            { display: 'Instagram', href: '#' },
-            { display: 'YouTube', href: '#' },
-            { display: 'LinkedIn', href: '#' },
+            { label: 'Discord', href: '#' },
+            { label: 'Instagram', href: '#' },
+            { label: 'YouTube', href: '#' },
+            { label: 'LinkedIn', href: '#' },
           ]}
         />
         <FooterNavColumn
           header="Get In Touch"
-          links={[{ display: 'Contact', href: '#' }]}
+          links={[{ label: 'Contact', href: '#' }]}
         />
         <div className="ml-auto mr-10 self-center shrink-0">
           <Image
