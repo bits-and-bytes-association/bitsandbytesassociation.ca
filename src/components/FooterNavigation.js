@@ -29,7 +29,7 @@ export default function FooterNavigation() {
   );
 
   return (
-    <nav className="bg-zinc-900">
+    <nav className="dark bg-zinc-900">
       <div className="container flex py-12 px-16 mx-auto">
         <FooterNavColumn
           header="Club"
