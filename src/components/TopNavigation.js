@@ -12,15 +12,13 @@ export default function TopNavigation() {
    * @param {string} href   The URL where the user will be redirected when clicking on the link.
    * @returns A text link.
    */
-  const TextLink = ({ label, href }) => {
-    return (
-      <li>
-        <Link href={href} className={styles['nav-link']}>
-          {label}
-        </Link>
-      </li>
-    );
-  };
+  const TextLink = ({ label, href }) => (
+    <li>
+      <Link href={href} className={styles['nav-link']}>
+        {label}
+      </Link>
+    </li>
+  );
 
   /**
    * Component that generates icon links in the top navigation.
@@ -41,22 +39,20 @@ export default function TopNavigation() {
     width,
     height,
     priority = false,
-  }) => {
-    return (
-      <li>
-        <Link href={href}>
-          <Image
-            src={src}
-            alt={alt}
-            className={styles[{ className }]}
-            width={width}
-            height={height}
-            priority={priority}
-          />
-        </Link>
-      </li>
-    );
-  };
+  }) => (
+    <li>
+      <Link href={href}>
+        <Image
+          src={src}
+          alt={alt}
+          className={styles[{ className }]}
+          width={width}
+          height={height}
+          priority={priority}
+        />
+      </Link>
+    </li>
+  );
 
   return (
     <nav id={styles['top-nav']}>
