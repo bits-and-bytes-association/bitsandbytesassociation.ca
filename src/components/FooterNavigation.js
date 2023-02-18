@@ -13,13 +13,13 @@ export default function FooterNavigation() {
    */
   const FooterNavColumn = ({ header, links }) => (
     <ul className="flex flex-col mx-10">
-      <li className="flex-initial mb-1">
-        <p href="#" className="text-white font-bold text-xl cursor-default">
-          {header.toUpperCase()}
+      <li className="flex-initial mb-2">
+        <p href="#" className="text-white font-bold text-lg cursor-default">
+          {header}
         </p>
       </li>
       {links.map((link, i) => (
-        <li className="flex-initial" key={i}>
+        <li className="flex-initial mb-1" key={i}>
           <Link href={link.href} className="text-gray-300 linear duration-200">
             {link.label}
           </Link>
@@ -64,8 +64,8 @@ export default function FooterNavigation() {
           <Image
             src="/images/bba-logomark-white.svg"
             alt="Bits and Bytes Association logo"
-            width={80}
-            height={80}
+            width={70}
+            height={70}
             priority
           />
         </div>
