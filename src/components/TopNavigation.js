@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '@/styles/TopNavigation.module.css';
 
 /**
  * A reusable navigation bar at the top of the page, including items such as logo, links and social media.
@@ -13,8 +12,13 @@ export default function TopNavigation() {
    * @returns A text link.
    */
   const TextLink = ({ label, href }) => (
-    <li>
-      <Link href={href} className={styles['nav-link']}>
+    <li className="border-slate-800">
+      <Link
+        href={href}
+        className={
+          'text-slate-900 hover:text-slate-500  mx-2 p-3.5 font-medium no-underline linear duration-100'
+        }
+      >
         {label}
       </Link>
     </li>
@@ -34,18 +38,17 @@ export default function TopNavigation() {
   const IconLink = ({
     href,
     src,
-    className = '',
     alt = '',
     width,
     height,
     priority = false,
   }) => (
-    <li>
+    <li className="ml-3">
       <Link href={href}>
         <Image
           src={src}
           alt={alt}
-          className={styles[{ className }]}
+          className="p-1"
           width={width}
           height={height}
           priority={priority}
@@ -55,21 +58,27 @@ export default function TopNavigation() {
   );
 
   return (
-    <nav id={styles['top-nav']}>
-      <div className={styles['nav-container']}>
+    <nav className="bg-white">
+      <div
+        className={
+          'container flex flex-1 justify-between items-center h-32 text-xl font-medium mx-auto py-4 px-5'
+        }
+      >
         {/* BBA main logo */}
-        <IconLink
-          href="/"
-          src="/images/bba-logo.svg"
-          alt="Bits and Bytes Association logo"
-          width={260}
-          height={80}
-          priority={true}
-        />
+        <ul className="list-none">
+          <IconLink
+            href="/"
+            src="/images/bba-logo.svg"
+            alt="Bits and Bytes Association logo"
+            width={260}
+            height={80}
+            priority={true}
+          />
+        </ul>
 
-        <div className={styles['nav-links']}>
+        <div className="flex items-center">
           {/* Main links */}
-          <ul className={styles['nav-text-links']}>
+          <ul className={'flex items-center list-none mr-12'}>
             <TextLink label="About" href="/about" />
             <TextLink label="Events" href="/events" />
             <TextLink label="Volunteer" href="/volunteer" />
@@ -77,14 +86,14 @@ export default function TopNavigation() {
           </ul>
 
           {/* Social media icons */}
-          <ul className={styles['nav-icon-links']}>
+          <ul className={'items-center justify-between flex list-none'}>
             {/* Discord */}
             <IconLink
               href="https://discord.gg/RXySZQE"
               src="/images/discord-logomark-black.svg"
               alt="Discord logo"
-              width={28}
-              height={28}
+              width={36}
+              height={36}
             />
 
             {/* YouTube */}
@@ -92,8 +101,8 @@ export default function TopNavigation() {
               href="https://www.youtube.com/@bitsandbytesassociation7743"
               src="/images/youtube-logomark-black.svg"
               alt="Youtube logo"
-              width={28}
-              height={20}
+              width={36}
+              height={26}
             />
 
             {/* Instagram */}
@@ -101,8 +110,8 @@ export default function TopNavigation() {
               href="https://www.instagram.com/rrcbba/"
               src="/images/instagram-logomark-black.svg"
               alt="Instagram logo"
-              width={22}
-              height={22}
+              width={30}
+              height={30}
             />
 
             {/* RRC */}
@@ -110,8 +119,8 @@ export default function TopNavigation() {
               href="https://www.rrc.ca/explore/computer-and-information-systems-technology/"
               src="/images/rrc-logomark-black.svg"
               alt="Red River College logo"
-              width={30}
-              height={30}
+              width={38}
+              height={38}
             />
           </ul>
         </div>
