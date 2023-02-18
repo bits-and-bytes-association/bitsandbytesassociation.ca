@@ -5,6 +5,7 @@ import styles from '@/styles/Home.module.css';
 
 // Components
 import TopNavigation from '@/components/TopNavigation';
+import FooterNavigation from '@/components/FooterNavigation';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,6 +22,7 @@ export default function Home() {
       <main>
         <div style={{ height: '600px' }}></div> {/* Placeholder element */}
       </main>
+      <FooterNavigation />
     </>
   );
 }

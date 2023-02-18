@@ -14,3 +14,7 @@
 body {
   font-family: 'Fira Sans', sans-serif;
 }
+
+a:hover {
+  color: #4ba7e1;
+}
