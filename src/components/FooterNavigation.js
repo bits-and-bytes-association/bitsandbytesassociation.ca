@@ -8,7 +8,7 @@ export default function FooterNavigation() {
   /**
    * Footer navigation column component
    * @param {string} header  Header text for the column
-   * @param {object} links  Object with link display and href props
+   * @param {object} links   Object with link display and href props
    * @returns  The footer navigation column.
    */
   const FooterNavColumn = ({ header, links }) => (
