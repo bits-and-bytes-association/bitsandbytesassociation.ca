@@ -12,5 +12,18 @@
 @tailwind utilities;
 
 body {
+  /* Variables */
+  --primary-color-light: #2d688d;
+  --primary-color-dark: #4ba7e1;
+
+  /* Styles */
   font-family: 'Fira Sans', sans-serif;
+}
+
+a:hover {
+  color: var(--primary-color-light);
+}
+
+.dark a:hover {
+  color: var(--primary-color-dark);
 }
