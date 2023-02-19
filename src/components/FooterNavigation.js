@@ -14,9 +14,7 @@ export default function FooterNavigation() {
   const FooterNavColumn = ({ header, links }) => (
     <ul className="flex flex-col mx-10">
       <li className="flex-initial mb-2">
-        <p href="#" className="text-white font-bold text-lg cursor-default">
-          {header}
-        </p>
+        <p className="text-white font-bold text-lg cursor-default">{header}</p>
       </li>
       {links.map((link, i) => (
         <li className="flex-initial mb-1" key={i}>
