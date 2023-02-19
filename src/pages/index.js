@@ -6,6 +6,7 @@ import styles from '@/styles/Home.module.css';
 // Components
 import TopNavigation from '@/components/TopNavigation';
 import FooterNavigation from '@/components/FooterNavigation';
+import HeadingBBAStyle from '@/components/HeadingBBAStyle';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -20,7 +21,17 @@ export default function Home() {
       </Head>
       <TopNavigation />
       <main>
-        <div style={{ height: '600px' }}></div> {/* Placeholder element */}
+        {/* Placeholder element */}
+        <div className="container mx-auto" style={{ height: '600px' }}>
+          {/* Sample Heading component */}
+          <HeadingBBAStyle>Follow us on Instagram</HeadingBBAStyle>
+          <HeadingBBAStyle
+            className="text-[2.5rem] font-bold text-sky-500"
+            inverted={true}
+          >
+            @rrcbba
+          </HeadingBBAStyle>
+        </div>{' '}
       </main>
       <FooterNavigation />
     </>
