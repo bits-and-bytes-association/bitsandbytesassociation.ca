@@ -4,9 +4,9 @@ import styles from '@/styles/HeadingBBAStyle.module.css';
  * Component that displays a styled heading with an adornment in one of its sides.
  * @param {string} className  Optional classes to style the heading.
  * @param {bool} inverted  Set to true to place the heading to the right.
- * @param {*} color  The CSS color of the adorning shape.
- * @param {*} lineWidth  The width in pixels of the adorning shape.
- * @param {*} children  Heading text or other content.
+ * @param {string} color  The CSS color of the adorning shape.
+ * @param {int} lineWidth  The width in pixels of the adorning shape.
+ * @param {ReactNode} children  Heading text or other content.
  * @returns  A heading with an adornment in one of its sides.
  */
 export default function HeadingBBAStyle({
