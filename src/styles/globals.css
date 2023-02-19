@@ -20,10 +20,24 @@ body {
   font-family: 'Fira Sans', sans-serif;
 }
 
+.text-primary-light,
 a:hover {
   color: var(--primary-color-light);
 }
 
+.text-primary-dark,
 .dark a:hover {
   color: var(--primary-color-dark);
+}
+
+.bg-primary-light {
+  background-color: var(--primary-color-light);
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-color-dark);
+}
+
+.bg-dark-button {
+  background-color: #202020;
 }
