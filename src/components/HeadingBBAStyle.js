@@ -26,7 +26,7 @@ export default function HeadingBBAStyle({
         {children}
       </h2>
       <div
-        className={`${styles['shape-wrapper']} flex items-center w-full`}
+        className={`${styles['shape-wrapper']} flex w-full items-center`}
         style={{ fontSize: `${lineWidth}px` }}
       >
         <div
