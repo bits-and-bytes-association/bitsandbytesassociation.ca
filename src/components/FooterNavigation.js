@@ -12,13 +12,13 @@ export default function FooterNavigation() {
    * @returns  The footer navigation column.
    */
   const FooterNavColumn = ({ header, links }) => (
-    <ul className="flex flex-col mx-10">
-      <li className="flex-initial mb-2">
-        <p className="text-white font-bold text-lg cursor-default">{header}</p>
+    <ul className="mx-10 flex flex-col">
+      <li className="mb-2 flex-initial">
+        <p className="cursor-default text-lg font-bold text-white">{header}</p>
       </li>
       {links.map((link, i) => (
-        <li className="flex-initial mb-1" key={i}>
-          <Link href={link.href} className="text-gray-300 linear duration-200">
+        <li className="mb-1 flex-initial" key={i}>
+          <Link href={link.href} className="linear text-gray-300 duration-200">
             {link.label}
           </Link>
         </li>
@@ -28,7 +28,7 @@ export default function FooterNavigation() {
 
   return (
     <nav className="dark bg-zinc-900">
-      <div className="container flex py-12 px-16 mx-auto">
+      <div className="container mx-auto flex py-12 px-16">
         <FooterNavColumn
           header="Club"
           links={[
@@ -58,7 +58,7 @@ export default function FooterNavigation() {
           header="Get In Touch"
           links={[{ label: 'Contact', href: '#' }]}
         />
-        <div className="ml-auto mr-10 self-center shrink-0">
+        <div className="ml-auto mr-10 shrink-0 self-center">
           <Image
             src="/images/bba-logomark-white.svg"
             alt="Bits and Bytes Association logo"
@@ -68,12 +68,12 @@ export default function FooterNavigation() {
           />
         </div>
       </div>
-      <div className="bg-neutral-900 border-t border-neutral-800">
-        <p className="text-sm text-center py-3 text-gray-400 cursor-default">
+      <div className="border-t border-neutral-800 bg-neutral-900">
+        <p className="cursor-default py-3 text-center text-sm text-gray-400">
           Made with ❤️ by our{' '}
           <Link
             href="#"
-            className="underline underline-offset-2 linear duration-300"
+            className="linear underline underline-offset-2 duration-300"
           >
             contributors
           </Link>
