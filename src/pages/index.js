@@ -24,12 +24,13 @@ export default function Home() {
         {/* Placeholder element */}
         <div className="container mx-auto" style={{ height: '600px' }}>
           {/* Sample Heading component */}
-          <HeadingBBAStyle textContent="Follow us on Instagram" />
+          <HeadingBBAStyle>Follow us on Instagram</HeadingBBAStyle>
           <HeadingBBAStyle
-            textContent="@rrcbba"
             className="text-[2.5rem] font-bold text-sky-500"
             inverted={true}
-          />
+          >
+            @rrcbba
+          </HeadingBBAStyle>
         </div>{' '}
       </main>
       <FooterNavigation />
