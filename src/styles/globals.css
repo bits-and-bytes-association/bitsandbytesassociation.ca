@@ -4,7 +4,7 @@
  * font-family: 'Fira Sans', sans-serif;
  * font-family: 'Work Sans', sans-serif;
  */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,400;0,600;0,700;0,900;1,200;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,400;0,600;0,700;0,800;0,900;1,200;1,400;1,700&family=Work+Sans:ital,wght@0,100;0,200;0,400;0,600;0,800;1,200;1,400;1,600&display=swap');
 
 /* Inject Tailwind's styles */
 @tailwind base;
@@ -15,6 +15,7 @@ body {
   /* Variables */
   --primary-color-light: #2d688d;
   --primary-color-dark: #4ba7e1;
+  --bg-color-dark: #202020;
 
   /* Styles */
   font-family: 'Fira Sans', sans-serif;
@@ -39,5 +40,5 @@ a:hover {
 }
 
 .bg-dark-button {
-  background-color: #202020;
+  background-color: var(--bg-color-dark);
 }

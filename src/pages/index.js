@@ -23,12 +23,63 @@ export default function Home() {
       <TopNavigation />
       <main>
         {/* Placeholder element */}
-        <div className="container mx-auto" style={{ height: '600px' }}>
+        <div className="container mx-auto">
           {/* Sample buttons */}
+          <h5 className="text-lg mb-2">
+            <b>Theme &quot;primary&quot;</b> - Simple link buttons with default
+            parameters.
+          </h5>
+          <div className="mb-5 flex items-start">
+            <Button href="#" size="sm" className="mr-4">
+              Learn More
+            </Button>
+            <Button href="#" className="mr-4">
+              Learn More
+            </Button>
+            <Button href="#" size="lg">
+              Learn More
+            </Button>
+          </div>
+
+          <h5 className="text-lg mb-2">
+            <b>Theme &quot;primary-outline&quot;</b> - Buttons with outline.
+          </h5>
+          <div className="mb-5 flex items-start">
+            <Button themeName="primary-outline" size="sm" className="mr-4">
+              Learn More
+            </Button>
+            <Button themeName="primary-outline" className="mr-4">
+              Learn More
+            </Button>
+            <Button themeName="primary-outline" size="lg" className="mr-4">
+              Learn More
+            </Button>
+          </div>
+
+          <h5 className="text-lg mb-2">
+            <b>Theme &quot;dark&quot;</b> - Sample non-link button with custom
+            parameters (fontSize, fontColor, padding) and onClick function
+          </h5>
           <div className="mb-5">
             <Button
-              bgColor="bg-dark-button"
-              padding="py-2 px-7"
+              themeName="dark"
+              fontSize="1em"
+              fontColor="var(--primary-color-dark)"
+              padding="0.5em 4em"
+              onClick={() => alert('Test')}
+            >
+              Learn More
+            </Button>
+          </div>
+
+          <h5 className="text-lg mb-2">
+            <b>Theme &quot;dark&quot;</b> - Sample large button with image
+          </h5>
+          <div className="mb-5">
+            <Button
+              themeName="dark"
+              size="lg"
+              padding="0.4em 1.25em"
               href="https://discord.gg/RXySZQE"
             >
               <Image
@@ -40,17 +91,17 @@ export default function Home() {
               />
             </Button>
           </div>
-          <div className="mb-5">
-            <Button href="#">Learn More</Button>
-          </div>
+
           {/* Sample Heading component */}
-          <HeadingBBAStyle>Follow us on Instagram</HeadingBBAStyle>
-          <HeadingBBAStyle
-            className="text-[2.5rem] font-bold text-sky-500"
-            inverted={true}
-          >
-            @rrcbba
-          </HeadingBBAStyle>
+          <div className="my-10">
+            <HeadingBBAStyle>Follow us on Instagram</HeadingBBAStyle>
+            <HeadingBBAStyle
+              className="text-[2.5rem] font-bold text-sky-500"
+              inverted={true}
+            >
+              @rrcbba
+            </HeadingBBAStyle>
+          </div>
         </div>{' '}
       </main>
       <FooterNavigation />

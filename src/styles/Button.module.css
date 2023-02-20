@@ -1,0 +1,59 @@
+/* Base theme - Applies to all buttons */
+.button-component[class^='Button_button-theme-'],
+.button-component[class*=' Button_button-theme-'] {
+  border-radius: 50em;
+  box-sizing: border-box;
+  color: white;
+  font-weight: 800;
+  display: inline-block;
+  transition: all linear 0.2s;
+  padding: 0.45em 1.7em;
+}
+
+.button-component[class^='Button_button-theme-']:hover,
+.button-component[class*=' Button_button-theme-']:hover {
+  color: white;
+}
+
+/* Theme for different sizes */
+.btn-sm {
+  font-size: 0.8em;
+}
+
+.btn-md {
+  font-size: 1em;
+}
+
+.btn-lg {
+  font-size: 1.5em;
+}
+
+/* Theme "primary" */
+.button-component.button-theme-primary {
+  background-color: var(--primary-color-dark);
+}
+
+.button-component.button-theme-primary:hover {
+  background-color: #3c89ba;
+}
+
+/* Theme "primary-outline" */
+.button-component.button-theme-primary-outline {
+  border: 0.1em solid var(--primary-color-dark);
+  color: var(--primary-color-dark);
+  font-weight: 600;
+}
+
+.button-component.button-theme-primary-outline:hover {
+  background-color: var(--primary-color-dark);
+  color: white;
+}
+
+/* Theme "dark" */
+.button-component.button-theme-dark {
+  background-color: var(--bg-color-dark);
+}
+
+.button-component.button-theme-dark:hover {
+  background-color: rgb(91, 91, 103);
+}
