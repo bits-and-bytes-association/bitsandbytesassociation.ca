@@ -9,7 +9,7 @@ import styles from '@/styles/Button.module.css';
  * @param {string} padding The CSS padding
  * @param {string} className Optional CSS classes.
  * @param {string} href Link button destination
- * @param {function} onClick onClick event handler. Only used for non-link buttons
+ * @param {function} onClick onClick event handler.
  * @param {ReactNode} children Button content
  * @returns A button
  */
@@ -34,7 +34,12 @@ export default function Button({
   // Link button
   if (href !== '') {
     return (
-      <Link className={classes} href={href} style={inlineStyles}>
+      <Link
+        className={classes}
+        href={href}
+        onClick={onClick}
+        style={inlineStyles}
+      >
         {children}
       </Link>
     );
