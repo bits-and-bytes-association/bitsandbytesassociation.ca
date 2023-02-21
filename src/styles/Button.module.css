@@ -15,7 +15,7 @@
   color: white;
 }
 
-/* Theme for different sizes */
+/* Variant for different sizes */
 .btn-sm {
   font-size: 0.8em;
 }
@@ -28,7 +28,7 @@
   font-size: 1.5em;
 }
 
-/* Theme "primary" */
+/* Variant "primary" */
 .button-component.button-variant-primary {
   background-color: var(--primary-color-dark);
 }
@@ -37,7 +37,7 @@
   background-color: #3c89ba;
 }
 
-/* Theme "primary-outline" */
+/* Variant "primary-outline" */
 .button-component.button-variant-primary-outline {
   border: 0.1em solid var(--primary-color-dark);
   color: var(--primary-color-dark);
@@ -49,7 +49,7 @@
   color: white;
 }
 
-/* Theme "dark" */
+/* Variant "dark" */
 .button-component.button-variant-dark {
   background-color: var(--bg-color-dark);
 }
