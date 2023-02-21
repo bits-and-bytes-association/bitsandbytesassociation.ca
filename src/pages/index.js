@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import { Inter } from '@next/font/google';
 import styles from '@/styles/Home.module.css';
 
 // Components
@@ -8,8 +7,6 @@ import TopNavigation from '@/components/TopNavigation';
 import FooterNavigation from '@/components/FooterNavigation';
 import Button from '@/components/Button';
 import HeadingBBAStyle from '@/components/HeadingBBAStyle';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -25,7 +22,7 @@ export default function Home() {
         {/* Placeholder element */}
         <div className="container mx-auto">
           {/* Sample buttons */}
-          <h5 className="text-lg mb-2">
+          <h5 className="mb-2 text-lg">
             <b>Variant &quot;primary&quot;</b> - Simple link buttons with
             default parameters.
           </h5>
@@ -41,7 +38,7 @@ export default function Home() {
             </Button>
           </div>
 
-          <h5 className="text-lg mb-2">
+          <h5 className="mb-2 text-lg">
             <b>Variant &quot;primary-outline&quot;</b> - Buttons with outline.
           </h5>
           <div className="mb-5 flex items-start">
@@ -56,7 +53,7 @@ export default function Home() {
             </Button>
           </div>
 
-          <h5 className="text-lg mb-2">
+          <h5 className="mb-2 text-lg">
             <b>Variant &quot;dark&quot;</b> - Sample non-link button with custom
             padding and onClick function
           </h5>
@@ -70,7 +67,7 @@ export default function Home() {
             </Button>
           </div>
 
-          <h5 className="text-lg mb-2">
+          <h5 className="mb-2 text-lg">
             <b>Variant &quot;dark&quot;</b> - Sample large button with image
           </h5>
           <div className="mb-5">
