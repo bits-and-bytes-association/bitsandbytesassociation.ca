@@ -12,7 +12,7 @@ import styles from '@/styles/HeadingBBAStyle.module.css';
 export default function HeadingBBAStyle({
   className = 'text-5xl font-black',
   inverted = false,
-  color = 'var(--primary-color-dark)',
+  color = 'var(--primary-color)',
   lineWidth = 30,
   children,
 }) {

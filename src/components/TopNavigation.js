@@ -8,15 +8,15 @@ export default function TopNavigation() {
   /**
    * Component that generates text links in the top navigation.
    * @param {string} label  The text that will appear on the link.
-   * @param {string} href   The URL where the user will be redirected when clicking on the link.
+   * @param {string} href  The URL where the user will be redirected when clicking on the link.
    * @returns A text link.
    */
   const TextLink = ({ label, href }) => (
-    <li className="border-slate-800">
+    <li>
       <Link
         href={href}
         className={
-          'linear mx-2  p-3.5 font-medium text-slate-900 no-underline duration-100 hover:text-slate-500'
+          'linear mx-2 p-3.5 font-normal text-dark no-underline duration-100 hover:text-[var(--dark-font-hover-color)]'
         }
       >
         {label}
@@ -58,7 +58,7 @@ export default function TopNavigation() {
   );
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-light">
       <div
         className={
           'container mx-auto flex h-32 flex-1 items-center justify-between py-4 px-5 text-xl font-medium'
