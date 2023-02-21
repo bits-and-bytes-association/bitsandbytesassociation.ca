@@ -9,7 +9,34 @@ module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     screens: customScreens,
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: 'var(--primary-color)',
+          light: 'var(--primary-color-100)',
+          dark: 'var(--primary-color-900)',
+          hover: 'var(--primary-hover-color)',
+          900: 'var(--primary-color-900)',
+          800: 'var(--primary-color-800)',
+          700: 'var(--primary-color-700)',
+          600: 'var(--primary-color-600)',
+          500: 'var(--primary-color-500)',
+          400: 'var(--primary-color-400)',
+          300: 'var(--primary-color-300)',
+          200: 'var(--primary-color-200)',
+          100: 'var(--primary-color-100)',
+          50: 'var(--primary-color-50)',
+        },
+        dark: {
+          DEFAULT: 'var(--dark-color)',
+          hover: 'var(--dark-hover-color)',
+        },
+        light: {
+          DEFAULT: 'var(--light-color)',
+          hover: 'var(--light-font-hover-color)',
+        },
+      },
+    },
   },
   plugins: [],
 };
