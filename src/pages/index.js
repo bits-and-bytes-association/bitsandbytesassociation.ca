@@ -26,8 +26,8 @@ export default function Home() {
         <div className="container mx-auto">
           {/* Sample buttons */}
           <h5 className="text-lg mb-2">
-            <b>Theme &quot;primary&quot;</b> - Simple link buttons with default
-            parameters.
+            <b>Variant &quot;primary&quot;</b> - Simple link buttons with
+            default parameters.
           </h5>
           <div className="mb-5 flex items-start">
             <Button href="#" size="sm" className="mr-4">
@@ -42,29 +42,27 @@ export default function Home() {
           </div>
 
           <h5 className="text-lg mb-2">
-            <b>Theme &quot;primary-outline&quot;</b> - Buttons with outline.
+            <b>Variant &quot;primary-outline&quot;</b> - Buttons with outline.
           </h5>
           <div className="mb-5 flex items-start">
-            <Button themeName="primary-outline" size="sm" className="mr-4">
+            <Button variant="primary-outline" size="sm" className="mr-4">
               Learn More
             </Button>
-            <Button themeName="primary-outline" className="mr-4">
+            <Button variant="primary-outline" className="mr-4">
               Learn More
             </Button>
-            <Button themeName="primary-outline" size="lg" className="mr-4">
+            <Button variant="primary-outline" size="lg" className="mr-4">
               Learn More
             </Button>
           </div>
 
           <h5 className="text-lg mb-2">
-            <b>Theme &quot;dark&quot;</b> - Sample non-link button with custom
-            parameters (fontSize, fontColor, padding) and onClick function
+            <b>Variant &quot;dark&quot;</b> - Sample non-link button with custom
+            padding and onClick function
           </h5>
           <div className="mb-5">
             <Button
-              themeName="dark"
-              fontSize="1em"
-              fontColor="var(--primary-color-dark)"
+              variant="dark"
               padding="0.5em 4em"
               onClick={() => alert('Test')}
             >
@@ -73,11 +71,11 @@ export default function Home() {
           </div>
 
           <h5 className="text-lg mb-2">
-            <b>Theme &quot;dark&quot;</b> - Sample large button with image
+            <b>Variant &quot;dark&quot;</b> - Sample large button with image
           </h5>
           <div className="mb-5">
             <Button
-              themeName="dark"
+              variant="dark"
               size="lg"
               padding="0.4em 1.25em"
               href="https://discord.gg/RXySZQE"

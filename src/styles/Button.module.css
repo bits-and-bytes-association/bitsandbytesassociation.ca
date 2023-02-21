@@ -1,6 +1,6 @@
-/* Base theme - Applies to all buttons */
-.button-component[class^='Button_button-theme-'],
-.button-component[class*=' Button_button-theme-'] {
+/* Base variant - Applies to all buttons */
+.button-component[class^='Button_button-variant-'],
+.button-component[class*=' Button_button-variant-'] {
   border-radius: 50em;
   box-sizing: border-box;
   color: white;
@@ -10,8 +10,8 @@
   padding: 0.45em 1.7em;
 }
 
-.button-component[class^='Button_button-theme-']:hover,
-.button-component[class*=' Button_button-theme-']:hover {
+.button-component[class^='Button_button-variant-']:hover,
+.button-component[class*=' Button_button-variant-']:hover {
   color: white;
 }
 
@@ -29,31 +29,31 @@
 }
 
 /* Theme "primary" */
-.button-component.button-theme-primary {
+.button-component.button-variant-primary {
   background-color: var(--primary-color-dark);
 }
 
-.button-component.button-theme-primary:hover {
+.button-component.button-variant-primary:hover {
   background-color: #3c89ba;
 }
 
 /* Theme "primary-outline" */
-.button-component.button-theme-primary-outline {
+.button-component.button-variant-primary-outline {
   border: 0.1em solid var(--primary-color-dark);
   color: var(--primary-color-dark);
   font-weight: 600;
 }
 
-.button-component.button-theme-primary-outline:hover {
+.button-component.button-variant-primary-outline:hover {
   background-color: var(--primary-color-dark);
   color: white;
 }
 
 /* Theme "dark" */
-.button-component.button-theme-dark {
+.button-component.button-variant-dark {
   background-color: var(--bg-color-dark);
 }
 
-.button-component.button-theme-dark:hover {
+.button-component.button-variant-dark:hover {
   background-color: rgb(91, 91, 103);
 }
