@@ -20,7 +20,7 @@ export default function FooterNavigation() {
         <li className="mb-1 flex-initial" key={i}>
           <Link
             href={link.href}
-            className="linear text-gray-400 duration-100 hover:text-white"
+            className="linear text-gray-400 duration-100 hover:text-light"
           >
             {link.label}
           </Link>
@@ -76,7 +76,7 @@ export default function FooterNavigation() {
           Made with ❤️ by our{' '}
           <Link
             href="#"
-            className="linear underline underline-offset-2 duration-300 hover:text-white"
+            className="linear underline underline-offset-2 duration-300 hover:text-light"
           >
             contributors
           </Link>

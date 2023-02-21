@@ -46,7 +46,7 @@
 
 .button-component.button-variant-primary-outline:hover {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--light-font-color);
 }
 
 /* Variant "dark" */
