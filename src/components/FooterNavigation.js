@@ -14,13 +14,15 @@ export default function FooterNavigation() {
   const FooterNavColumn = ({ header, links }) => (
     <ul className="mx-10 flex flex-col">
       <li className="mb-2 flex-initial">
-        <p className="cursor-default text-lg font-bold text-light">{header}</p>
+        <p className="cursor-default text-lg font-bold text-light-font">
+          {header}
+        </p>
       </li>
       {links.map((link, i) => (
         <li className="mb-1 flex-initial" key={i}>
           <Link
             href={link.href}
-            className="linear text-gray-400 duration-100 hover:text-light"
+            className="linear text-gray-400 duration-100 hover:text-light-font"
           >
             {link.label}
           </Link>
@@ -76,7 +78,7 @@ export default function FooterNavigation() {
           Made with ❤️ by our{' '}
           <Link
             href="#"
-            className="linear underline underline-offset-2 duration-300 hover:text-light"
+            className="linear underline underline-offset-2 duration-300 hover:text-light-font"
           >
             contributors
           </Link>

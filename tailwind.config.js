@@ -27,13 +27,20 @@ module.exports = {
           100: 'var(--primary-color-100)',
           50: 'var(--primary-color-50)',
         },
+        light: {
+          DEFAULT: 'var(--light-color)',
+        },
         dark: {
           DEFAULT: 'var(--dark-color)',
           hover: 'var(--dark-hover-color)',
         },
-        light: {
+        'light-font': {
           DEFAULT: 'var(--light-color)',
           hover: 'var(--light-font-hover-color)',
+        },
+        'dark-font': {
+          DEFAULT: 'var(--dark-color)',
+          hover: 'var(--dark-font-hover-color)',
         },
       },
     },

@@ -256,7 +256,7 @@ export default function Home() {
           <p className="my-2 text-xl font-bold">Tailwind classes</p>
           <div className="flex">
             <div
-              className="mb-10 mr-10 flex flex-col text-light"
+              className="mb-10 mr-10 flex flex-col text-light-font"
               style={{
                 height: '20em',
                 width: '20em',
@@ -280,7 +280,7 @@ export default function Home() {
             </div>
 
             <div
-              className="mb-10 mr-10 flex flex-col text-light"
+              className="mb-10 mr-10 flex flex-col text-light-font"
               style={{
                 height: '20em',
                 width: '20em',
@@ -326,8 +326,10 @@ export default function Home() {
                   width: '20em',
                 }}
               >
-                <p className="text-2xl text-light">text-light</p>
-                <p className="text-2xl text-light-hover">text-light-hover</p>
+                <p className="text-2xl text-light-font">text-light-font</p>
+                <p className="text-2xl text-light-font-hover">
+                  text-light-font-hover
+                </p>
               </div>
               <div
                 className="flex flex-col items-center justify-center bg-light"
@@ -336,7 +338,10 @@ export default function Home() {
                   width: '20em',
                 }}
               >
-                <p className="text-2xl text-dark">text-dark</p>
+                <p className="text-2xl text-dark">text-dark-font</p>
+                <p className="text-2xl text-dark-font-hover">
+                  text-dark-font-hover
+                </p>
               </div>
             </div>
           </div>
