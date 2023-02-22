@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }) {
           --font-secondary: ${secondaryFont.style.fontFamily};
         }
       `}</style>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }
