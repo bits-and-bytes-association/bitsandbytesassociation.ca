@@ -2,12 +2,30 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 /**
+ * Footer navigation column link
+ * @param {string} href  Link destination
+ * @param {ReactNode} children  Link content
+ */
+function NavLink({ href, children }) {
+  return (
+    <li className="mb-1 flex-initial">
+      <Link
+        href={href}
+        className="linear text-gray-400 duration-100 hover:text-light-font"
+      >
+        {children}
+      </Link>
+    </li>
+  );
+}
+
+/**
  * Footer navigation column component
  * @param {string} header  Header text for the column
  * @param {object} links  Object with link label and href props
  * @returns  The footer navigation column.
  */
-function FooterNavColumn({ header, links }) {
+function NavColumn({ header, children }) {
   return (
     <ul className="mx-10 flex flex-col">
       <li className="mb-2 flex-initial">
@@ -15,16 +33,7 @@ function FooterNavColumn({ header, links }) {
           {header}
         </p>
       </li>
-      {links.map((link, i) => (
-        <li className="mb-1 flex-initial" key={i}>
-          <Link
-            href={link.href}
-            className="linear text-gray-400 duration-100 hover:text-light-font"
-          >
-            {link.label}
-          </Link>
-        </li>
-      ))}
+      {children}
     </ul>
   );
 }
@@ -36,35 +45,25 @@ export default function FooterNavigation() {
   return (
     <nav className="bg-dark">
       <div className="container mx-auto flex py-12 px-16">
-        <FooterNavColumn
-          header="Club"
-          links={[
-            { label: 'Mission Statement', href: '#' },
-            { label: 'Current Board', href: '#' },
-            { label: 'Past Executives', href: '#' },
-          ]}
-        />
-        <FooterNavColumn
-          header="Involvement"
-          links={[
-            { label: 'Events', href: '#' },
-            { label: 'Volunteer', href: '#' },
-            { label: 'GitHub', href: '#' },
-          ]}
-        />
-        <FooterNavColumn
-          header="Socials"
-          links={[
-            { label: 'Discord', href: '#' },
-            { label: 'Instagram', href: '#' },
-            { label: 'YouTube', href: '#' },
-            { label: 'LinkedIn', href: '#' },
-          ]}
-        />
-        <FooterNavColumn
-          header="Get In Touch"
-          links={[{ label: 'Contact', href: '#' }]}
-        />
+        <NavColumn header="Club">
+          <NavLink href="#">Mission Statement</NavLink>
+          <NavLink href="#">Current Board</NavLink>
+          <NavLink href="#">Past Executives</NavLink>
+        </NavColumn>
+        <NavColumn header="Involvement">
+          <NavLink href="#">Events</NavLink>
+          <NavLink href="#">Volunteer</NavLink>
+          <NavLink href="#">GitHub</NavLink>
+        </NavColumn>
+        <NavColumn header="Socials">
+          <NavLink href="#">Discord</NavLink>
+          <NavLink href="#">Instagram</NavLink>
+          <NavLink href="#">YouTube</NavLink>
+          <NavLink href="#">LinkedIn</NavLink>
+        </NavColumn>
+        <NavColumn header="Get In Touch">
+          <NavLink href="#">Contact</NavLink>
+        </NavColumn>
         <div className="ml-auto mr-10 shrink-0 self-center">
           <Image
             src="/images/bba-logomark-white.svg"
