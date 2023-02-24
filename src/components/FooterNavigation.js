@@ -2,16 +2,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 /**
- * Footer navigation component
+ * Footer navigation column component
+ * @param {string} header  Header text for the column
+ * @param {object} links  Object with link label and href props
+ * @returns  The footer navigation column.
  */
-export default function FooterNavigation() {
-  /**
-   * Footer navigation column component
-   * @param {string} header  Header text for the column
-   * @param {object} links  Object with link label and href props
-   * @returns  The footer navigation column.
-   */
-  const FooterNavColumn = ({ header, links }) => (
+function FooterNavColumn({ header, links }) {
+  return (
     <ul className="mx-10 flex flex-col">
       <li className="mb-2 flex-initial">
         <p className="cursor-default text-lg font-bold text-light-font">
@@ -30,7 +27,12 @@ export default function FooterNavigation() {
       ))}
     </ul>
   );
+}
 
+/**
+ * Footer navigation component
+ */
+export default function FooterNavigation() {
   return (
     <nav className="bg-dark">
       <div className="container mx-auto flex py-12 px-16">
