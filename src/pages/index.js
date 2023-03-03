@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 // Components
 import TopNavigation from '@/components/TopNavigation';
-import FooterNavigation from '@/components/FooterNavigation';
+import Footer from '@/components/Footer';
 import Button from '@/components/Button';
 import HeadingBBAStyle from '@/components/HeadingBBAStyle';
 
@@ -357,7 +357,7 @@ export default function Home() {
           </div>
         </div>{' '}
       </main>
-      <FooterNavigation />
+      <Footer />
     </>
   );
 }
