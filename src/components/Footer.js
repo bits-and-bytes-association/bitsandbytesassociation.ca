@@ -69,7 +69,7 @@ function BottomNotice() {
 /**
  * Footer navigation column component
  * @param {string} header  Header text
- * @param {ReactNode} links  Column link components
+ * @param {ReactNode} children  Column link components
  */
 function NavColumn({ header, children }) {
   return (
