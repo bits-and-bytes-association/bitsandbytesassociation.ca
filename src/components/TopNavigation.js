@@ -2,16 +2,13 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 /**
- * A reusable navigation bar at the top of the page, including items such as logo, links and social media.
+ * Component that generates text links in the top navigation.
+ * @param {string} label  The text that will appear on the link.
+ * @param {string} href  The URL where the user will be redirected when clicking on the link.
+ * @returns A text link.
  */
-export default function TopNavigation() {
-  /**
-   * Component that generates text links in the top navigation.
-   * @param {string} label  The text that will appear on the link.
-   * @param {string} href  The URL where the user will be redirected when clicking on the link.
-   * @returns A text link.
-   */
-  const TextLink = ({ label, href }) => (
+function TextLink({ label, href }) {
+  return (
     <li>
       <Link
         href={href}
@@ -23,26 +20,21 @@ export default function TopNavigation() {
       </Link>
     </li>
   );
+}
 
-  /**
-   * Component that generates icon links in the top navigation.
-   * @param {string} href  The URL where the user will be redirected when clicking on the link.
-   * @param {string} src  The path where the icon asset is stored.
-   * @param {string} className  The classes to add to the icon.
-   * @param {string} alt  The alternative text of the icon.
-   * @param {int} width  The width of the icon.
-   * @param {int} height  The height of the icon.
-   * @param {bool} priority  Set to true if the image is considered high priority and should preload instead of lazy loading.
-   * @returns An icon link.
-   */
-  const IconLink = ({
-    href,
-    src,
-    alt = '',
-    width,
-    height,
-    priority = false,
-  }) => (
+/**
+ * Component that generates icon links in the top navigation.
+ * @param {string} href  The URL where the user will be redirected when clicking on the link.
+ * @param {string} src  The path where the icon asset is stored.
+ * @param {string} className  The classes to add to the icon.
+ * @param {string} alt  The alternative text of the icon.
+ * @param {int} width  The width of the icon.
+ * @param {int} height  The height of the icon.
+ * @param {bool} priority  Set to true if the image is considered high priority and should preload instead of lazy loading.
+ * @returns An icon link.
+ */
+function IconLink({ href, src, alt = '', width, height, priority = false }) {
+  return (
     <li className="ml-3">
       <Link href={href}>
         <Image
@@ -56,7 +48,12 @@ export default function TopNavigation() {
       </Link>
     </li>
   );
+}
 
+/**
+ * A reusable navigation bar at the top of the page, including items such as logo, links and social media.
+ */
+export default function TopNavigation() {
   return (
     <nav className="bg-light">
       <div
