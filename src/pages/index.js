@@ -19,7 +19,7 @@ export default function Home() {
       <TopNavigation />
       <main>
         {/* Placeholder element */}
-        <div className="container mx-auto">
+        <div className="container mx-auto px-6">
           {/* Sample buttons */}
           <p className="my-3 text-3xl font-bold">Buttons</p>
           <h5 className="mb-2 text-lg">
