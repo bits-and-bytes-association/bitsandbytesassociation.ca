@@ -12,7 +12,7 @@ export default function TopNavigation() {
           'container mx-auto flex h-32 flex-1 items-center justify-between py-4 px-5 text-xl font-medium'
         }
       >
-        {/* Navigation logo */}
+        {/* Left-aligned nav logo */}
         <Link href="/">
           <Image
             src="/images/bba-logo.svg"
@@ -23,71 +23,57 @@ export default function TopNavigation() {
           />
         </Link>
 
+        {/* Right-aligned nav items */}
         <div className="flex items-center">
-          <TextLinks />
-          <IconLinks />
+          {/* Text links */}
+          <ul className={'mr-12 flex list-none items-center'}>
+            <TextLink href="/about">About</TextLink>
+            <TextLink href="/events">Events</TextLink>
+            <TextLink href="/volunteer">Volunteer</TextLink>
+            <TextLink href="/contact">Contact</TextLink>
+          </ul>
+
+          {/* Icon links */}
+          <ul className={'flex list-none items-center justify-between'}>
+            {/* Discord */}
+            <IconLink
+              href="https://discord.gg/RXySZQE"
+              src="/images/discord-logomark-black.svg"
+              alt="Discord logo"
+              width={36}
+              height={36}
+            />
+
+            {/* YouTube */}
+            <IconLink
+              href="https://www.youtube.com/@bitsandbytesassociation7743"
+              src="/images/youtube-logomark-black.svg"
+              alt="Youtube logo"
+              width={36}
+              height={26}
+            />
+
+            {/* Instagram */}
+            <IconLink
+              href="https://www.instagram.com/rrcbba/"
+              src="/images/instagram-logomark-black.svg"
+              alt="Instagram logo"
+              width={30}
+              height={30}
+            />
+
+            {/* RRC */}
+            <IconLink
+              href="https://www.rrc.ca/explore/computer-and-information-systems-technology/"
+              src="/images/rrc-logomark-black.svg"
+              alt="Red River College logo"
+              width={38}
+              height={38}
+            />
+          </ul>
         </div>
       </div>
     </nav>
-  );
-}
-
-/**
- * Text links component.
- */
-function TextLinks() {
-  return (
-    <ul className={'mr-12 flex list-none items-center'}>
-      <TextLink href="/about">About</TextLink>
-      <TextLink href="/events">Events</TextLink>
-      <TextLink href="/volunteer">Volunteer</TextLink>
-      <TextLink href="/contact">Contact</TextLink>
-    </ul>
-  );
-}
-
-/**
- * Icon links component.
- */
-function IconLinks() {
-  return (
-    <ul className={'flex list-none items-center justify-between'}>
-      {/* Discord */}
-      <IconLink
-        href="https://discord.gg/RXySZQE"
-        src="/images/discord-logomark-black.svg"
-        alt="Discord logo"
-        width={36}
-        height={36}
-      />
-
-      {/* YouTube */}
-      <IconLink
-        href="https://www.youtube.com/@bitsandbytesassociation7743"
-        src="/images/youtube-logomark-black.svg"
-        alt="Youtube logo"
-        width={36}
-        height={26}
-      />
-
-      {/* Instagram */}
-      <IconLink
-        href="https://www.instagram.com/rrcbba/"
-        src="/images/instagram-logomark-black.svg"
-        alt="Instagram logo"
-        width={30}
-        height={30}
-      />
-
-      {/* RRC */}
-      <IconLink
-        href="https://www.rrc.ca/explore/computer-and-information-systems-technology/"
-        src="/images/rrc-logomark-black.svg"
-        alt="Red River College logo"
-        width={38}
-        height={38}
-      />
-    </ul>
   );
 }
 
