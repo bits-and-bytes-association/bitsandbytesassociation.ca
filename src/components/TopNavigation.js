@@ -34,8 +34,8 @@ export default function TopNavigation() {
         {/* Hamburger button */}
         <button
           className={`${
-            isCollapsed ? '' : 'bg-dark text-light-font hover:bg-dark-hover'
-          } rounded-lg p-2 duration-100 ease-linear hover:bg-dark hover:text-light-font lg:hidden`}
+            isCollapsed ? '' : 'bg-dark-hover'
+          } rounded-lg bg-dark p-2 text-light-font duration-100 ease-linear hover:bg-dark-hover lg:hidden`}
           type="button"
           onClick={() => setIsCollapsed(!isCollapsed)}
         >
@@ -57,7 +57,7 @@ export default function TopNavigation() {
             <TextLink href="/volunteer">Volunteer</TextLink>
             <TextLink href="/contact">Contact</TextLink>
             <li>
-              <ul className="mt-2 mb-4 ml-3.5 flex flex-row items-center gap-4 lg:mt-0 lg:mb-0 lg:ml-12">
+              <ul className="mx-3.5 mt-2 mb-4 flex flex-row items-center justify-around gap-8 sm:justify-start lg:mt-0 lg:mb-0 lg:ml-12">
                 {/* Discord */}
                 <SocialLink
                   href="https://discord.gg/RXySZQE"
@@ -114,7 +114,7 @@ function TextLink({ href, children }) {
       <Link
         href={href}
         className={
-          'linear block rounded-lg p-4 font-normal text-dark no-underline duration-100 hover:bg-primary hover:text-light-font lg:m-3 lg:p-1 lg:hover:bg-inherit lg:hover:text-primary'
+          'linear block rounded-lg p-4 font-normal text-dark no-underline duration-100 hover:bg-primary hover:text-light-font active:bg-primary active:text-light-font lg:m-3 lg:p-1 lg:hover:bg-inherit lg:hover:text-primary lg:active:bg-inherit lg:active:text-primary'
         }
       >
         {children}

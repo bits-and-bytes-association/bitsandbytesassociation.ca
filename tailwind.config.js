@@ -7,6 +7,9 @@ delete customScreens['2xl'];
 
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  future: {
+    hoverOnlyWhenSupported: true
+  },
   theme: {
     screens: customScreens,
     extend: {
