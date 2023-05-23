@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Bars3Icon } from '@heroicons/react/24/outline';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 /**
  * A reusable navigation bar at the top of the page.
@@ -33,13 +33,15 @@ export default function TopNavigation() {
 
         {/* Hamburger button */}
         <button
-          className={`${
-            isCollapsed ? '' : 'bg-dark-hover'
-          } rounded-lg bg-dark p-2 text-light-font duration-100 ease-linear hover:bg-dark-hover lg:hidden`}
+          className={`rounded-lg bg-dark p-2 text-light-font duration-100 ease-linear hover:bg-dark-hover lg:hidden`}
           type="button"
           onClick={() => setIsCollapsed(!isCollapsed)}
         >
-          <Bars3Icon className="h-6 w-6" />
+          {isCollapsed ? (
+            <Bars3Icon className="h-6 w-6" />
+          ) : (
+            <XMarkIcon className="h-6 w-6" />
+          )}
         </button>
 
         {/* Right-aligned nav items */}
@@ -57,7 +59,7 @@ export default function TopNavigation() {
             <TextLink href="/volunteer">Volunteer</TextLink>
             <TextLink href="/contact">Contact</TextLink>
             <li>
-              <ul className="mx-3.5 mt-2 mb-4 flex flex-row items-center justify-around gap-8 sm:justify-start lg:mt-0 lg:mb-0 lg:ml-12">
+              <ul className="mx-3.5 mt-2 mb-4 flex flex-row items-center justify-around gap-6 sm:justify-start lg:mt-0 lg:mb-0 lg:ml-12">
                 {/* Discord */}
                 <SocialLink
                   href="https://discord.gg/RXySZQE"
