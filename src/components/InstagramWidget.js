@@ -11,7 +11,7 @@ import Link from 'next/link';
  * @returns  A component with a collection of image thumbnails.
  */
 export default function InstagramWidget({ title, instagramHandle }) {
-  const [isMounted, setIsMounted] = useState(false); // Using state to prevent hydratation issues that can be caused by the useMediaQuery hook
+  const [isMounted, setIsMounted] = useState(false); // Using state to prevent hydration issues that can be caused by the useMediaQuery hook
   const isSmallScreen = useMediaQuery('(max-width: 640px)');
 
   useEffect(() => {
