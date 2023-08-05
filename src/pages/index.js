@@ -5,7 +5,7 @@ import Image from 'next/image';
 import TopNavigation from '@/components/TopNavigation';
 import Footer from '@/components/Footer';
 import Button from '@/components/Button';
-import HeadingBBAStyle from '@/components/HeadingBBAStyle';
+import InstagramWidget from '@/components/InstagramWidget';
 
 export default function Home() {
   return (
@@ -427,18 +427,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-
-          {/* Sample Heading component */}
-          <div className="my-10">
-            <HeadingBBAStyle>Follow us on Instagram</HeadingBBAStyle>
-            <HeadingBBAStyle
-              className="text-[2.5rem] font-bold text-primary"
-              inverted={true}
-            >
-              @rrcbba
-            </HeadingBBAStyle>
-          </div>
-        </div>{' '}
+          <InstagramWidget />
+        </div>
       </main>
       <Footer />
     </>
