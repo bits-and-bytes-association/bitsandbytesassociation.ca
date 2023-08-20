@@ -23,10 +23,10 @@ export default function InstagramWidget({ title, instagramHandle }) {
   }
 
   const instagramImages = [
-    'https://instagram.fyyc2-1.fna.fbcdn.net/v/t51.2885-15/334582093_937607827253408_4872161509600452505_n.jpg?stp=dst-jpg_e35_s1080x1080&_nc_ht=instagram.fyyc2-1.fna.fbcdn.net&_nc_cat=108&_nc_ohc=qBa2D0TXBv4AX_j0LK-&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzA1NTUzNjEzMDQzMTU1NTEyNg%3D%3D.2-ccb7-5&oh=00_AfCdHXN4jJB919OV1VN4d46-gLHSbEGHiNcT49dk7K7fXw&oe=64D2486B&_nc_sid=ee9879',
-    'https://instagram.fyyc2-1.fna.fbcdn.net/v/t51.2885-15/329109004_1605031446625841_7214731077982621334_n.jpg?stp=dst-jpg_e35_s1080x1080&_nc_ht=instagram.fyyc2-1.fna.fbcdn.net&_nc_cat=105&_nc_ohc=hIvv34BWA4gAX8jljeG&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzAzMjM5NTMzNzU0MTg3OTU2Mg%3D%3D.2-ccb7-5&oh=00_AfBmi5vZcDwbswpF-eeyC1EUAQsW0gTTTFw4bJw1Ed9w9Q&oe=64D0D1BC&_nc_sid=ee9879',
-    'https://instagram.fyyc2-1.fna.fbcdn.net/v/t51.2885-15/327824273_213932551118548_6905632684116415768_n.jpg?stp=dst-jpg_e35_p720x720&_nc_ht=instagram.fyyc2-1.fna.fbcdn.net&_nc_cat=104&_nc_ohc=P3TKApH3eTwAX_qgVuT&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzAyNzY3NjI3NDk4MTkyMzg5OA%3D%3D.2-ccb7-5&oh=00_AfBszwH-chIX2_FIyVN6sNClAlC1fFV20hZlHYMCrSEEbA&oe=64D07791&_nc_sid=ee9879',
-    'https://instagram.fyyc2-1.fna.fbcdn.net/v/t51.2885-15/324395222_179153411408239_2164168081678146259_n.jpg?stp=dst-jpg_e35_s1080x1080&_nc_ht=instagram.fyyc2-1.fna.fbcdn.net&_nc_cat=107&_nc_ohc=4d867c1HfhIAX94zi0W&edm=ACWDqb8BAAAA&ccb=7-5&ig_cache_key=MzAxMzQ1MzIyODIxNzc2MzgxNw%3D%3D.2-ccb7-5&oh=00_AfBhrPtmv2Jy-Jo90KJbnmDevFDW_v8CL5p88v8CL5TJAQ&oe=64D072AB&_nc_sid=ee9879',
+    'https://imageholdr.com/262x262/dad8e1/a5a6b2/fa-photo?font-size=50',
+    'https://imageholdr.com/262x262/dad8e1/a5a6b2/fa-photo?font-size=50',
+    'https://imageholdr.com/262x262/dad8e1/a5a6b2/fa-photo?font-size=50',
+    'https://imageholdr.com/262x262/dad8e1/a5a6b2/fa-photo?font-size=50',
   ];
 
   return (

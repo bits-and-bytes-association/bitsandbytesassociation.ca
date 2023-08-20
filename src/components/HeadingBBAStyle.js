@@ -22,7 +22,10 @@ export default function HeadingBBAStyle({
         styles['wrapper']
       } ${className} flex`}
     >
-      <h2 className={`${styles['text']}`} style={{ whiteSpace: 'nowrap' }}>
+      <h2
+        className={`cursor-default ${styles['text']}`}
+        style={{ whiteSpace: 'nowrap' }}
+      >
         {children}
       </h2>
       <div

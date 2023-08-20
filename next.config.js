@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['instagram.fyyc2-1.fna.fbcdn.net'],
+    domains: ['imageholdr.com'],
   },
 };
 
