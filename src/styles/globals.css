@@ -114,6 +114,10 @@ body {
   color: var(--dark-font-color);
 }
 
+a {
+  transition: linear 0.1s;
+}
+
 a:hover {
   color: var(--light-font-hover-color);
 }
