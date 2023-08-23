@@ -8,7 +8,7 @@ delete customScreens['2xl'];
 module.exports = {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
   future: {
-    hoverOnlyWhenSupported: true
+    hoverOnlyWhenSupported: true,
   },
   theme: {
     screens: customScreens,
@@ -51,5 +51,5 @@ module.exports = {
   corePlugins: {
     aspectRatio: false,
   },
-  plugins: [require('@tailwindcss/aspect-ratio')],
+  plugins: [require('@tailwindcss/aspect-ratio'), require('daisyui')],
 };

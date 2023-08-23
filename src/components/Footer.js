@@ -52,7 +52,7 @@ export default function Footer() {
               Made with ❤️ by our{' '}
               <Link
                 href="#"
-                className="linear underline underline-offset-2 duration-300 hover:text-light-font"
+                className="underline underline-offset-2 duration-300 hover:text-light-font"
               >
                 contributors
               </Link>
@@ -105,7 +105,7 @@ function NavLink({ href, children }) {
     <li className="mb-1 flex-initial">
       <Link
         href={href}
-        className="linear text-gray-400 duration-100 hover:text-light-font"
+        className="text-gray-400 duration-100 hover:text-light-font"
       >
         {children}
       </Link>

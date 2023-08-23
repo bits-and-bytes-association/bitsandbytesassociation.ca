@@ -5,7 +5,7 @@ import Image from 'next/image';
 import TopNavigation from '@/components/TopNavigation';
 import Footer from '@/components/Footer';
 import Button from '@/components/Button';
-import HeadingBBAStyle from '@/components/HeadingBBAStyle';
+import InstagramWidget from '@/components/InstagramWidget';
 
 export default function Home() {
   return (
@@ -17,63 +17,63 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <TopNavigation />
-      <main>
-        {/* Hero section */}
-        <section id="hero">
-          <div className="relative overflow-hidden md:h-[38rem]">
-            <Image
-              className="z-0 object-cover"
-              src="/images/tech-table.jpg"
-              alt=""
-              fill
-              priority
-            />
-            <div className="relative z-10 h-full bg-[#51aaff]/80">
-              <div className="mx-auto flex h-full max-w-screen-xl items-center text-light-font">
-                <div className="flex flex-col gap-4 p-8 md:flex-row">
-                  <div className="basis-2/5">
-                    <h1 className="cursor-default whitespace-nowrap text-5xl font-black">
-                      Join the Group!
-                    </h1>
-                    <Button
-                      className="mt-8"
-                      variant="dark"
-                      size="lg"
-                      padding="0.4em 1.25em"
-                      href="https://discord.gg/RXySZQE"
-                    >
-                      <Image
-                        src="/images/discord-logo-white.svg"
-                        alt="Join our Discord"
-                        width={147}
-                        height={40}
-                        priority
-                      />
-                    </Button>
-                  </div>
-                  <div className="basis-3/5">
-                    <p className="text-xl">
-                      The Bits and Bytes Association (BBA) was created to
-                      improve communication between students and staff to
-                      enhance the quality of education for Introduction to
-                      Business Information Technology (IBIT), Business
-                      Information Technology (BIT), Business Technology
-                      Management (BTM) and Information Security (IS) programs
-                      offered at Red River College through the Applied Computer
-                      Education (ACE) department. Since its inception in 2015,
-                      BBA has grown to over 100 members today and continues to
-                      climb steadily.
-                    </p>
-                  </div>
+      {/* Hero section */}
+      <section id="hero">
+        <div className="relative overflow-hidden md:h-[38rem]">
+          <Image
+            className="z-0 object-cover"
+            src="/images/tech-table.jpg"
+            alt=""
+            fill
+            priority
+          />
+          <div className="relative z-10 h-full bg-[#51aaff]/80">
+            <div className="container mx-auto flex h-full items-center text-light-font">
+              <div className="flex flex-col gap-4 p-8 md:flex-row">
+                <div className="basis-2/5">
+                  <h1 className="cursor-default whitespace-nowrap text-5xl font-black">
+                    Join the Group!
+                  </h1>
+                  <Button
+                    className="mt-8"
+                    variant="dark"
+                    size="lg"
+                    padding="0.4em 1.25em"
+                    href="https://discord.gg/RXySZQE"
+                  >
+                    <Image
+                      src="/images/discord-logo-white.svg"
+                      alt="Join our Discord"
+                      width={147}
+                      height={40}
+                      priority
+                    />
+                  </Button>
+                </div>
+                <div className="basis-3/5">
+                  <p className="text-xl">
+                    The Bits and Bytes Association (BBA) was created to improve
+                    communication between students and staff to enhance the
+                    quality of education for Introduction to Business
+                    Information Technology (IBIT), Business Information
+                    Technology (BIT), Business Technology Management (BTM) and
+                    Information Security (IS) programs offered at Red River
+                    College through the Applied Computer Education (ACE)
+                    department. Since its inception in 2015, BBA has grown to
+                    over 100 members today and continues to climb steadily.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
+
+      <main className="container mx-auto px-8">
         {/* About Us section */}
         <section id="about-us" className="py-8 md:py-32">
-          <div className="mx-auto flex max-w-screen-xl flex-col gap-x-20 gap-y-8 md:flex-row md:px-8">
-            <div className="flex basis-2/5 flex-col justify-between gap-y-4 px-8 md:order-last md:px-0">
+          <div className="flex flex-col gap-x-20 gap-y-8 md:flex-row">
+            <div className="flex basis-2/5 flex-col justify-between gap-y-4 md:order-last md:px-0">
               <h1 className="cursor-default text-5xl font-black">About Us</h1>
               <p className="text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -101,344 +101,11 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* Placeholder element */}
-        <div className="container mx-auto px-6">
-          {/* Sample buttons */}
-          <p className="my-3 text-3xl font-bold">Buttons</p>
-          <h5 className="mb-2 text-lg">
-            <b>Variant &quot;primary&quot;</b> - Simple link buttons with
-            default parameters.
-          </h5>
-          <div className="mb-5 flex items-start">
-            <Button href="#" size="sm" className="mr-4">
-              Learn More
-            </Button>
-            <Button href="#" className="mr-4">
-              Learn More
-            </Button>
-            <Button href="#" size="lg">
-              Learn More
-            </Button>
-          </div>
 
-          <h5 className="mb-2 text-lg">
-            <b>Variant &quot;primary-outline&quot;</b> - Buttons with outline.
-          </h5>
-          <div className="mb-5 flex items-start">
-            <Button variant="primary-outline" size="sm" className="mr-4">
-              Learn More
-            </Button>
-            <Button variant="primary-outline" className="mr-4">
-              Learn More
-            </Button>
-            <Button variant="primary-outline" size="lg" className="mr-4">
-              Learn More
-            </Button>
-          </div>
-
-          <h5 className="mb-2 text-lg">
-            <b>Variant &quot;dark&quot;</b> - Sample non-link button with custom
-            padding and onClick function
-          </h5>
-          <div className="mb-5">
-            <Button
-              variant="dark"
-              padding="0.5em 4em"
-              onClick={() => alert('Test')}
-            >
-              Learn More
-            </Button>
-          </div>
-
-          <h5 className="mb-2 text-lg">
-            <b>Variant &quot;dark&quot;</b> - Sample large button with image
-          </h5>
-          <div className="mb-10">
-            <Button
-              variant="dark"
-              size="lg"
-              padding="0.4em 1.25em"
-              href="https://discord.gg/RXySZQE"
-            >
-              <Image
-                src="/images/discord-logo-white.svg"
-                alt="Join our Discord"
-                width={147}
-                height={40}
-                priority
-              />
-            </Button>
-          </div>
-
-          {/* Color palette */}
-          <p className="my-4 text-3xl font-bold">Color palette</p>
-          <p className="my-2 text-xl font-bold">CSS variables</p>
-          <div className="flex">
-            <div
-              className="mb-10 mr-10 flex flex-col"
-              style={{
-                height: '20em',
-                width: '20em',
-                color: 'var(--light-font-color)',
-              }}
-            >
-              <div
-                style={{ background: 'var(--primary-color)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color
-              </div>
-              <div
-                style={{
-                  background: 'var(--primary-hover-color)',
-                }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-hover-color
-              </div>
-              <div
-                style={{
-                  background: 'var(--light-color)',
-                  color: 'var(--dark-font-color)',
-                }}
-                className="flex grow items-center justify-center"
-              >
-                --light-color
-              </div>
-              <div
-                style={{ background: 'var(--dark-color)' }}
-                className="flex grow items-center justify-center"
-              >
-                --dark-color
-              </div>
-              <div
-                style={{ background: 'var(--dark-hover-color)' }}
-                className="flex grow items-center justify-center"
-              >
-                --dark-hover-color
-              </div>
-            </div>
-
-            <div
-              className="mb-10 mr-10 flex flex-col"
-              style={{
-                height: '20em',
-                width: '20em',
-                color: 'var(--light-font-color)',
-              }}
-            >
-              <div
-                style={{ background: 'var(--primary-color-900)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-900
-              </div>
-              <div
-                style={{ background: 'var(--primary-color-800)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-800
-              </div>
-              <div
-                style={{ background: 'var(--primary-color-700)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-700
-              </div>
-              <div
-                style={{ background: 'var(--primary-color-600)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-600
-              </div>
-              <div
-                style={{ background: 'var(--primary-color-500)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-500 (brand)
-              </div>
-              <div
-                style={{ background: 'var(--primary-color-400)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-400
-              </div>
-              <div
-                style={{ background: 'var(--primary-color-300)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-300
-              </div>
-              <div
-                style={{ background: 'var(--primary-color-200)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-200
-              </div>
-              <div
-                style={{ background: 'var(--primary-color-100)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-100
-              </div>
-              <div
-                style={{ background: 'var(--primary-color-50)' }}
-                className="flex grow items-center justify-center"
-              >
-                --primary-color-50
-              </div>
-            </div>
-
-            <div>
-              <div
-                className="flex flex-col items-center justify-center"
-                style={{
-                  height: '10em',
-                  width: '20em',
-                  background: 'var(--dark-color)',
-                }}
-              >
-                <p
-                  className="text-2xl"
-                  style={{ color: 'var(--light-font-color)' }}
-                >
-                  --light-font-color
-                </p>
-                <p
-                  className="text-2xl"
-                  style={{ color: 'var(--light-font-hover-color)' }}
-                >
-                  --light-font-hover-color
-                </p>
-              </div>
-              <div
-                className="flex flex-col items-center justify-center"
-                style={{
-                  height: '10em',
-                  width: '20em',
-                  background: 'var(--light-color)',
-                }}
-              >
-                <p
-                  className="text-2xl"
-                  style={{ color: 'var(--dark-font-color)' }}
-                >
-                  --dark-font-color
-                </p>
-                <p
-                  className="text-2xl"
-                  style={{ color: 'var(--dark-font-hover-color)' }}
-                >
-                  --dark-font-hover-color
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <p className="my-2 text-xl font-bold">Tailwind classes</p>
-          <div className="flex">
-            <div
-              className="mb-10 mr-10 flex flex-col text-light-font"
-              style={{
-                height: '20em',
-                width: '20em',
-              }}
-            >
-              <div className="flex grow items-center justify-center bg-primary">
-                bg-primary
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-hover">
-                bg-primary-hover
-              </div>
-              <div className="flex grow items-center justify-center bg-light text-dark">
-                bg-light
-              </div>
-              <div className="flex grow items-center justify-center bg-dark">
-                bg-dark
-              </div>
-              <div className="flex grow items-center justify-center bg-dark-hover">
-                bg-dark-hover
-              </div>
-            </div>
-
-            <div
-              className="mb-10 mr-10 flex flex-col text-light-font"
-              style={{
-                height: '20em',
-                width: '20em',
-              }}
-            >
-              <div className="flex grow items-center justify-center bg-primary-900">
-                bg-primary-900
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-800">
-                bg-primary-800
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-700">
-                bg-primary-700
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-600">
-                bg-primary-600
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-500">
-                bg-primary-500 (brand)
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-400">
-                bg-primary-400
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-300">
-                bg-primary-300
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-200">
-                bg-primary-200
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-100">
-                bg-primary-100
-              </div>
-              <div className="flex grow items-center justify-center bg-primary-50">
-                bg-primary-50
-              </div>
-            </div>
-
-            <div>
-              <div
-                className="flex flex-col items-center justify-center bg-dark"
-                style={{
-                  height: '10em',
-                  width: '20em',
-                }}
-              >
-                <p className="text-2xl text-light-font">text-light-font</p>
-                <p className="text-2xl text-light-font-hover">
-                  text-light-font-hover
-                </p>
-              </div>
-              <div
-                className="flex flex-col items-center justify-center bg-light"
-                style={{
-                  height: '10em',
-                  width: '20em',
-                }}
-              >
-                <p className="text-2xl text-dark">text-dark-font</p>
-                <p className="text-2xl text-dark-font-hover">
-                  text-dark-font-hover
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Sample Heading component */}
-          <div className="my-10">
-            <HeadingBBAStyle>Follow us on Instagram</HeadingBBAStyle>
-            <HeadingBBAStyle
-              className="text-[2.5rem] font-bold text-primary"
-              inverted={true}
-            >
-              @rrcbba
-            </HeadingBBAStyle>
-          </div>
-        </div>{' '}
+        <InstagramWidget
+          title="Follow us on Instagram"
+          instagramHandle="rrcbba"
+        />
       </main>
       <Footer />
     </>

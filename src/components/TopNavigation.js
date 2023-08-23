@@ -116,7 +116,7 @@ function TextLink({ href, children }) {
       <Link
         href={href}
         className={
-          'linear block rounded-lg p-4 font-normal text-dark no-underline duration-100 hover:bg-primary hover:text-light-font active:bg-primary active:text-light-font lg:m-3 lg:p-1 lg:hover:bg-inherit lg:hover:text-primary lg:active:bg-inherit lg:active:text-primary'
+          'block rounded-lg p-4 font-normal text-dark no-underline hover:bg-primary hover:text-light-font active:bg-primary active:text-light-font lg:m-3 lg:p-1 lg:hover:bg-inherit lg:hover:text-primary lg:active:bg-inherit lg:active:text-primary'
         }
       >
         {children}
@@ -141,7 +141,7 @@ function SocialLink({ href, src, alt = '', width, height, priority = false }) {
     <li>
       <Link href={href}>
         <div
-          className={`flex h-14 w-14 items-center justify-center rounded-full bg-dark p-[0.45em] duration-200 ease-linear hover:bg-dark-hover lg:h-auto lg:w-auto lg:bg-inherit lg:p-0 lg:hover:bg-inherit`}
+          className={`flex h-14 w-14 items-center justify-center rounded-full bg-dark p-[0.45em] hover:bg-dark-hover lg:h-auto lg:w-auto lg:bg-inherit lg:p-0 lg:hover:bg-inherit`}
         >
           <Image
             className="p-1 invert lg:invert-0"

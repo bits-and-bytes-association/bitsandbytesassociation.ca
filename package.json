@@ -11,6 +11,7 @@
   "dependencies": {
     "@heroicons/react": "^2.0.18",
     "@next/font": "13.1.6",
+    "@react-hook/media-query": "^1.1.1",
     "eslint": "8.34.0",
     "eslint-config-next": "13.1.6",
     "next": "13.1.6",
@@ -20,6 +21,7 @@
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.4.13",
+    "daisyui": "^3.5.1",
     "eslint-config-prettier": "^8.6.0",
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",

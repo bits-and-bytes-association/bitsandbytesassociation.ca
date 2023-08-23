@@ -10,7 +10,7 @@ import styles from '@/styles/HeadingBBAStyle.module.css';
  * @returns  A heading with an adornment in one of its sides.
  */
 export default function HeadingBBAStyle({
-  className = 'text-5xl font-black',
+  className = 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black',
   inverted = false,
   color = 'var(--primary-color)',
   lineWidth = 30,
@@ -22,7 +22,10 @@ export default function HeadingBBAStyle({
         styles['wrapper']
       } ${className} flex`}
     >
-      <h2 className={`${styles['text']}`} style={{ whiteSpace: 'nowrap' }}>
+      <h2
+        className={`cursor-default ${styles['text']}`}
+        style={{ whiteSpace: 'nowrap' }}
+      >
         {children}
       </h2>
       <div
