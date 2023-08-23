@@ -34,7 +34,12 @@ export default function InstagramWidget({ title, instagramHandle }) {
       <HeadingBBAStyle>{title}</HeadingBBAStyle>
       <div className="my-4 grid grid-cols-3 gap-4 sm:my-8 sm:grid-cols-4 sm:gap-8 md:my-10 md:gap-10 lg:my-14 lg:gap-14">
         {instagramImages.slice(0, isSmallScreen ? 3 : 4).map((src, index) => (
-          <div key={index} className={`aspect-w-1 aspect-h-1 bg-slate-100`}>
+          <div
+            key={index}
+            className={
+              'aspect-w-1 aspect-h-1 bg-slate-100 duration-200 ease-linear hover:brightness-75'
+            }
+          >
             <Link href={`https://www.instagram.com/${instagramHandle}`}>
               <Image
                 src={src}
