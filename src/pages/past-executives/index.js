@@ -1,7 +1,12 @@
+import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import pastExecutives from '@/data/past-executives.json';
+import SearchBar from '@/components/past-executives/SearchBar';
 
 export default function PastExecutivesPage() {
+  const [allMembers, setAllMembers] = useState([pastExecutives]);
+  const [displayedMembers, setDisplayedMembers] = useState(pastExecutives);
+
   // Sorts past executives to show the most recent first.
   const sortPastExecutives = (pastExecutives) => {
     let sortedPastExecutives = pastExecutives.toSorted((a, b) => {
@@ -46,17 +51,36 @@ export default function PastExecutivesPage() {
     return flattenedPastExecutives;
   };
 
-  const flattenedPastExecutives = flattenPastExecutives(pastExecutives);
-  const sortedPastExecutives = sortPastExecutives(flattenedPastExecutives);
+  const onChangeSearchBar = (event) => {
+    // Filter the results based on the search bar value.
+    const filteredResults = allMembers.filter(
+      (member) =>
+        member.name.toLowerCase().includes(event.target.value.toLowerCase()) ||
+        member.role.toLowerCase().includes(event.target.value.toLowerCase()) ||
+        member.year.toString().includes(event.target.value.toLowerCase())
+    );
+
+    setDisplayedMembers(filteredResults);
+  };
+
+  useEffect(() => {
+    const flattenedPastExecutives = flattenPastExecutives(pastExecutives);
+    const sortedPastExecutives = sortPastExecutives(flattenedPastExecutives);
+    setAllMembers(sortedPastExecutives);
+    setDisplayedMembers(sortedPastExecutives);
+  }, []);
 
   return (
     <div className="container mx-auto p-8">
       <Head>
         <title>Past Executives</title>
       </Head>
+      <div className="mb-4 flex flex-col items-center justify-between sm:flex-row">
+        <h1 className="mb-4 text-2xl font-semibold sm:mb-0">Past Executives</h1>
+        <SearchBar onChange={onChangeSearchBar} />
+      </div>
       <div className="overflow-x-auto">
         <table className="table">
-          {/* head */}
           <thead>
             <tr>
               <th>Name</th>
@@ -66,7 +90,7 @@ export default function PastExecutivesPage() {
             </tr>
           </thead>
           <tbody>
-            {sortedPastExecutives.map((member, index) => (
+            {displayedMembers.map((member, index) => (
               <tr key={index}>
                 <td>{member.name}</td>
                 <td>{member.role}</td>
@@ -76,6 +100,9 @@ export default function PastExecutivesPage() {
             ))}
           </tbody>
         </table>
+        {displayedMembers.length === 0 && (
+          <p className="py-3 text-center italic">No results found.</p>
+        )}
       </div>
     </div>
   );
