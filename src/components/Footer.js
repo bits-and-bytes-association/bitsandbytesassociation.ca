@@ -7,15 +7,16 @@ const curYear = new Date().getFullYear();
 
 /**
  * Footer component
+ * @param {Object} data - The footer links data. See ./src/data/footer-links.json
  */
-export default function Footer({ footerLinks }) {
+export default function Footer({ data }) {
   return (
     <div className="bg-dark">
       <div className="container mx-auto px-6">
         <div className="flex flex-row items-center py-6 md:flex-row md:py-12">
           <nav className="grid grid-cols-[repeat(2,min-content)] gap-y-8 gap-x-20 lg:grid-cols-[repeat(4,min-content)]">
             {/* Footer links */}
-            {footerLinks.map(({ columnTitle, links }, index) => (
+            {data.map(({ columnTitle, links }, index) => (
               <NavColumn header={columnTitle} key={index}>
                 {links.map((link, index) => (
                   <NavLink href={link.href} key={index}>
