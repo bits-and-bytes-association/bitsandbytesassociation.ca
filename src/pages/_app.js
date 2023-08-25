@@ -2,6 +2,7 @@ import { Fira_Sans, Work_Sans } from '@next/font/google';
 import Head from 'next/head';
 import TopNavigation from '@/components/TopNavigation';
 import Footer from '@/components/Footer';
+import footerLinks from '@/data/footer-links.json';
 import '@/styles/globals.css';
 
 const primaryFont = Fira_Sans({
@@ -38,7 +39,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <TopNavigation />
       <Component {...pageProps} />
-      <Footer />
+      <Footer data={footerLinks} />
     </>
   );
 }

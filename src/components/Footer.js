@@ -7,32 +7,24 @@ const curYear = new Date().getFullYear();
 
 /**
  * Footer component
+ * @param {Object} data - The footer links data. See ./src/data/footer-links.json
  */
-export default function Footer() {
+export default function Footer({ data }) {
   return (
     <div className="bg-dark">
       <div className="container mx-auto px-6">
         <div className="flex flex-row items-center py-6 md:flex-row md:py-12">
           <nav className="grid grid-cols-[repeat(2,min-content)] gap-y-8 gap-x-20 lg:grid-cols-[repeat(4,min-content)]">
-            <NavColumn header="Club">
-              <NavLink href="#">Mission Statement</NavLink>
-              <NavLink href="#">Current Board</NavLink>
-              <NavLink href="#">Past Executives</NavLink>
-            </NavColumn>
-            <NavColumn header="Involvement">
-              <NavLink href="#">Events</NavLink>
-              <NavLink href="#">Volunteer</NavLink>
-              <NavLink href="#">GitHub</NavLink>
-            </NavColumn>
-            <NavColumn header="Socials">
-              <NavLink href="#">Discord</NavLink>
-              <NavLink href="#">Instagram</NavLink>
-              <NavLink href="#">YouTube</NavLink>
-              <NavLink href="#">LinkedIn</NavLink>
-            </NavColumn>
-            <NavColumn header="Get In Touch">
-              <NavLink href="#">Contact</NavLink>
-            </NavColumn>
+            {/* Footer links */}
+            {data.map(({ columnTitle, links }, index) => (
+              <NavColumn header={columnTitle} key={index}>
+                {links.map((link, index) => (
+                  <NavLink href={link.href} key={index}>
+                    {link.label}
+                  </NavLink>
+                ))}
+              </NavColumn>
+            ))}
           </nav>
           <div className="ml-auto hidden shrink-0 self-center sm:inline">
             <Image
