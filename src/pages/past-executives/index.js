@@ -53,12 +53,15 @@ export default function PastExecutivesPage() {
 
   const onChangeSearchBar = (event) => {
     // Filter the results based on the search bar value.
-    const filteredResults = allMembers.filter(
-      (member) =>
-        member.name.toLowerCase().includes(event.target.value.toLowerCase()) ||
-        member.role.toLowerCase().includes(event.target.value.toLowerCase()) ||
-        member.year.toString().includes(event.target.value.toLowerCase())
-    );
+    const filteredResults = allMembers.filter((member) => {
+      const query = event.target.value.toLowerCase().trim();
+
+      return (
+        member.name.toLowerCase().includes(query) ||
+        member.role.toLowerCase().includes(query) ||
+        member.year.toString().includes(query)
+      );
+    });
 
     setDisplayedMembers(filteredResults);
   };
