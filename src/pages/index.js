@@ -6,6 +6,7 @@ import TopNavigation from '@/components/TopNavigation';
 import Footer from '@/components/Footer';
 import Button from '@/components/Button';
 import InstagramWidget from '@/components/InstagramWidget';
+import footerLinks from '@/data/footer-links.json';
 
 export default function Home() {
   return (
@@ -107,7 +108,7 @@ export default function Home() {
           instagramHandle="rrcbba"
         />
       </main>
-      <Footer />
+      <Footer data={footerLinks} />
     </>
   );
 }
