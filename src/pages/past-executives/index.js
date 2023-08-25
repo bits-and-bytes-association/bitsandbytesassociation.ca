@@ -82,7 +82,7 @@ export default function PastExecutivesPage() {
       <div className="overflow-x-auto">
         <table className="table">
           <thead>
-            <tr>
+            <tr className="text-slate-400">
               <th>Name</th>
               <th>Role</th>
               <th>Year</th>
