@@ -596,28 +596,14 @@
       {
         "role": "Treasurer",
         "name": "Binh Thanh Nguyen"
-      }
-    ]
-  },
-  {
-    "term": "Fall",
-    "year": 2023,
-    "board": [
-      {
-        "role": "President",
-        "name": "Faye Vaquilar"
       },
       {
-        "role": "Vice President",
-        "name": "Binh Thanh Nguyen"
+        "role": "Website",
+        "name": "Bradley Anderson"
       },
       {
-        "role": "Secretary",
-        "name": "@sandeep"
-      },
-      {
-        "role": "Treasurer",
-        "name": "@SoJoNo"
+        "role": "Website",
+        "name": "Camilo Lucero"
       }
     ]
   }
