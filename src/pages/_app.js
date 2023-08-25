@@ -1,5 +1,8 @@
-import '@/styles/globals.css';
 import { Fira_Sans, Work_Sans } from '@next/font/google';
+import Head from 'next/head';
+import TopNavigation from '@/components/TopNavigation';
+import Footer from '@/components/Footer';
+import '@/styles/globals.css';
 
 const primaryFont = Fira_Sans({
   style: ['normal', 'italic'],
@@ -23,7 +26,19 @@ export default function App({ Component, pageProps }) {
           --font-secondary: ${secondaryFont.style.fontFamily};
         }
       `}</style>
+
+      <Head>
+        <title>Bits and Bytes Association: BBA</title>
+        <meta
+          name="description"
+          content="The Bits and Bytes Association is a student group created to bring together students and staff of programs offered in the ACE Department at Red River College. Our goal is to promote communication between students, staff, and industry professionals, as well as provide additional tech-related opportunities to students."
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
+      <TopNavigation />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
