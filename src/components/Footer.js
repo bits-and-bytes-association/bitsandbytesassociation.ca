@@ -5,6 +5,73 @@ import Image from 'next/image';
 const firstYear = 2023;
 const curYear = new Date().getFullYear();
 
+const footerLinks = [
+  {
+    columnTitle: 'Club',
+    links: [
+      {
+        label: 'Mission Statement',
+        href: '#',
+      },
+      {
+        label: 'Current Board',
+        href: '#',
+      },
+      {
+        label: 'Past Executives',
+        href: './past-executives',
+      },
+    ],
+  },
+  {
+    columnTitle: 'Involvement',
+    links: [
+      {
+        label: 'Events',
+        href: '#',
+      },
+      {
+        label: 'Volunteer',
+        href: '#',
+      },
+      {
+        label: 'GitHub',
+        href: 'https://github.com/bits-and-bytes-association/',
+      },
+    ],
+  },
+  {
+    columnTitle: 'Socials',
+    links: [
+      {
+        label: 'Discord',
+        href: 'https://bitsandbytesassociation.ca/assets/img/discord-logo.png',
+      },
+      {
+        label: 'Instagram',
+        href: 'https://www.instagram.com/rrcbba/',
+      },
+      {
+        label: 'YouTube',
+        href: 'https://www.youtube.com/channel/UCQ1KRzD0F7dEuvQs7Brd0YQ',
+      },
+      {
+        label: 'LinkedIn',
+        href: 'https://www.linkedin.com/company/bits-and-bytes-association',
+      },
+    ],
+  },
+  {
+    columnTitle: 'Get In Touch',
+    links: [
+      {
+        label: 'Contact',
+        href: '#',
+      },
+    ],
+  },
+];
+
 /**
  * Footer component
  */
@@ -14,25 +81,16 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="flex flex-row items-center py-6 md:flex-row md:py-12">
           <nav className="grid grid-cols-[repeat(2,min-content)] gap-y-8 gap-x-20 lg:grid-cols-[repeat(4,min-content)]">
-            <NavColumn header="Club">
-              <NavLink href="#">Mission Statement</NavLink>
-              <NavLink href="#">Current Board</NavLink>
-              <NavLink href="#">Past Executives</NavLink>
-            </NavColumn>
-            <NavColumn header="Involvement">
-              <NavLink href="#">Events</NavLink>
-              <NavLink href="#">Volunteer</NavLink>
-              <NavLink href="#">GitHub</NavLink>
-            </NavColumn>
-            <NavColumn header="Socials">
-              <NavLink href="#">Discord</NavLink>
-              <NavLink href="#">Instagram</NavLink>
-              <NavLink href="#">YouTube</NavLink>
-              <NavLink href="#">LinkedIn</NavLink>
-            </NavColumn>
-            <NavColumn header="Get In Touch">
-              <NavLink href="#">Contact</NavLink>
-            </NavColumn>
+            {/* Footer links */}
+            {footerLinks.map(({ columnTitle, links }, index) => (
+              <NavColumn header={columnTitle} key={index}>
+                {links.map((link, index) => (
+                  <NavLink href={link.href} key={index}>
+                    {link.label}
+                  </NavLink>
+                ))}
+              </NavColumn>
+            ))}
           </nav>
           <div className="ml-auto hidden shrink-0 self-center sm:inline">
             <Image
