@@ -1,0 +1,610 @@
+[
+  {
+    "term": "Fall",
+    "year": 2015,
+    "board": [
+      {
+        "role": "President",
+        "name": "Derek Richard"
+      },
+      {
+        "role": "Vice President",
+        "name": "James Warren"
+      },
+      {
+        "role": "Secretary",
+        "name": "Patrick Falk"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Jeremy Ens"
+      }
+    ]
+  },
+  {
+    "term": "Winter",
+    "year": 2016,
+    "board": [
+      {
+        "role": "President",
+        "name": "James Warren"
+      },
+      {
+        "role": "Vice President",
+        "name": "Tony Van"
+      },
+      {
+        "role": "Secretary",
+        "name": "Jonnathan García"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Matheu Plouffe"
+      }
+    ]
+  },
+  {
+    "term": "Fall",
+    "year": 2016,
+    "board": [
+      {
+        "role": "President",
+        "name": "Tony Van"
+      },
+      {
+        "role": "Vice President",
+        "name": "Jeremy Ens"
+      },
+      {
+        "role": "Secretary",
+        "name": "Charles Steele"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Renato Carneiro"
+      },
+      {
+        "role": "Media Director",
+        "name": "Michael Vasallo"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Jaspreet Sohal"
+      }
+    ]
+  },
+  {
+    "term": "Winter",
+    "year": 2017,
+    "board": [
+      {
+        "role": "President",
+        "name": "Aaron Cram"
+      },
+      {
+        "role": "Vice President",
+        "name": "Jonnathan García"
+      },
+      {
+        "role": "Secretary",
+        "name": "Jose-Luis Sabogal"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Jaspreet Sohal"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Aayush Manchanda"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Hasanpreet Singh"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Sarah LaCroix"
+      }
+    ]
+  },
+  {
+    "term": "Fall",
+    "year": 2017,
+    "board": [
+      {
+        "role": "President",
+        "name": "Sarah LaCroix"
+      },
+      {
+        "role": "Vice President",
+        "name": "Alec Chung"
+      },
+      {
+        "role": "Secretary",
+        "name": "Amanda Braybrook"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Marcos Reimer"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Ciara Preteau"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Jordan Lys"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Jonnathan García"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Jovin Toews"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Stephen Pawulski"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Jared Siy"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Mia Malaluan"
+      }
+    ]
+  },
+  {
+    "term": "Winter",
+    "year": 2018,
+    "board": [
+      {
+        "role": "President",
+        "name": "Stephen Pawulski"
+      },
+      {
+        "role": "Vice President",
+        "name": "Amanda Braybrook"
+      },
+      {
+        "role": "Secretary",
+        "name": "Jovin Toews"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Nigel Anthony Manuel"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Alec Chung"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Jared Siy"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Michael Falcetta"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Shamus Osler"
+      }
+    ]
+  },
+  {
+    "term": "Fall",
+    "year": 2018,
+    "board": [
+      {
+        "role": "President",
+        "name": "Alec Chung"
+      },
+      {
+        "role": "Vice President",
+        "name": "Shamus Osler"
+      },
+      {
+        "role": "Secretary",
+        "name": "Dan Lawrence Consengco"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Nicholas Dujlovic"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Amanda Braybrook"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Jared Siy"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Michael Falcetta"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Jovin Toews"
+      }
+    ]
+  },
+  {
+    "term": "Winter",
+    "year": 2019,
+    "board": [
+      {
+        "role": "President",
+        "name": "Shamus Osler"
+      },
+      {
+        "role": "Vice President",
+        "name": "Dan Lawrence Consengco"
+      },
+      {
+        "role": "Secretary",
+        "name": "Kyle Vouriot"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Ernest Janzen"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Crystal Quick"
+      }
+    ]
+  },
+  {
+    "term": "Fall",
+    "year": 2019,
+    "board": [
+      {
+        "role": "President",
+        "name": "Dan Lawrence Consengco"
+      },
+      {
+        "role": "Vice President",
+        "name": "Jovin Toews"
+      },
+      {
+        "role": "Secretary",
+        "name": "Michael Falcetta"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Gandolfo Tolentino"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Crystal Quick"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Amanda Braybrook"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Dana Schultz"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Delaney Jost"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Robert Kaufman"
+      }
+    ]
+  },
+  {
+    "term": "Winter",
+    "year": 2020,
+    "board": [
+      {
+        "role": "President",
+        "name": "Ella Batongbakal"
+      },
+      {
+        "role": "Vice President",
+        "name": "Duncan Foss"
+      },
+      {
+        "role": "Secretary",
+        "name": "April Donne Pecson"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Jewel Faith Feliciano"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Tracy Anne Salak"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Kyle Vouriot"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Jared Mariash"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Delaney Jost"
+      }
+    ]
+  },
+  {
+    "term": "Fall",
+    "year": 2020,
+    "board": [
+      {
+        "role": "President",
+        "name": "Robert Kaufman"
+      },
+      {
+        "role": "Vice President",
+        "name": "Duncan Foss"
+      },
+      {
+        "role": "Secretary",
+        "name": "Brodie Giesbrecht"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Adam Huybers"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Dustin Belen"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Justin Martinez"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Tracy Anne Salak"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Joshua Garcia"
+      }
+    ]
+  },
+  {
+    "term": "Winter",
+    "year": 2021,
+    "board": [
+      {
+        "role": "President",
+        "name": "Adam Huybers"
+      },
+      {
+        "role": "Vice President",
+        "name": "Udayveer Singh Manshahia"
+      },
+      {
+        "role": "Secretary",
+        "name": "Raymond Nagamori"
+      },
+      {
+        "role": "Secretary",
+        "name": "David Montanez"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Ayame Ulrich"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Robert Kaufman"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Duncan Foss"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Delaney Jost"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Justin Martinez"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Tracy Anne Salak"
+      }
+    ]
+  },
+  {
+    "term": "Fall",
+    "year": 2021,
+    "board": [
+      {
+        "role": "President",
+        "name": "Adam Huybers"
+      },
+      {
+        "role": "Vice President",
+        "name": "Justin Martinez"
+      },
+      {
+        "role": "Secretary",
+        "name": "Eric Stevenson"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Ayame Ulrich"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Breandan Waddell-Flynn"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Udayveer Singh Manshahia"
+      },
+      {
+        "role": "Member at Large",
+        "name": "David Montanez"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Vikas Sharma"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Reid Olnick"
+      }
+    ]
+  },
+  {
+    "term": "Winter",
+    "year": 2022,
+    "board": [
+      {
+        "role": "President",
+        "name": "Justin Martinez"
+      },
+      {
+        "role": "Vice President",
+        "name": "Julian Macaraeg"
+      },
+      {
+        "role": "Secretary",
+        "name": "Maya Hamm"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Mikayla Kolansky"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Don Zhu"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Reid Olnick"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Aira Ashley Villalobos"
+      },
+      {
+        "role": "Member at Large",
+        "name": "Nicolas Funk"
+      }
+    ]
+  },
+  {
+    "term": "Fall",
+    "year": 2022,
+    "board": [
+      {
+        "role": "President",
+        "name": "Julian Macaraeg"
+      },
+      {
+        "role": "Vice President",
+        "name": "Cole Cianflone"
+      },
+      {
+        "role": "Secretary",
+        "name": "Maya Hamm"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Bradley Anderson"
+      },
+      {
+        "role": "Announcements",
+        "name": "Tadgh Henry"
+      },
+      {
+        "role": "Announcements",
+        "name": "Matt Isaac"
+      },
+      {
+        "role": "Social Media",
+        "name": "Abigail Ferreira"
+      },
+      {
+        "role": "Social Media",
+        "name": "Faye Vaquilar"
+      },
+      {
+        "role": "Newspaper",
+        "name": "Alyssa Johnson"
+      },
+      {
+        "role": "Newspaper",
+        "name": "Ryan Rutherford"
+      },
+      {
+        "role": "Newspaper",
+        "name": "Wajiha Waseem"
+      },
+      {
+        "role": "Events",
+        "name": "Ella Batongbakal"
+      },
+      {
+        "role": "Events",
+        "name": "Everett Bazzocchi"
+      },
+      {
+        "role": "Events",
+        "name": "Karan Brar"
+      },
+      {
+        "role": "Events",
+        "name": "Camilo Lucero"
+      },
+      {
+        "role": "Events",
+        "name": "Edward Seo"
+      },
+      {
+        "role": "Events",
+        "name": "Luke Wagner"
+      }
+    ]
+  },
+  {
+    "term": "Winter",
+    "year": 2023,
+    "board": [
+      {
+        "role": "President",
+        "name": "Jon McInnes"
+      },
+      {
+        "role": "Vice President",
+        "name": "Faye Vaquilar"
+      },
+      {
+        "role": "Secretary",
+        "name": "Alyson Buller"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Binh Thanh Nguyen"
+      },
+      {
+        "role": "Website",
+        "name": "Bradley Anderson"
+      },
+      {
+        "role": "Website",
+        "name": "Camilo Lucero"
+      }
+    ]
+  }
+]
