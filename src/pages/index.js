@@ -3,6 +3,7 @@ import Image from 'next/image';
 // Components
 import Button from '@/components/Button';
 import InstagramWidget from '@/components/InstagramWidget';
+import footerLinks from '@/data/footer-links.json';
 
 export default function Home() {
   return (
