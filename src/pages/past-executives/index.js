@@ -14,8 +14,7 @@ export default function PastExecutivesPage() {
       const termOrder = {
         winter: 1,
         spring: 2,
-        summer: 3,
-        fall: 4,
+        fall: 3,
       };
 
       // Divide the terms value by 10, so that we can add them to the years and compare them.
@@ -23,7 +22,7 @@ export default function PastExecutivesPage() {
       const termOrderB = termOrder[b.term.toLowerCase()] / 10;
 
       // The term order is added to the year to get a total value. The higher the total value, the more recent the term.
-      // E.g. Fall 2023 will have a value of 2023.4, while Winter 2023 will have a value of 2023.1
+      // E.g. Fall 2023 will have a value of 2023.3, while Winter 2023 will have a value of 2023.1
       const valueA = a.year + termOrderA;
       const valueB = b.year + termOrderB;
 
