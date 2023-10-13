@@ -10,7 +10,7 @@ import Link from 'next/link';
  * @param {string} instagramHandle  The handle for the Instagram account.
  * @returns  A component with a collection of image thumbnails.
  */
-export default function InstagramWidget({ title, instagramHandle }) {
+export default function InstagramWidget({ title, instagramHandle, feed }) {
   const [isMounted, setIsMounted] = useState(false); // Using state to prevent hydration issues that can be caused by the useMediaQuery hook
   const isSmallScreen = useMediaQuery('(max-width: 640px)');
 
@@ -22,30 +22,23 @@ export default function InstagramWidget({ title, instagramHandle }) {
     return null;
   }
 
-  const instagramImages = [
-    'https://imageholdr.com/262x262/dad8e1/a5a6b2/fa-photo?font-size=50',
-    'https://imageholdr.com/262x262/dad8e1/a5a6b2/fa-photo?font-size=50',
-    'https://imageholdr.com/262x262/dad8e1/a5a6b2/fa-photo?font-size=50',
-    'https://imageholdr.com/262x262/dad8e1/a5a6b2/fa-photo?font-size=50',
-  ];
-
   return (
     <div className="my-10">
       <HeadingBBAStyle>{title}</HeadingBBAStyle>
       <div className="my-4 grid grid-cols-3 gap-4 sm:my-8 sm:grid-cols-4 sm:gap-8 md:my-10 md:gap-10 lg:my-14 lg:gap-14">
-        {instagramImages.slice(0, isSmallScreen ? 3 : 4).map((src, index) => (
+        {feed.slice(0, isSmallScreen ? 3 : 4).map((post) => (
           <div
-            key={index}
+            key={post.id}
             className={
               'aspect-w-1 aspect-h-1 bg-slate-100 duration-200 ease-linear hover:brightness-75'
             }
           >
-            <Link href={`https://www.instagram.com/${instagramHandle}`}>
+            <Link href={post.permalink}>
               <Image
-                src={src}
+                src={post.mediaUrl}
                 fill={true}
-                style={{ objectFit: 'cover', objectPosition: 'center' }}
-                alt={'Instagram post'}
+                className={'object-cover object-center'}
+                alt="Instagram post"
               />
             </Link>
           </div>
