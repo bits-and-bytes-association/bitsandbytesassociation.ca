@@ -35,7 +35,7 @@ export default function InstagramWidget({ title, instagramHandle, feed }) {
           >
             <Link href={post.permalink}>
               <Image
-                src={post.mediaUrl}
+                src={post.thumbnailUrl ?? post.mediaUrl}
                 fill={true}
                 className={'object-cover object-center'}
                 alt="Instagram post"
