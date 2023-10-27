@@ -1,0 +1,48 @@
+.gapSlide {
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  left: 30px;
+  top: 30px;
+}
+
+@media (min-width: 768px) {
+  .gapSlide {
+    transition: all 0.2s linear;
+  }
+  
+  .gapSlide:hover {
+    filter: brightness(50%);
+  }
+}
+
+.slide > div {
+  transition: 0.5s;
+  filter: brightness(100%);
+}
+
+.hiddenSlide > div {
+  filter: brightness(30%);
+}
+
+.dotGroup {
+  text-align: center;
+  padding-bottom: 1rem;
+  transform: translateY(-0.5rem);
+}
+
+.carouselDot {
+  background-color: theme('colors.zinc.500');
+  width: 0.9rem;
+  height: 0.9rem;
+  margin: 0.25rem;
+  border-radius: 50%;
+  transition: all 0.1s linear;
+}
+
+.carouselDot:hover {
+  background-color: theme('colors.zinc.300');
+}
+
+.currentDot {
+  background-color: theme('colors.white');
+}

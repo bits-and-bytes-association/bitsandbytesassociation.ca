@@ -1,0 +1,68 @@
+{
+  "newsletters": [
+    {
+      "description": "Artificial Intelligence",
+      "credits": [
+        "Wajiha Waseem",
+        "Mohitpreet Kaur",
+        "Alyssa Johnson",
+        "Sochimazuru SJ. Noshiri"
+      ],
+      "publishDate": "2023-02-01",
+      "pdfSrc": "/newsletters/bba-newsletter-2023-02.pdf",
+      "thumbSrc": "/newsletters/bba-newsletter-2023-02.jpg"
+    },
+    {
+      "description": "Cybersecurity",
+      "credits": [
+        "Wajiha Waseem",
+        "Mohitpreet Kaur",
+        "Alyssa Johnson",
+        "Sochimazuru SJ. Noshiri"
+      ],
+      "publishDate": "2023-01-01",
+      "pdfSrc": "/newsletters/bba-newsletter-2023-01.pdf",
+      "thumbSrc": "/newsletters/bba-newsletter-2023-01.jpg"
+    },
+    {
+      "description": "Networking, Likability, Directions 2022, and Women in Tech",
+      "credits": [
+        "Alyssa Johnson",
+        "Ryan Rutherford",
+        "Prachi Chawla",
+        "Wajiha Waseem"
+      ],
+      "publishDate": "2022-10-01",
+      "pdfSrc": "/newsletters/bba-newsletter-2022-10.pdf",
+      "thumbSrc": "/newsletters/bba-newsletter-2022-10.jpg"
+    },
+    {
+      "description": "Starting Your First IT Job and Industry Event w/ James Warren",
+      "credits": ["???"],
+      "publishDate": "2022-01-01",
+      "pdfSrc": "/newsletters/bba-newsletter-2022-01.pdf",
+      "thumbSrc": "/newsletters/bba-newsletter-2022-01.jpg"
+    },
+    {
+      "description": "Women in Tech",
+      "credits": ["???"],
+      "publishDate": "2021-12-01",
+      "pdfSrc": "/newsletters/bba-newsletter-2021-12.pdf",
+      "thumbSrc": "/newsletters/bba-newsletter-2021-12.jpg"
+    },
+    {
+      "description": "Web Accessibility and RRC Game Dev Program Interview w/ Kyle Geske",
+      "credits": ["???"],
+      "publishDate": "2021-11-01",
+      "pdfSrc": "/newsletters/bba-newsletter-2021-11.pdf",
+      "thumbSrc": "/newsletters/bba-newsletter-2021-11.jpg"
+    },
+    {
+      "description": "Imposter Syndrome, IT Career Tips, and Industry Event w/ Stephan Pawulski",
+      "credits": ["???"],
+      "publishDate": "2021-10-01",
+      "pdfSrc": "/newsletters/bba-newsletter-2021-10.pdf",
+      "thumbSrc": "/newsletters/bba-newsletter-2021-10.jpg"
+    }
+  ]
+}
