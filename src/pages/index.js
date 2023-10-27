@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Button from '@/components/Button';
 import InstagramWidget from '@/components/InstagramWidget';
 import footerLinks from '@/data/footer-links.json';
+import NewsletterCarousel from '@/components/NewsletterCarousel';
 
 export default function Home() {
   return (
@@ -60,7 +61,7 @@ export default function Home() {
         </div>
       </section>
 
-      <main className="container mx-auto px-8">
+      <div className="container mx-auto px-8">
         {/* About Us section */}
         <section id="about-us" className="py-8 md:py-32">
           <div className="flex flex-col gap-x-20 gap-y-8 md:flex-row">
@@ -79,7 +80,7 @@ export default function Home() {
                 </Button>
               </div>
             </div>
-            <div className="basis-3/5">
+            <div className="basis-3/5 px-8 md:px-0">
               <div className="aspect-w-16 aspect-h-9">
                 <iframe
                   className="border-0"
@@ -92,12 +93,29 @@ export default function Home() {
             </div>
           </div>
         </section>
+      </div>
 
-        <InstagramWidget
-          title="Follow us on Instagram"
-          instagramHandle="rrcbba"
-        />
-      </main>
+      {/* Newsletters section */}
+      <section id="newsletters" className="bg-dark pt-8 md:py-32">
+        <div className="mx-auto">
+          <h1 className="cursor-default text-center text-4xl font-black text-light-font md:mb-4">
+            BBA Newsletters
+          </h1>
+        </div>
+        <div className="mx-auto md:max-w-screen-xl md:px-8">
+          <NewsletterCarousel />
+        </div>
+      </section>
+
+      <div className="container mx-auto px-8">
+        {/* Instagram section */}
+        <section id="instagram">
+          <InstagramWidget
+            title="Follow us on Instagram"
+            instagramHandle="rrcbba"
+          />
+        </section>
+      </div>
     </>
   );
 }
