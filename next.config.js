@@ -2,7 +2,13 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['imageholdr.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.cdninstagram.com',
+        port: '',
+      },
+    ],
   },
 };
 

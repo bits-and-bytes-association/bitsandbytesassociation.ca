@@ -6,7 +6,20 @@ import InstagramWidget from '@/components/InstagramWidget';
 import footerLinks from '@/data/footer-links.json';
 import NewsletterCarousel from '@/components/NewsletterCarousel';
 
-export default function Home() {
+export async function getStaticProps() {
+  if (!process.env.BEHOLD_URL) return { props: { instaFeed: [] } };
+
+  const response = await fetch(process.env.BEHOLD_URL);
+  const instaFeed = await response.json();
+
+  return {
+    props: { instaFeed },
+    // behold.so limits us to 1,200 requests a month. Re-generate at most once per hour to be safe.
+    revalidate: 3600,
+  };
+}
+
+export default function Home({ instaFeed }) {
   return (
     <>
       {/* Hero section */}
@@ -113,6 +126,7 @@ export default function Home() {
           <InstagramWidget
             title="Follow us on Instagram"
             instagramHandle="rrcbba"
+            feed={instaFeed}
           />
         </section>
       </div>
