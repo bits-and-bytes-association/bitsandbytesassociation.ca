@@ -125,7 +125,8 @@ export default function Home({ instaFeed }) {
         <section id="instagram">
           <InstagramWidget
             title="Follow us on Instagram"
-            instagramHandle={instaFeed}
+            instagramHandle="rrcbba"
+            feed={instaFeed}
           />
         </section>
       </div>
