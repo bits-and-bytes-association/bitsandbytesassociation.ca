@@ -8,11 +8,11 @@
       },
       {
         "label": "Current Board",
-        "href": "#"
+        "href": "/current-board"
       },
       {
         "label": "Past Executives",
-        "href": "./past-executives"
+        "href": "/past-executives"
       }
     ]
   },

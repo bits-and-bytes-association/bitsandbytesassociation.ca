@@ -21,6 +21,7 @@
     "react-responsive": "^9.0.2"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "autoprefixer": "^10.4.13",
     "daisyui": "^3.9.2",

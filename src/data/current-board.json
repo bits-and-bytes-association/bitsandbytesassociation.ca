@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Faye Vaquilar",
+    "role": "President",
+    "photoUrl": "https://placehold.co/300",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut leo.",
+    "socials": {
+      "linkedin": "",
+      "github": "",
+      "instagram": "",
+      "tiktok": "",
+      "x": "",
+      "threads": ""
+    }
+  },
+  {
+    "name": "Binh Nguyen",
+    "role": "Vice President",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut leo.",
+    "photoUrl": "https://placehold.co/300",
+    "socials": {
+      "linkedin": "",
+      "github": "",
+      "instagram": "",
+      "tiktok": "",
+      "x": "",
+      "threads": ""
+    }
+  },
+  {
+    "name": "Sandeep Singh",
+    "role": "Secretary",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut leo.",
+    "photoUrl": "https://placehold.co/300",
+    "socials": {
+      "linkedin": "",
+      "github": "",
+      "instagram": "",
+      "tiktok": "",
+      "x": "",
+      "threads": ""
+    }
+  },
+  {
+    "name": "Sopuruchi \"Sochi\" Noshiri",
+    "role": "Treasurer",
+    "bio": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut leo.",
+    "photoUrl": "https://placehold.co/300",
+    "socials": {
+      "linkedin": "",
+      "github": "",
+      "instagram": "",
+      "tiktok": "",
+      "x": "",
+      "threads": ""
+    }
+  }
+]
