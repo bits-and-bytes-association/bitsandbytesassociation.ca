@@ -46,7 +46,7 @@ export default function Footer({ data }) {
                 href="#"
                 className="underline underline-offset-2 duration-300 hover:text-light-font"
               >
-                contributors
+                volunteers
               </Link>
               .
             </p>
