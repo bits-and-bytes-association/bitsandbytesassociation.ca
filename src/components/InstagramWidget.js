@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useMediaQuery } from '@react-hook/media-query';
+import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 import HeadingBBAStyle from './HeadingBBAStyle';
 import Link from 'next/link';
@@ -12,7 +12,7 @@ import Link from 'next/link';
  */
 export default function InstagramWidget({ title, instagramHandle, feed }) {
   const [isMounted, setIsMounted] = useState(false); // Using state to prevent hydration issues that can be caused by the useMediaQuery hook
-  const isSmallScreen = useMediaQuery('(max-width: 640px)');
+  const isSmallScreen = useMediaQuery({ maxWidth: '640px' });
 
   useEffect(() => {
     setIsMounted(true);
