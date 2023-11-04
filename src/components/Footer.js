@@ -16,10 +16,10 @@ export default function Footer({ data }) {
         <div className="flex flex-row items-center py-6 md:flex-row md:py-12">
           <nav className="grid grid-cols-[repeat(2,min-content)] gap-y-8 gap-x-20 lg:grid-cols-[repeat(4,min-content)]">
             {/* Footer links */}
-            {data.map(({ columnTitle, links }, index) => (
-              <NavColumn header={columnTitle} key={index}>
-                {links.map((link, index) => (
-                  <NavLink href={link.href} key={index}>
+            {data.map(({ columnTitle, links }) => (
+              <NavColumn header={columnTitle} key={`col-${columnTitle}`}>
+                {links.map((link) => (
+                  <NavLink href={link.href} key={`link-${link.label}`}>
                     {link.label}
                   </NavLink>
                 ))}
@@ -40,6 +40,16 @@ export default function Footer({ data }) {
       <div className="border-t border-neutral-800 bg-neutral-900 px-6">
         <div className="flex justify-between py-3 sm:justify-center">
           <div className="flex cursor-default flex-col gap-x-1 text-sm text-gray-400 sm:flex-row">
+            <p>
+              Design by{' '}
+              <Link href="#" className="duration-300 hover:text-light-font">
+                @
+                <span className="underline underline-offset-2">
+                  placeholder
+                </span>
+              </Link>
+              .
+            </p>
             <p>
               Made with ❤️ by our{' '}
               <Link

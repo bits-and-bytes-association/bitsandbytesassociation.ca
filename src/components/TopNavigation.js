@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import DiscordIcon from '@/icons/discord.svg';
+import InstagramIcon from '@/icons/instagram.svg';
+import LinkedInIcon from '@/icons/linkedin.svg';
+import RRCIcon from '@/icons/rrc.svg';
 
 /**
  * A reusable navigation bar at the top of the page.
@@ -57,43 +61,34 @@ export default function TopNavigation() {
             <TextLink href="/about">About</TextLink>
             <TextLink href="/events">Events</TextLink>
             <TextLink href="/volunteer">Volunteer</TextLink>
-            <TextLink href="/contact">Contact</TextLink>
             <li>
               <ul className="mx-3.5 mt-2 mb-4 flex flex-row items-center justify-around gap-6 sm:justify-start lg:mt-0 lg:mb-0 lg:ml-12">
                 {/* Discord */}
                 <SocialLink
                   href="https://discord.gg/RXySZQE"
-                  src="/images/discord-logomark-black.svg"
+                  Icon={DiscordIcon}
                   alt="Discord logo"
-                  width={36}
-                  height={36}
-                />
-
-                {/* YouTube */}
-                <SocialLink
-                  href="https://www.youtube.com/@bitsandbytesassociation7743"
-                  src="/images/youtube-logomark-black.svg"
-                  alt="Youtube logo"
-                  width={36}
-                  height={26}
                 />
 
                 {/* Instagram */}
                 <SocialLink
                   href="https://www.instagram.com/rrcbba/"
-                  src="/images/instagram-logomark-black.svg"
+                  Icon={InstagramIcon}
                   alt="Instagram logo"
-                  width={30}
-                  height={30}
+                />
+
+                {/* LinkedIn */}
+                <SocialLink
+                  href="https://www.linkedin.com/company/bits-and-bytes-association"
+                  Icon={LinkedInIcon}
+                  alt="LinkedIn logo"
                 />
 
                 {/* RRC */}
                 <SocialLink
                   href="https://www.rrc.ca/explore/computer-and-information-systems-technology/"
-                  src="/images/rrc-logomark-black.svg"
+                  Icon={RRCIcon}
                   alt="Red River College logo"
-                  width={38}
-                  height={38}
                 />
               </ul>
             </li>
@@ -128,30 +123,18 @@ function TextLink({ href, children }) {
 /**
  * Component that generates social icon links in the top navigation.
  * @param {string} href  The URL where the user will be redirected when clicking on the link.
- * @param {string} src  The path where the icon asset is stored.
- * @param {string} className  The classes to add to the icon.
+ * @param {string} Icon  The icon component to display.
  * @param {string} alt  The alternative text of the icon.
- * @param {int} width  The width of the icon.
- * @param {int} height  The height of the icon.
- * @param {bool} priority  Set to true if the image is considered high priority and should preload instead of lazy loading.
  * @returns An icon link.
  */
-function SocialLink({ href, src, alt = '', width, height, priority = false }) {
+function SocialLink({ href, Icon, alt = '' }) {
   return (
     <li>
-      <Link href={href}>
-        <div
-          className={`flex h-14 w-14 items-center justify-center rounded-full bg-dark p-[0.45em] hover:bg-dark-hover lg:h-auto lg:w-auto lg:bg-inherit lg:p-0 lg:hover:bg-inherit`}
-        >
-          <Image
-            className="p-1 invert lg:invert-0"
-            src={src}
-            alt={alt}
-            width={width}
-            height={height}
-            priority={priority}
-          />
-        </div>
+      <Link
+        href={href}
+        className={`flex h-14 w-14 items-center justify-center rounded-full bg-dark p-[0.45em] hover:bg-dark-hover lg:h-auto lg:w-auto lg:bg-inherit lg:p-0 lg:hover:bg-inherit lg:hover:text-primary`}
+      >
+        <Icon className="h-8 w-8 p-1 invert lg:invert-0" alt={alt} />
       </Link>
     </li>
   );

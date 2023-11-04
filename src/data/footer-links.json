@@ -1,9 +1,9 @@
 [
   {
-    "columnTitle": "Club",
+    "columnTitle": "About",
     "links": [
       {
-        "label": "Mission Statement",
+        "label": "Our Story",
         "href": "#"
       },
       {
@@ -17,7 +17,7 @@
     ]
   },
   {
-    "columnTitle": "Involvement",
+    "columnTitle": "Participate",
     "links": [
       {
         "label": "Events",
@@ -28,38 +28,33 @@
         "href": "#"
       },
       {
+        "label": "Newsletters",
+        "href": "#"
+      },
+      {
         "label": "GitHub",
         "href": "https://github.com/bits-and-bytes-association/"
+      },
+      {
+        "label": "YouTube",
+        "href": "https://www.youtube.com/channel/UCQ1KRzD0F7dEuvQs7Brd0YQ"
       }
     ]
   },
   {
-    "columnTitle": "Socials",
+    "columnTitle": "Connect",
     "links": [
       {
         "label": "Discord",
-        "href": "https://bitsandbytesassociation.ca/assets/img/discord-logo.png"
+        "href": "https://discord.gg/RXySZQE"
       },
       {
         "label": "Instagram",
         "href": "https://www.instagram.com/rrcbba/"
       },
       {
-        "label": "YouTube",
-        "href": "https://www.youtube.com/channel/UCQ1KRzD0F7dEuvQs7Brd0YQ"
-      },
-      {
         "label": "LinkedIn",
         "href": "https://www.linkedin.com/company/bits-and-bytes-association"
-      }
-    ]
-  },
-  {
-    "columnTitle": "Get In Touch",
-    "links": [
-      {
-        "label": "Contact",
-        "href": "#"
       }
     ]
   }

@@ -3,7 +3,6 @@ import Image from 'next/image';
 // Components
 import Button from '@/components/Button';
 import InstagramWidget from '@/components/InstagramWidget';
-import footerLinks from '@/data/footer-links.json';
 import NewsletterCarousel from '@/components/NewsletterCarousel';
 
 export async function getStaticProps() {
