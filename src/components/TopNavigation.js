@@ -132,9 +132,9 @@ function SocialLink({ href, Icon, alt = '' }) {
     <li>
       <Link
         href={href}
-        className={`flex h-14 w-14 items-center justify-center rounded-full bg-dark p-[0.45em] hover:bg-dark-hover lg:h-auto lg:w-auto lg:bg-inherit lg:p-0 lg:hover:bg-inherit lg:hover:text-primary`}
+        className={`flex h-14 w-14 items-center justify-center rounded-full bg-dark p-[0.45em] text-light-font hover:bg-dark-hover hover:text-light-font lg:h-auto lg:w-auto lg:bg-inherit lg:p-0 lg:text-dark-font lg:hover:bg-inherit lg:hover:text-primary`}
       >
-        <Icon className="h-8 w-8 p-1 invert lg:invert-0" alt={alt} />
+        <Icon className="h-8 w-8 p-1" alt={alt} />
       </Link>
     </li>
   );
