@@ -73,9 +73,9 @@ export default function Home({ instaFeed }) {
         </div>
       </section>
 
-      <div className="container mx-auto px-8">
-        {/* About Us section */}
-        <section id="about-us" className="py-8 md:py-32">
+      {/* About Us section */}
+      <section id="about-us" className="bg-dark py-8 text-light-font md:py-32">
+        <div className="container mx-auto px-8">
           <div className="flex flex-col gap-x-20 gap-y-8 md:flex-row">
             <div className="flex basis-2/5 flex-col justify-between gap-y-4 md:order-last md:px-0">
               <h1 className="cursor-default text-5xl font-black">About Us</h1>
@@ -92,43 +92,25 @@ export default function Home({ instaFeed }) {
                 </Button>
               </div>
             </div>
-            <div className="basis-3/5 px-8 md:px-0">
+            <div className="basis-3/5">
               <div className="aspect-w-16 aspect-h-9">
-                <iframe
-                  className="border-0"
-                  src="https://www.youtube.com/embed/JxbH7wA-NpU?rel=0"
-                  title="YouTube video player"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
+                <img src="https://placehold.co/1600x900" />
               </div>
             </div>
           </div>
-        </section>
-      </div>
-
-      {/* Newsletters section */}
-      <section id="newsletters" className="bg-dark pt-8 md:py-32">
-        <div className="mx-auto">
-          <h1 className="cursor-default text-center text-4xl font-black text-light-font md:mb-4">
-            BBA Newsletters
-          </h1>
-        </div>
-        <div className="mx-auto md:max-w-screen-xl md:px-8">
-          <NewsletterCarousel />
         </div>
       </section>
 
-      <div className="container mx-auto px-8">
-        {/* Instagram section */}
-        <section id="instagram">
+      {/* Instagram section */}
+      <section id="instagram">
+        <div className="container mx-auto px-8">
           <InstagramWidget
             title="Follow us on Instagram"
             instagramHandle="rrcbba"
             feed={instaFeed}
           />
-        </section>
-      </div>
+        </div>
+      </section>
     </>
   );
 }
