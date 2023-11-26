@@ -1,6 +1,6 @@
-import Button from '@/components/Button';
+import Button from '@/components/common/ui/Button';
 import Image from 'next/image';
-import HeadingBBAStyle from '@/components/HeadingBBAStyle';
+import HeadingBBAStyle from '@/components/common/ui/HeadingBBAStyle';
 
 export default function Style() {
   return (

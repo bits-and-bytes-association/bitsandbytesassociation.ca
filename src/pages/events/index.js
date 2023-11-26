@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import GoogleCalendarEmbed from '@/components/GoogleCalendarEmbed';
+import GoogleCalendarEmbed from '@/components/events/GoogleCalendarEmbed';
 
 export default function EventsPage() {
   return (

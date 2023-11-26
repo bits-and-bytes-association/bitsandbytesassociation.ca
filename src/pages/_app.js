@@ -1,7 +1,7 @@
 import { Fira_Sans, Work_Sans } from '@next/font/google';
 import Head from 'next/head';
-import TopNavigation from '@/components/TopNavigation';
-import Footer from '@/components/Footer';
+import TopNavigation from '@/components/common/navigation/TopNavigation';
+import Footer from '@/components/common/layout/Footer';
 import footerLinks from '@/data/footer-links.json';
 import '@/styles/globals.css';
 

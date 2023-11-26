@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import pastExecutives from '@/data/past-executives.json';
-import SearchBar from '@/components/past-executives/SearchBar';
+import SearchBar from '@/components/common/ui/SearchBar';
 
 export default function PastExecutivesPage() {
   const [allMembers, setAllMembers] = useState([pastExecutives]);

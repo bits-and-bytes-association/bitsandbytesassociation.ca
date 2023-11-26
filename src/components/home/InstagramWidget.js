@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
-import HeadingBBAStyle from './HeadingBBAStyle';
+import HeadingBBAStyle from '../common/ui/HeadingBBAStyle';
 import Link from 'next/link';
 
 /**
