@@ -1,4 +1,4 @@
-import newsletters from '../../json/newsletters.json';
+import newsletters from '@/data/newsletters';
 import { useState, useEffect } from 'react';
 import {
   ButtonBack,
