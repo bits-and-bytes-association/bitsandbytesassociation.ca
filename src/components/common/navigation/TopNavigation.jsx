@@ -1,15 +1,12 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
+
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import DiscordIcon from '@/icons/discord.svg';
 import InstagramIcon from '@/icons/instagram.svg';
 import LinkedInIcon from '@/icons/linkedin.svg';
 import RRCIcon from '@/icons/rrc.svg';
 
-/**
- * A reusable navigation bar at the top of the page.
- */
 export default function TopNavigation() {
   /**
    * Stores visibility state for mobile navigation links.
@@ -17,83 +14,65 @@ export default function TopNavigation() {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
-    <nav className="bg-light">
-      <div
-        className={
-          'container mx-auto flex flex-wrap items-center justify-between px-6 py-8 text-xl font-medium'
-        }
+    <nav>
+      {/* Hamburger button */}
+      <button
+        className={`rounded-lg bg-dark p-2 text-light-font duration-100 ease-linear hover:bg-dark-hover lg:hidden`}
+        type="button"
+        onClick={() => setIsCollapsed(!isCollapsed)}
       >
-        {/* Left-aligned nav logo */}
-        <Link href="/">
-          <Image
-            className="ml-2 lg:ml-0"
-            src="/images/bba-logo.svg"
-            alt="Bits and Bytes Association logo"
-            width={250}
-            height={53}
-            priority={true}
-          />
-        </Link>
+        {isCollapsed ? (
+          <Bars3Icon className="h-6 w-6" />
+        ) : (
+          <XMarkIcon className="h-6 w-6" />
+        )}
+      </button>
 
-        {/* Hamburger button */}
-        <button
-          className={`rounded-lg bg-dark p-2 text-light-font duration-100 ease-linear hover:bg-dark-hover lg:hidden`}
-          type="button"
-          onClick={() => setIsCollapsed(!isCollapsed)}
+      {/* Right-aligned nav items */}
+      <div
+        className={`mt-3.5 w-full items-center lg:m-0 ${
+          isCollapsed ? 'hidden' : ''
+        } lg:flex lg:w-auto`}
+      >
+        {/* Text links */}
+        <ul
+          className={`flex list-none flex-col rounded-lg bg-slate-200 lg:flex-row lg:items-center lg:bg-inherit lg:pt-0`}
         >
-          {isCollapsed ? (
-            <Bars3Icon className="h-6 w-6" />
-          ) : (
-            <XMarkIcon className="h-6 w-6" />
-          )}
-        </button>
+          <TextLink href="/about">About</TextLink>
+          <TextLink href="/events">Events</TextLink>
+          <TextLink href="/volunteer">Volunteer</TextLink>
+          <li>
+            <ul className="mx-3.5 mt-2 mb-4 flex flex-row items-center justify-around gap-6 sm:justify-start lg:mt-0 lg:mb-0 lg:ml-12">
+              {/* Discord */}
+              <SocialLink
+                href="https://discord.gg/RXySZQE"
+                Icon={DiscordIcon}
+                alt="Discord logo"
+              />
 
-        {/* Right-aligned nav items */}
-        <div
-          className={`mt-3.5 w-full items-center lg:m-0 ${
-            isCollapsed ? 'hidden' : ''
-          } lg:flex lg:w-auto`}
-        >
-          {/* Text links */}
-          <ul
-            className={`flex list-none flex-col rounded-lg bg-slate-200 lg:flex-row lg:items-center lg:bg-inherit lg:pt-0`}
-          >
-            <TextLink href="/about">About</TextLink>
-            <TextLink href="/events">Events</TextLink>
-            <TextLink href="/volunteer">Volunteer</TextLink>
-            <li>
-              <ul className="mx-3.5 mt-2 mb-4 flex flex-row items-center justify-around gap-6 sm:justify-start lg:mt-0 lg:mb-0 lg:ml-12">
-                {/* Discord */}
-                <SocialLink
-                  href="https://discord.gg/RXySZQE"
-                  Icon={DiscordIcon}
-                  alt="Discord logo"
-                />
+              {/* Instagram */}
+              <SocialLink
+                href="https://www.instagram.com/rrcbba/"
+                Icon={InstagramIcon}
+                alt="Instagram logo"
+              />
 
-                {/* Instagram */}
-                <SocialLink
-                  href="https://www.instagram.com/rrcbba/"
-                  Icon={InstagramIcon}
-                  alt="Instagram logo"
-                />
+              {/* LinkedIn */}
+              <SocialLink
+                href="https://www.linkedin.com/company/bits-and-bytes-association"
+                Icon={LinkedInIcon}
+                alt="LinkedIn logo"
+              />
 
-                {/* LinkedIn */}
-                <SocialLink
-                  href="https://www.linkedin.com/company/bits-and-bytes-association"
-                  Icon={LinkedInIcon}
-                  alt="LinkedIn logo"
-                />
-
-                {/* RRC */}
-                <SocialLink
-                  href="https://www.rrc.ca/explore/computer-and-information-systems-technology/"
-                  Icon={RRCIcon}
-                  alt="Red River College logo"
-                />
-              </ul>
-            </li>
-          </ul>
-        </div>
+              {/* RRC */}
+              <SocialLink
+                href="https://www.rrc.ca/explore/computer-and-information-systems-technology/"
+                Icon={RRCIcon}
+                alt="Red River College logo"
+              />
+            </ul>
+          </li>
+        </ul>
       </div>
     </nav>
   );

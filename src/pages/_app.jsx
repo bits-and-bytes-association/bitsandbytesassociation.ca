@@ -1,6 +1,6 @@
 import { Fira_Sans, Work_Sans } from '@next/font/google';
 import Head from 'next/head';
-import TopNavigation from '@/components/common/navigation/TopNavigation';
+import Header from '@/components/common/layout/Header';
 import Footer from '@/components/common/layout/Footer';
 import footerLinks from '@/data/footer-links.json';
 import '@/styles/globals.css';
@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className="globalContainer">
-        <TopNavigation />
+        <Header />
         <div className="pageContainer">
           <Component {...pageProps} />
         </div>

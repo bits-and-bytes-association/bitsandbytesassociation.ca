@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import BottomNavigation from '../navigation/BottomNavigation';
 
 // For copyright notice
 const firstYear = 2023;
@@ -11,21 +12,10 @@ const curYear = new Date().getFullYear();
  */
 export default function Footer({ data }) {
   return (
-    <div className="bg-dark">
+    <footer className="bg-dark">
       <div className="container mx-auto px-6">
         <div className="flex flex-row items-center py-6 md:flex-row md:py-12">
-          <nav className="grid grid-cols-[repeat(2,min-content)] gap-y-8 gap-x-20 lg:grid-cols-[repeat(4,min-content)]">
-            {/* Footer links */}
-            {data.map(({ columnTitle, links }) => (
-              <NavColumn header={columnTitle} key={`col-${columnTitle}`}>
-                {links.map((link) => (
-                  <NavLink href={link.href} key={`link-${link.label}`}>
-                    {link.label}
-                  </NavLink>
-                ))}
-              </NavColumn>
-            ))}
-          </nav>
+          <BottomNavigation data={data} />
           <div className="ml-auto hidden shrink-0 self-center sm:inline">
             <Image
               src="/images/bba-logomark-white.svg"
@@ -75,42 +65,6 @@ export default function Footer({ data }) {
           />
         </div>
       </div>
-    </div>
-  );
-}
-
-/**
- * Footer navigation column component
- * @param {string} header  Header text
- * @param {ReactNode} children  Column link components
- */
-function NavColumn({ header, children }) {
-  return (
-    <ul className="flex flex-col whitespace-nowrap">
-      <li className="mb-2 flex-initial">
-        <p className="cursor-default text-lg font-bold text-light-font">
-          {header}
-        </p>
-      </li>
-      {children}
-    </ul>
-  );
-}
-
-/**
- * Footer navigation column link
- * @param {string} href  Link destination
- * @param {ReactNode} children  Link content
- */
-function NavLink({ href, children }) {
-  return (
-    <li className="mb-1 flex-initial">
-      <Link
-        href={href}
-        className="text-gray-400 duration-100 hover:text-light-font"
-      >
-        {children}
-      </Link>
-    </li>
+    </footer>
   );
 }

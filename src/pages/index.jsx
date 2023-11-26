@@ -1,9 +1,6 @@
 import Image from 'next/image';
-
-// Components
 import Button from '@/components/common/ui/Button';
 import InstagramWidget from '@/components/home/InstagramWidget';
-import NewsletterCarousel from '@/components/newsletters/NewsletterCarousel';
 
 export async function getStaticProps() {
   if (!process.env.BEHOLD_URL) return { props: { instaFeed: [] } };
