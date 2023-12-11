@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Link from 'next/link';
+import Button from '@/components/common/ui/Button';
 
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import DiscordIcon from '@/icons/discord.svg';
@@ -16,9 +17,10 @@ export default function TopNavigation() {
   return (
     <nav>
       {/* Hamburger button */}
-      <button
-        className={`rounded-lg bg-dark p-2 text-light-font duration-100 ease-linear hover:bg-dark-hover lg:hidden`}
-        type="button"
+      <Button
+        className="lg:hidden"
+        variant="square"
+        size="md"
         onClick={() => setIsCollapsed(!isCollapsed)}
       >
         {isCollapsed ? (
@@ -26,7 +28,7 @@ export default function TopNavigation() {
         ) : (
           <XMarkIcon className="h-6 w-6" />
         )}
-      </button>
+      </Button>
 
       {/* Right-aligned nav items */}
       <div
@@ -68,7 +70,7 @@ export default function TopNavigation() {
               <SocialLink
                 href="https://www.rrc.ca/explore/computer-and-information-systems-technology/"
                 Icon={RRCIcon}
-                alt="Red River College logo"
+                alt="Red River College Polytechnic logo"
               />
             </ul>
           </li>
@@ -90,7 +92,7 @@ function TextLink({ href, children }) {
       <Link
         href={href}
         className={
-          'block rounded-lg p-4 font-normal text-dark no-underline hover:bg-primary hover:text-light-font active:bg-primary active:text-light-font lg:m-3 lg:p-1 lg:hover:bg-inherit lg:hover:text-primary lg:active:bg-inherit lg:active:text-primary'
+          'block rounded-lg p-4 font-normal hover:bg-brand hover:text-white active:bg-brand active:text-white lg:m-3 lg:p-1 lg:hover:bg-inherit lg:hover:text-brand lg:active:bg-inherit lg:active:text-brand'
         }
       >
         {children}
@@ -111,7 +113,7 @@ function SocialLink({ href, Icon, alt = '' }) {
     <li>
       <Link
         href={href}
-        className={`flex h-14 w-14 items-center justify-center rounded-full bg-dark p-[0.45em] text-light-font hover:bg-dark-hover hover:text-light-font lg:h-auto lg:w-auto lg:bg-inherit lg:p-0 lg:text-dark-font lg:hover:bg-inherit lg:hover:text-primary`}
+        className={`flex h-14 w-14 items-center justify-center rounded-full bg-neutral-800 p-[0.45em] text-white hover:bg-neutral-700 lg:h-auto lg:w-auto lg:bg-inherit lg:p-0 lg:text-neutral-800 lg:hover:bg-inherit lg:hover:text-brand`}
       >
         <Icon className="h-8 w-8 p-1" alt={alt} />
       </Link>

@@ -25,9 +25,7 @@ function NavColumn({ header, children }) {
   return (
     <ul className="flex flex-col whitespace-nowrap">
       <li className="mb-2 flex-initial">
-        <p className="cursor-default text-lg font-bold text-light-font">
-          {header}
-        </p>
+        <p className="cursor-default text-lg font-bold text-white">{header}</p>
       </li>
       {children}
     </ul>
@@ -42,10 +40,7 @@ function NavColumn({ header, children }) {
 function NavLink({ href, children }) {
   return (
     <li className="mb-1 flex-initial">
-      <Link
-        href={href}
-        className="text-gray-400 duration-100 hover:text-light-font"
-      >
+      <Link href={href} className=" text-gray-400 hover:text-white">
         {children}
       </Link>
     </li>

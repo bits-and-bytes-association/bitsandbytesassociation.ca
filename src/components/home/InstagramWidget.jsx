@@ -45,7 +45,7 @@ export default function InstagramWidget({ title, instagramHandle, feed }) {
         ))}
       </div>
       <HeadingBBAStyle
-        className="text-2xl font-bold text-primary sm:text-3xl md:text-4xl lg:text-5xl"
+        className="text-2xl font-bold text-brand hover:text-brand-400 sm:text-3xl md:text-4xl lg:text-5xl"
         inverted={true}
       >
         <Link href={`https://www.instagram.com/${instagramHandle}`}>

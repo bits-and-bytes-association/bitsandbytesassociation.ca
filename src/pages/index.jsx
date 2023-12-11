@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Image from 'next/image';
 import Button from '@/components/common/ui/Button';
 import InstagramWidget from '@/components/home/InstagramWidget';
@@ -28,18 +29,18 @@ export default function Home({ instaFeed }) {
             fill
             priority
           />
-          <div className="relative z-10 h-full bg-[#51aaff]/80">
-            <div className="container mx-auto flex h-full items-center text-light-font">
+          <div className="relative z-10 h-full bg-brand-700/80">
+            <div className="container mx-auto flex h-full items-center text-white">
               <div className="flex flex-col gap-4 p-8 md:flex-row">
                 <div className="basis-2/5">
                   <h1 className="cursor-default whitespace-nowrap text-5xl font-black">
                     Join the Group!
                   </h1>
                   <Button
-                    className="mt-8"
-                    variant="dark"
+                    className="mt-8 !px-[1.25em] !py-[0.4em]"
+                    as={Link}
+                    variant="secondary"
                     size="lg"
-                    padding="0.4em 1.25em"
                     href="https://discord.gg/RXySZQE"
                   >
                     <Image
@@ -71,7 +72,10 @@ export default function Home({ instaFeed }) {
       </section>
 
       {/* About Us section */}
-      <section id="about-us" className="bg-dark py-8 text-light-font md:py-32">
+      <section
+        id="about-us"
+        className="bg-neutral-800 py-8 text-white md:py-32"
+      >
         <div className="container mx-auto px-8">
           <div className="flex flex-col gap-x-20 gap-y-8 md:flex-row">
             <div className="flex basis-2/5 flex-col justify-between gap-y-4 md:order-last md:px-0">
@@ -84,7 +88,7 @@ export default function Home({ instaFeed }) {
                 dignissim sapien, eget lobortis sapien nunc ut elit.
               </p>
               <div>
-                <Button href="#" size="lg">
+                <Button as={Link} href="#" size="lg">
                   Learn More
                 </Button>
               </div>

@@ -10,14 +10,10 @@ export default function Style() {
         {/* Sample buttons */}
         <p className="my-3 text-3xl font-bold">Buttons</p>
         <h5 className="mb-2 text-lg">
-          <b>Variant &quot;primary&quot;</b> - Simple link buttons with default
-          parameters.
+          <b>Variant &quot;primary&quot;</b>
         </h5>
         <div className="mb-5 flex items-start">
-          <Button href="#" size="sm" className="mr-4">
-            Learn More
-          </Button>
-          <Button href="#" className="mr-4">
+          <Button href="#" size="md" className="mr-4">
             Learn More
           </Button>
           <Button href="#" size="lg">
@@ -26,43 +22,28 @@ export default function Style() {
         </div>
 
         <h5 className="mb-2 text-lg">
-          <b>Variant &quot;primary-outline&quot;</b> - Buttons with outline.
+          <b>Variant &quot;outline&quot;</b>
         </h5>
         <div className="mb-5 flex items-start">
-          <Button variant="primary-outline" size="sm" className="mr-4">
+          <Button href="#" variant="outline" size="md" className="mr-4">
             Learn More
           </Button>
-          <Button variant="primary-outline" className="mr-4">
-            Learn More
-          </Button>
-          <Button variant="primary-outline" size="lg" className="mr-4">
+          <Button href="#" variant="outline" size="lg" className="mr-4">
             Learn More
           </Button>
         </div>
 
         <h5 className="mb-2 text-lg">
-          <b>Variant &quot;dark&quot;</b> - Sample non-link button with custom
-          padding and onClick function
+          <b>Variant &quot;secondary&quot;</b>
         </h5>
-        <div className="mb-5">
-          <Button
-            variant="dark"
-            padding="0.5em 4em"
-            onClick={() => alert('Test')}
-          >
+        <div className="mb-5 flex items-start">
+          <Button variant="secondary" href="#" className="mr-4">
             Learn More
           </Button>
-        </div>
-
-        <h5 className="mb-2 text-lg">
-          <b>Variant &quot;dark&quot;</b> - Sample large button with image
-        </h5>
-        <div className="mb-10">
           <Button
-            variant="dark"
+            variant="secondary"
             size="lg"
-            padding="0.4em 1.25em"
-            href="https://discord.gg/RXySZQE"
+            className="!px-[1.25em] !py-[0.4em]"
           >
             <Image
               src="/images/discord-logo-white.svg"
@@ -76,258 +57,43 @@ export default function Style() {
 
         {/* Color palette */}
         <p className="my-4 text-3xl font-bold">Color palette</p>
-        <p className="my-2 text-xl font-bold">CSS variables</p>
         <div className="flex">
           <div
-            className="mb-10 mr-10 flex flex-col"
-            style={{
-              height: '20em',
-              width: '20em',
-              color: 'var(--light-font-color)',
-            }}
-          >
-            <div
-              style={{ background: 'var(--primary-color)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color
-            </div>
-            <div
-              style={{
-                background: 'var(--primary-hover-color)',
-              }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-hover-color
-            </div>
-            <div
-              style={{
-                background: 'var(--light-color)',
-                color: 'var(--dark-font-color)',
-              }}
-              className="flex grow items-center justify-center"
-            >
-              --light-color
-            </div>
-            <div
-              style={{ background: 'var(--dark-color)' }}
-              className="flex grow items-center justify-center"
-            >
-              --dark-color
-            </div>
-            <div
-              style={{ background: 'var(--dark-hover-color)' }}
-              className="flex grow items-center justify-center"
-            >
-              --dark-hover-color
-            </div>
-          </div>
-
-          <div
-            className="mb-10 mr-10 flex flex-col"
-            style={{
-              height: '20em',
-              width: '20em',
-              color: 'var(--light-font-color)',
-            }}
-          >
-            <div
-              style={{ background: 'var(--primary-color-900)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-900
-            </div>
-            <div
-              style={{ background: 'var(--primary-color-800)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-800
-            </div>
-            <div
-              style={{ background: 'var(--primary-color-700)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-700
-            </div>
-            <div
-              style={{ background: 'var(--primary-color-600)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-600
-            </div>
-            <div
-              style={{ background: 'var(--primary-color-500)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-500 (brand)
-            </div>
-            <div
-              style={{ background: 'var(--primary-color-400)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-400
-            </div>
-            <div
-              style={{ background: 'var(--primary-color-300)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-300
-            </div>
-            <div
-              style={{ background: 'var(--primary-color-200)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-200
-            </div>
-            <div
-              style={{ background: 'var(--primary-color-100)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-100
-            </div>
-            <div
-              style={{ background: 'var(--primary-color-50)' }}
-              className="flex grow items-center justify-center"
-            >
-              --primary-color-50
-            </div>
-          </div>
-
-          <div>
-            <div
-              className="flex flex-col items-center justify-center"
-              style={{
-                height: '10em',
-                width: '20em',
-                background: 'var(--dark-color)',
-              }}
-            >
-              <p
-                className="text-2xl"
-                style={{ color: 'var(--light-font-color)' }}
-              >
-                --light-font-color
-              </p>
-              <p
-                className="text-2xl"
-                style={{ color: 'var(--light-font-hover-color)' }}
-              >
-                --light-font-hover-color
-              </p>
-            </div>
-            <div
-              className="flex flex-col items-center justify-center"
-              style={{
-                height: '10em',
-                width: '20em',
-                background: 'var(--light-color)',
-              }}
-            >
-              <p
-                className="text-2xl"
-                style={{ color: 'var(--dark-font-color)' }}
-              >
-                --dark-font-color
-              </p>
-              <p
-                className="text-2xl"
-                style={{ color: 'var(--dark-font-hover-color)' }}
-              >
-                --dark-font-hover-color
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <p className="my-2 text-xl font-bold">Tailwind classes</p>
-        <div className="flex">
-          <div
-            className="mb-10 mr-10 flex flex-col text-light-font"
+            className="text-light-font mb-10 mr-10 flex flex-col"
             style={{
               height: '20em',
               width: '20em',
             }}
           >
-            <div className="flex grow items-center justify-center bg-primary">
-              bg-primary
+            <div className="flex grow items-center justify-center bg-brand-900">
+              brand-900
             </div>
-            <div className="flex grow items-center justify-center bg-primary-hover">
-              bg-primary-hover
+            <div className="flex grow items-center justify-center bg-brand-800">
+              brand-800
             </div>
-            <div className="flex grow items-center justify-center bg-light text-dark">
-              bg-light
+            <div className="flex grow items-center justify-center bg-brand-700">
+              brand-700
             </div>
-            <div className="flex grow items-center justify-center bg-dark">
-              bg-dark
+            <div className="flex grow items-center justify-center bg-brand-600">
+              brand-600
             </div>
-            <div className="flex grow items-center justify-center bg-dark-hover">
-              bg-dark-hover
+            <div className="flex grow items-center justify-center bg-brand-500">
+              brand-500 (primary)
             </div>
-          </div>
-
-          <div
-            className="mb-10 mr-10 flex flex-col text-light-font"
-            style={{
-              height: '20em',
-              width: '20em',
-            }}
-          >
-            <div className="flex grow items-center justify-center bg-primary-900">
-              bg-primary-900
+            <div className="flex grow items-center justify-center bg-brand-400">
+              brand-400
             </div>
-            <div className="flex grow items-center justify-center bg-primary-800">
-              bg-primary-800
+            <div className="flex grow items-center justify-center bg-brand-300">
+              brand-300
             </div>
-            <div className="flex grow items-center justify-center bg-primary-700">
-              bg-primary-700
+            <div className="flex grow items-center justify-center bg-brand-200">
+              brand-200
             </div>
-            <div className="flex grow items-center justify-center bg-primary-600">
-              bg-primary-600
+            <div className="flex grow items-center justify-center bg-brand-100">
+              brand-100
             </div>
-            <div className="flex grow items-center justify-center bg-primary-500">
-              bg-primary-500 (brand)
-            </div>
-            <div className="flex grow items-center justify-center bg-primary-400">
-              bg-primary-400
-            </div>
-            <div className="flex grow items-center justify-center bg-primary-300">
-              bg-primary-300
-            </div>
-            <div className="flex grow items-center justify-center bg-primary-200">
-              bg-primary-200
-            </div>
-            <div className="flex grow items-center justify-center bg-primary-100">
-              bg-primary-100
-            </div>
-            <div className="flex grow items-center justify-center bg-primary-50">
-              bg-primary-50
-            </div>
-          </div>
-
-          <div>
-            <div
-              className="flex flex-col items-center justify-center bg-dark"
-              style={{
-                height: '10em',
-                width: '20em',
-              }}
-            >
-              <p className="text-2xl text-light-font">text-light-font</p>
-              <p className="text-2xl text-light-font-hover">
-                text-light-font-hover
-              </p>
-            </div>
-            <div
-              className="flex flex-col items-center justify-center bg-light"
-              style={{
-                height: '10em',
-                width: '20em',
-              }}
-            >
-              <p className="text-2xl text-dark">text-dark-font</p>
-              <p className="text-2xl text-dark-font-hover">
-                text-dark-font-hover
-              </p>
+            <div className="flex grow items-center justify-center bg-brand-50">
+              brand-50
             </div>
           </div>
         </div>
@@ -336,7 +102,7 @@ export default function Style() {
         <div className="my-10">
           <HeadingBBAStyle>Follow us on Instagram</HeadingBBAStyle>
           <HeadingBBAStyle
-            className="text-[2.5rem] font-bold text-primary"
+            className="text-[2.5rem] font-bold text-brand"
             inverted={true}
           >
             @rrcbba

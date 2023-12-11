@@ -12,7 +12,7 @@ const curYear = new Date().getFullYear();
  */
 export default function Footer({ data }) {
   return (
-    <footer className="bg-dark">
+    <footer className="bg-neutral-800">
       <div className="container mx-auto px-6">
         <div className="flex flex-row items-center py-6 md:flex-row md:py-12">
           <BottomNavigation data={data} />
@@ -27,12 +27,12 @@ export default function Footer({ data }) {
           </div>
         </div>
       </div>
-      <div className="border-t border-neutral-800 bg-neutral-900 px-6">
+      <div className="border-t border-neutral-700 px-6">
         <div className="flex justify-between py-3 sm:justify-center">
           <div className="flex cursor-default flex-col gap-x-1 text-sm text-gray-400 sm:flex-row">
             <p>
               Design by{' '}
-              <Link href="#" className="duration-300 hover:text-light-font">
+              <Link href="#" className="hover:text-white">
                 @
                 <span className="underline underline-offset-2">
                   placeholder
@@ -44,7 +44,7 @@ export default function Footer({ data }) {
               Made with ❤️ by our{' '}
               <Link
                 href="#"
-                className="underline underline-offset-2 duration-300 hover:text-light-font"
+                className="underline underline-offset-2 hover:text-white"
               >
                 volunteers
               </Link>

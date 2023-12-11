@@ -12,7 +12,7 @@ import styles from '@/styles/HeadingBBAStyle.module.css';
 export default function HeadingBBAStyle({
   className = 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black',
   inverted = false,
-  color = 'var(--primary-color)',
+  // color = 'var(--primary-color)',
   lineWidth = 30,
   children,
 }) {
@@ -32,14 +32,8 @@ export default function HeadingBBAStyle({
         className={`${styles['shape-wrapper']} flex w-full items-center`}
         style={{ fontSize: `${lineWidth}px` }}
       >
-        <div
-          className={`${styles['circle']}`}
-          style={{ backgroundColor: `${color}` }}
-        ></div>
-        <div
-          className={`${styles['line']}`}
-          style={{ backgroundColor: `${color}` }}
-        ></div>
+        <div className={`${styles['circle']} bg-brand`}></div>
+        <div className={`${styles['line']} bg-brand`}></div>
       </div>
     </div>
   );
