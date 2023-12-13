@@ -31,7 +31,7 @@ export default function Footer({ data }) {
         <div className="flex justify-between py-3 sm:justify-center">
           <div className="flex cursor-default flex-col gap-x-1 text-sm text-gray-400 sm:flex-row">
             <p>
-              Design by{' '}
+              Original Design by{' '}
               <Link href="#" className="hover:text-white">
                 @
                 <span className="underline underline-offset-2">

@@ -1,18 +1,15 @@
-import Head from 'next/head';
 import GoogleCalendarEmbed from '@/components/events/GoogleCalendarEmbed';
+import CenteredPage from '@/components/common/layout/CenteredPage';
 
 export default function EventsPage() {
   return (
-    <div className="container mx-auto px-6 pb-16">
-      <Head>
-        <title>Events</title>
-      </Head>
-      <div className="mb-4 flex flex-col items-center justify-between sm:flex-row">
-        <h1 className="mb-4 text-2xl font-semibold sm:mb-0">Events</h1>
-      </div>
-      <div className="max-w-3xl">
+    <CenteredPage
+      title="Events"
+      description="Connect with the ACE community in person at our upcoming events. Explore industry professional meet-ups, game nights, and more on our calendar. For details, head over to our Discord channel where we post our event announcements. Join us to create and be a part of memorable moments within our academic journey!"
+    >
+      <div className="mx-auto max-w-3xl rounded-lg border border-[#bcc8f3] bg-[#e3e9ff] p-5 shadow-md">
         <GoogleCalendarEmbed src="Yml0c2J5dGVzYXNzb2NpYXRpb25AZ21haWwuY29t" />
       </div>
-    </div>
+    </CenteredPage>
   );
 }

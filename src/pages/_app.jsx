@@ -27,12 +27,14 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
-        className={`${firaSans.variable} flex min-h-screen flex-col font-sans text-neutral-900`}
+        className={`${firaSans.variable} flex flex-col font-sans text-neutral-900`}
       >
-        <Header />
-        <main>
-          <Component className="flex-grow" {...pageProps} />
-        </main>
+        <div className="flex min-h-screen flex-col">
+          <Header />
+          <main>
+            <Component className="flex-grow" {...pageProps} />
+          </main>
+        </div>
         <Footer data={footerLinks} />
       </div>
     </>

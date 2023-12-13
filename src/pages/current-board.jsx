@@ -1,8 +1,8 @@
-import React from 'react';
-import Head from 'next/head';
-
 import currentBoard from '@/data/current-board.json';
+import React from 'react';
+import CenteredPage from '@/components/common/layout/CenteredPage';
 
+// Icons
 import InstagramIcon from '@/icons/instagram.svg';
 import TikTokIcon from '@/icons/tiktok.svg';
 import GitHubIcon from '@/icons/github.svg';
@@ -21,30 +21,29 @@ const socialMediaIcons = {
 
 export default function CurrentBoardPage() {
   return (
-    <div className="container mx-auto px-6 pb-16">
-      <Head>
-        <title>Current Board</title>
-      </Head>
-      <div className="mb-4 flex flex-col items-center justify-between sm:flex-row">
-        <h1 className="mb-4 text-2xl font-semibold sm:mb-0">Current Board</h1>
-      </div>
-      <div className="grid gap-8 md:grid-cols-2">
+    <CenteredPage
+      title="Current Board"
+      description="Meet the driving force behind our current leadership team. The continous journey of the Bits and Bytes Association is made possible by these students who generously invest their time and passion, actively molding the future of our community."
+    >
+      <div className="grid gap-8 lg:grid-cols-2">
         {currentBoard.map((member) => {
           return (
-            <div key={member.name} className="items-center bg-gray-100 sm:flex">
-              <div>
-                <img
-                  className="w-full"
-                  src={member.photoUrl}
-                  alt={`${member.name} Avatar`}
-                />
-              </div>
+            <div
+              key={member.name}
+              className="items-center rounded-lg border border-neutral-300 bg-neutral-100 shadow-md sm:flex"
+            >
+              <img
+                className="w-full sm:w-[225px] sm:rounded-l-lg lg:w-[150px] xl:w-[225px]"
+                src={member.photoUrl}
+                alt={`${member.name} Avatar`}
+              />
               <div className="p-5">
-                <h6 className="text-xl font-bold text-gray-900">
+                <h2 className="text-xl font-bold text-neutral-900">
                   {member.name}
-                </h6>
-                <span className="text-gray-600">{member.role}</span>
-                <p className="mt-3 mb-4 font-light text-gray-800">
+                </h2>
+                <div className="text-neutral-600">{member.program}</div>
+                <span className="text-neutral-600">{member.role}</span>
+                <p className="mt-3 mb-4 font-light text-neutral-800">
                   {member.bio}
                 </p>
                 <ul className="flex space-x-4">
@@ -53,7 +52,7 @@ export default function CurrentBoardPage() {
                       <li key={`member-${member.name}-${platform}`}>
                         <a
                           href={url}
-                          className="text-gray-600 hover:text-gray-900"
+                          className="text-neutral-600 hover:text-neutral-900"
                         >
                           {React.createElement(socialMediaIcons[platform], {
                             className: 'h-4 w-4',
@@ -68,6 +67,6 @@ export default function CurrentBoardPage() {
           );
         })}
       </div>
-    </div>
+    </CenteredPage>
   );
 }

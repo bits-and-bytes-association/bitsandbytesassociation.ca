@@ -79,7 +79,7 @@ export default function Home({ instaFeed }) {
         <div className="container mx-auto px-8">
           <div className="flex flex-col gap-x-20 gap-y-8 md:flex-row">
             <div className="flex basis-2/5 flex-col justify-between gap-y-4 md:order-last md:px-0">
-              <h1 className="cursor-default text-5xl font-black">About Us</h1>
+              <h2 className="cursor-default text-5xl font-black">About Us</h2>
               <p className="text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 pellentesque est id leo fermentum, et gravida odio hendrerit. Ut
