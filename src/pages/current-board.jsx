@@ -1,6 +1,6 @@
 import currentBoard from '@/data/current-board.json';
 import React from 'react';
-import CenteredPage from '@/components/common/layout/CenteredPage';
+import Page from '@/components/common/layout/Page';
 
 // Icons
 import InstagramIcon from '@/icons/instagram.svg';
@@ -21,7 +21,7 @@ const socialMediaIcons = {
 
 export default function CurrentBoardPage() {
   return (
-    <CenteredPage
+    <Page
       title="Current Board"
       description="Meet the driving force behind our current leadership team. The continous journey of the Bits and Bytes Association is made possible by these students who generously invest their time and passion, actively molding the future of our community."
     >
@@ -30,7 +30,7 @@ export default function CurrentBoardPage() {
           return (
             <div
               key={member.name}
-              className="items-center rounded-lg border border-neutral-300 bg-neutral-100 shadow-md sm:flex"
+              className="items-center rounded-lg border border-neutral-300 bg-neutral-50 shadow-md sm:flex"
             >
               <img
                 className="w-full sm:w-[225px] sm:rounded-l-lg lg:w-[150px] xl:w-[225px]"
@@ -67,6 +67,6 @@ export default function CurrentBoardPage() {
           );
         })}
       </div>
-    </CenteredPage>
+    </Page>
   );
 }

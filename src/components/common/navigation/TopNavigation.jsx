@@ -40,7 +40,7 @@ export default function TopNavigation() {
         <ul
           className={`flex list-none flex-col rounded-lg bg-slate-200 lg:flex-row lg:items-center lg:bg-inherit lg:pt-0`}
         >
-          <TextLink href="/about">About</TextLink>
+          <TextLink href="/our-story">Our Story</TextLink>
           <TextLink href="/events">Events</TextLink>
           <TextLink href="/volunteer">Volunteer</TextLink>
           <li>

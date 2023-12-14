@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import pastExecutives from '@/data/past-executives.json';
 import SearchBar from '@/components/common/ui/SearchBar';
-import CenteredPage from '@/components/common/layout/CenteredPage';
+import Page from '@/components/common/layout/Page';
 import clsx from 'clsx';
 
 export default function PastLeadershipPage() {
@@ -58,7 +58,7 @@ export default function PastLeadershipPage() {
   }, []);
 
   return (
-    <CenteredPage
+    <Page
       title="Past Leadership"
       description="We acknowledge the invaluable contributions of past leadership teams who have guided and shaped the Bits and Bytes Association. Each name on this list represents dedicated individuals who played pivotal roles, leaving an enduring impact on our community. We are so grateful to the students who have been instrumental in building the Bits and Bytes Association into what it is today."
     >
@@ -98,6 +98,6 @@ export default function PastLeadershipPage() {
           <p className="py-3 text-center italic">No results found.</p>
         )}
       </div>
-    </CenteredPage>
+    </Page>
   );
 }
