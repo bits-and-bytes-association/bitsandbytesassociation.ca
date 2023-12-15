@@ -88,7 +88,7 @@ export default function Home({ instaFeed }) {
                 dignissim sapien, eget lobortis sapien nunc ut elit.
               </p>
               <div>
-                <Button as={Link} href="#" size="lg">
+                <Button as={Link} href="/our-story" size="lg">
                   Learn More
                 </Button>
               </div>
@@ -103,7 +103,7 @@ export default function Home({ instaFeed }) {
       </section>
 
       {/* Instagram section */}
-      <section id="instagram">
+      <section id="instagram" className="md:py-16">
         <div className="container mx-auto px-8">
           <InstagramWidget
             title="Follow us on Instagram"

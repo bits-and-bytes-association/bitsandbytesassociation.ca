@@ -38,11 +38,11 @@ export default function CurrentBoardPage() {
                 alt={`${member.name} Avatar`}
               />
               <div className="p-5">
-                <h2 className="text-xl font-bold text-neutral-900">
+                <div className="text-xl font-bold text-neutral-900">
                   {member.name}
-                </h2>
+                </div>
                 <div className="text-neutral-600">{member.program}</div>
-                <span className="text-neutral-600">{member.role}</span>
+                <div className="text-neutral-600">{member.role}</div>
                 <p className="mt-3 mb-4 font-light text-neutral-800">
                   {member.bio}
                 </p>

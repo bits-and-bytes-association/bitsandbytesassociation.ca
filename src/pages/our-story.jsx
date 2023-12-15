@@ -4,10 +4,10 @@ import Page from '@/components/common/layout/Page';
 import {
   HeartIcon,
   BookOpenIcon,
-  UserGroupIcon,
   AcademicCapIcon,
   EyeIcon,
   RocketLaunchIcon,
+  SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 export default function OurStoryPage() {
@@ -33,11 +33,14 @@ export default function OurStoryPage() {
       }
     >
       {/* Mission and Vision cards */}
-      <div className="mb-16 flex justify-center gap-8">
+      <section
+        id="mission-and-vision"
+        className="mb-32 flex justify-center gap-32"
+      >
         <div className="flex flex-col items-center gap-4">
-          <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+          <div className="max-w-sm grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
             <RocketLaunchIcon className="mb-5 h-16 w-16" />
-            <h2 className="text-xl font-bold text-neutral-900">Mission</h2>
+            <div className="mb-1 text-xl font-bold">Mission</div>
             <p>
               Cultivate a thriving community through meaningful communication,
               connecting ACE Department students, staff, and alumni.
@@ -45,21 +48,21 @@ export default function OurStoryPage() {
           </div>
         </div>
         <div className="flex flex-col items-center gap-4">
-          <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+          <div className="max-w-sm grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
             <EyeIcon className="mb-5 h-16 w-16" />
-            <h2 className="text-xl font-bold text-neutral-900">Vision</h2>
-            Establish a distinguished RRC Polytech tech community, uniting
-            students, alumni, and staff with a dedication to high-quality
-            education and enduring relationships within the ACE Department.
+            <div className="mb-1 text-xl font-bold">Vision</div>
+            <p>
+              Establish a distinguished RRC Polytech tech community, uniting
+              students, alumni, and staff with a dedication to high-quality
+              education and enduring relationships within the ACE Department.
+            </p>
           </div>
         </div>
-      </div>
+      </section>
       {/* Goals */}
-      <div className="flex flex-col">
+      <section id="goals" className="mb-20 flex flex-col">
         <div className="mb-12 text-center">
-          <h2 className="cursor-default text-4xl font-bold text-neutral-900">
-            Goals
-          </h2>
+          <div className="cursor-default text-4xl font-black">Goals</div>
           <p className="text-xl text-neutral-500">
             Inspire a meaningful college experience by championing teamwork and
             embracing diversity among ACE students.
@@ -69,9 +72,9 @@ export default function OurStoryPage() {
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
             <AcademicCapIcon className="mb-3 h-16 w-16" />
-            <h3 className="text-xl font-bold text-neutral-900">
+            <div className="mb-1 text-xl font-bold">
               Address Diverse Student Needs
-            </h3>
+            </div>
             <p>
               Tackle a spectrum of needs from academic support, professional
               development, social and well-being initiatives, across all ACE
@@ -79,10 +82,10 @@ export default function OurStoryPage() {
             </p>
           </div>
           <div className="rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
-            <UserGroupIcon className="mb-3 h-16 w-16" />
-            <h3 className="text-xl font-bold text-neutral-900">
+            <SparklesIcon className="mb-3 h-16 w-16" />
+            <div className="mb-1 text-xl font-bold">
               Organize Inclusive Events
-            </h3>
+            </div>
             <p>
               Plan engaging events from industry professional meet-ups, program
               tutorials, to fun game nights, providing diverse opportunities for
@@ -91,9 +94,9 @@ export default function OurStoryPage() {
           </div>
           <div className="rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
             <BookOpenIcon className="mb-3 h-16 w-16" />
-            <h3 className="text-xl font-bold text-neutral-900">
+            <div className="mb-1 text-xl font-bold">
               Share Valuable information
-            </h3>
+            </div>
             <p>
               Effectively spread information through savvy social media posts
               and carefully crafted newsletters. Boost event awareness,
@@ -103,9 +106,9 @@ export default function OurStoryPage() {
           </div>
           <div className="rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
             <HeartIcon className="mb-3 h-16 w-16" />
-            <h3 className="text-xl font-bold text-neutral-900">
+            <div className="mb-1 text-xl font-bold">
               Nurture an Empowered Community
-            </h3>
+            </div>
             <p>
               Fuel community growth by through executive meetings to
               strategically plan and discuss upcoming events and initiatives -
@@ -114,7 +117,7 @@ export default function OurStoryPage() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
     </Page>
   );
 }

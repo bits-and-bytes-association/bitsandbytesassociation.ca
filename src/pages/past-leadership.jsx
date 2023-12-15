@@ -63,13 +63,13 @@ export default function PastLeadershipPage() {
       description="We acknowledge the invaluable contributions of past leadership teams who have guided and shaped the Bits and Bytes Association. Each name on this list represents dedicated individuals who played pivotal roles, leaving an enduring impact on our community. We are so grateful to the students who have been instrumental in building the Bits and Bytes Association into what it is today."
     >
       <div className="mb-4 flex flex-col items-center justify-between sm:flex-row">
-        <h1 className="mb-4 text-2xl font-semibold sm:mb-0">Members</h1>
+        <h2 className="mb-4 text-2xl font-semibold sm:mb-0">Members</h2>
         <SearchBar onChange={onSearchChange} />
       </div>
       <div className="overflow-x-auto rounded-lg border border-neutral-300 shadow-md">
         <table className="w-full text-left">
           <thead className="bg-neutral-100">
-            <tr className="border-b text-neutral-900">
+            <tr className="border-b">
               <th className="px-6 py-4">Name</th>
               <th className="px-6 py-4">Role</th>
               <th className="px-6 py-4">Year</th>
