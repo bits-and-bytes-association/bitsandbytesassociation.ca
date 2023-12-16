@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import pastExecutives from '@/data/past-executives.json';
 import SearchBar from '@/components/common/ui/SearchBar';
-import Page from '@/components/common/layout/Page';
 import clsx from 'clsx';
+import PageContainer from '@/components/common/layout/PageContainer';
+import PageTitle from '@/components/common/layout/PageTitle';
+import pastExecutives from '@/data/past-leadership';
 
 export default function PastLeadershipPage() {
   const [allMembers, setAllMembers] = useState([pastExecutives]);
@@ -36,10 +37,7 @@ export default function PastLeadershipPage() {
     const filteredResults = allMembers.reduce((acc, board) => {
       const filteredMembers = board.board.filter((member) => {
         const query = event.target.value.toLowerCase().trim();
-        return (
-          member.name.toLowerCase().includes(query) ||
-          member.role.toLowerCase().includes(query)
-        );
+        return member.name.toLowerCase().includes(query);
       });
 
       if (filteredMembers.length > 0) {
@@ -58,17 +56,25 @@ export default function PastLeadershipPage() {
   }, []);
 
   return (
-    <Page
-      title="Past Leadership"
-      description="We acknowledge the invaluable contributions of past leadership teams who have guided and shaped the Bits and Bytes Association. Each name on this list represents dedicated individuals who played pivotal roles, leaving an enduring impact on our community. We are so grateful to the students who have been instrumental in building the Bits and Bytes Association into what it is today."
-    >
+    <PageContainer>
+      <PageTitle title="Past Leadership" />
+      <p className="mb-12">
+        We acknowledge the invaluable contributions of past leadership teams who
+        have guided and shaped the Bits and Bytes Association. Each name on this
+        list represents dedicated individuals who played pivotal roles, leaving
+        an enduring impact on our community. We are so grateful to the students
+        who have been instrumental in building the Bits and Bytes Association
+        into what it is today.
+      </p>
       <div className="mb-4 flex flex-col items-center justify-between sm:flex-row">
-        <h2 className="mb-4 text-2xl font-semibold sm:mb-0">Members</h2>
+        <h2 className="mb-4 text-2xl font-semibold text-neutral-900 sm:mb-0">
+          Members
+        </h2>
         <SearchBar onChange={onSearchChange} />
       </div>
-      <div className="overflow-x-auto rounded-lg border border-neutral-300 shadow-md">
+      <div className="overflow-x-auto rounded-lg border border-neutral-300 text-base shadow-md">
         <table className="w-full text-left">
-          <thead className="bg-neutral-100">
+          <thead className="bg-neutral-100 text-neutral-900">
             <tr className="border-b">
               <th className="px-6 py-4">Name</th>
               <th className="px-6 py-4">Role</th>
@@ -98,6 +104,6 @@ export default function PastLeadershipPage() {
           <p className="py-3 text-center italic">No results found.</p>
         )}
       </div>
-    </Page>
+    </PageContainer>
   );
 }

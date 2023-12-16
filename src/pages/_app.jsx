@@ -27,7 +27,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div
-        className={`${firaSans.variable} flex flex-col font-sans text-neutral-900`}
+        className={`${firaSans.variable} flex flex-col font-sans text-xl text-neutral-500`}
       >
         <div className="flex min-h-screen flex-col">
           <Header />

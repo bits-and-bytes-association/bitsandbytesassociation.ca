@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Page from '@/components/common/layout/Page';
+import PageContainer from '@/components/common/layout/PageContainer';
+import PageTitle from '@/components/common/layout/PageTitle';
 import Button from '@/components/common/ui/Button';
 
 // Icons
@@ -17,14 +18,23 @@ import {
 
 export default function VolunteerPage() {
   return (
-    <Page
-      title="Volunteering"
-      description="The Bits and Bytes Association believes in the power of collaboration, creativity, and community. As a student-run organization dedicated to enhancing the educational experience within the Applied Computer Education (ACE) department at Red River College Polytechnic, we understand the value of student engagement. Our volunteer opportunities are designed to not only contribute to the success of the BBA but also to provide a platform for personal and professional growth."
-    >
+    <PageContainer>
+      <PageTitle title="Volunteering" />
+      <p className="mb-12">
+        The Bits and Bytes Association believes in the power of collaboration,
+        creativity, and community. As a student-run organization dedicated to
+        enhancing the educational experience within the Applied Computer
+        Education (ACE) department at Red River College Polytechnic, we
+        understand the value of student engagement. Our volunteer opportunities
+        are designed to not only contribute to the success of the BBA but also
+        to provide a platform for personal and professional growth.
+      </p>
       <div className="mt-16 mb-4">
         {/* Who We're Looking For */}
         <section id="who-were-looking-for">
-          <div className="mb-4 text-4xl font-black">Who We're Looking For</div>
+          <div className="mb-4 text-4xl font-black text-neutral-900">
+            Who We're Looking For
+          </div>
           <p className="mb-20 text-xl text-neutral-500">
             All students with a passion for technology and eager to develop your
             skills and contribute to a supportive community are welcome! If
@@ -35,10 +45,12 @@ export default function VolunteerPage() {
 
         {/* Opportunities */}
         <section id="opportunities" className="mb-20">
-          <div className="mb-6 text-4xl font-black">Opportunities</div>
+          <div className="mb-6 text-4xl font-black text-neutral-900">
+            Opportunities
+          </div>
           <div className="flex justify-center gap-8">
             <div className="flex flex-col items-center gap-4">
-              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
                 <CodeBracketIcon className="mb-5 h-16 w-16" />
                 <div className="mb-1 text-xl font-bold">Web Development</div>
                 <p>
@@ -48,7 +60,7 @@ export default function VolunteerPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
                 <AtSymbolIcon className="mb-5 h-16 w-16" />
                 <div className="mb-1 text-xl font-bold">
                   Represent Your Program at Orientations
@@ -60,7 +72,7 @@ export default function VolunteerPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
                 <NewspaperIcon className="mb-5 h-16 w-16" />
                 <div className="mb-1 text-xl font-bold">Content Creation</div>
                 <p>
@@ -73,7 +85,7 @@ export default function VolunteerPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
                 <TrophyIcon className="mb-5 h-16 w-16" />
                 <div className="mb-1 text-xl font-bold">
                   Serve as Project Champion
@@ -89,7 +101,9 @@ export default function VolunteerPage() {
 
         {/* Time and Place */}
         <section id="time-and-place" className="mb-20">
-          <div className="mb-4 text-4xl font-black">Time and Place</div>
+          <div className="mb-4 text-4xl font-black text-neutral-900">
+            Time and Place
+          </div>
           <p className="text-xl text-neutral-500">
             Join us at one of our weekly meetings or events at the EDC campus in
             the Manitou A Bi Bii Dazigae building for in-person collaboration.
@@ -101,10 +115,12 @@ export default function VolunteerPage() {
 
         {/* Benefits */}
         <section id="benefits" className="mb-20">
-          <div className="mb-6 text-4xl font-black">Benefits</div>
+          <div className="mb-6 text-4xl font-black text-neutral-900">
+            Benefits
+          </div>
           <div className="flex justify-center gap-8">
             <div className="flex flex-col items-center gap-4">
-              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
                 <WrenchScrewdriverIcon className="mb-5 h-16 w-16" />
                 <div className="mb-1 text-xl font-bold">Build Community</div>
                 <p>
@@ -116,7 +132,7 @@ export default function VolunteerPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
                 <PaintBrushIcon className="mb-5 h-16 w-16" />
                 <div className="mb-1 text-xl font-bold">Develop Skillsets</div>
                 <p>
@@ -129,7 +145,7 @@ export default function VolunteerPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
                 <PuzzlePieceIcon className="mb-5 h-16 w-16" />
                 <div className="mb-1 text-xl font-bold">Team Building</div>
                 <p>
@@ -142,7 +158,7 @@ export default function VolunteerPage() {
               </div>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 shadow-md">
+              <div className="max-w-xs grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
                 <UserGroupIcon className="mb-5 h-16 w-16" />
                 <div className="mb-1 text-xl font-bold">Leadership Skills</div>
                 <p>
@@ -158,7 +174,9 @@ export default function VolunteerPage() {
 
         {/* How to Get Started */}
         <section id="how-to-get-started" className="mb-20">
-          <div className="mb-3 text-4xl font-black">How to Get Started</div>
+          <div className="mb-3 text-4xl font-black text-neutral-900">
+            How to Get Started
+          </div>
           <p className="text-xl text-neutral-500">
             Join our Discord server and introduce yourself sharing your program
             and passions. Attend a meeting in-person (check for our Discord
@@ -190,6 +208,6 @@ export default function VolunteerPage() {
           </Button>
         </div>
       </div>
-    </Page>
+    </PageContainer>
   );
 }

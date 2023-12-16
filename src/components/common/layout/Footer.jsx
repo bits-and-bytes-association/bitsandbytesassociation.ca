@@ -12,7 +12,7 @@ const curYear = new Date().getFullYear();
  */
 export default function Footer({ data }) {
   return (
-    <footer className="bg-neutral-800">
+    <footer className="bg-neutral-800 text-base text-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-row items-center py-6 md:flex-row md:py-12">
           <BottomNavigation data={data} />

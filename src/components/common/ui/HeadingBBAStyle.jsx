@@ -10,7 +10,7 @@ import styles from '@/styles/HeadingBBAStyle.module.css';
  * @returns  A heading with an adornment in one of its sides.
  */
 export default function HeadingBBAStyle({
-  className = 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black',
+  className = 'text-neutral-900 text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black',
   inverted = false,
   // color = 'var(--primary-color)',
   lineWidth = 30,

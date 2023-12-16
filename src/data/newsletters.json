@@ -1,83 +1,73 @@
-{
-  "newsletters": [
-    {
-      "topics": ["Artificial Intelligence"],
-      "credits": [
-        "Wajiha Waseem",
-        "Mohitpreet Kaur",
-        "Alyssa Johnson",
-        "Sochimazuru SJ. Noshiri"
-      ],
-      "publishDate": "2023-02-01",
-      "pdfSrc": "/newsletters/bba-newsletter-2023-02.pdf",
-      "thumbSrc": "/newsletters/bba-newsletter-2023-02.jpg"
-    },
-    {
-      "topics": ["Cybersecurity"],
-      "credits": [
-        "Wajiha Waseem",
-        "Mohitpreet Kaur",
-        "Alyssa Johnson",
-        "Sochimazuru SJ. Noshiri"
-      ],
-      "publishDate": "2023-01-01",
-      "pdfSrc": "/newsletters/bba-newsletter-2023-01.pdf",
-      "thumbSrc": "/newsletters/bba-newsletter-2023-01.jpg"
-    },
-    {
-      "topics": [
-        "Networking",
-        "Likability",
-        "Directions 2022",
-        "Women in Tech"
-      ],
-      "credits": [
-        "Alyssa Johnson",
-        "Ryan Rutherford",
-        "Prachi Chawla",
-        "Wajiha Waseem"
-      ],
-      "publishDate": "2022-10-01",
-      "pdfSrc": "/newsletters/bba-newsletter-2022-10.pdf",
-      "thumbSrc": "/newsletters/bba-newsletter-2022-10.jpg"
-    },
-    {
-      "topics": [
-        "Starting Your First IT Job",
-        "Industry Event w/ James Warren"
-      ],
-      "credits": ["???"],
-      "publishDate": "2022-01-01",
-      "pdfSrc": "/newsletters/bba-newsletter-2022-01.pdf",
-      "thumbSrc": "/newsletters/bba-newsletter-2022-01.jpg"
-    },
-    {
-      "topics": ["Women in Tech"],
-      "credits": ["???"],
-      "publishDate": "2021-12-01",
-      "pdfSrc": "/newsletters/bba-newsletter-2021-12.pdf",
-      "thumbSrc": "/newsletters/bba-newsletter-2021-12.jpg"
-    },
-    {
-      "topics": [
-        "Web Accessibility",
-        "RRC Game Dev Program Interview w/ Kyle Geske"
-      ],
-      "credits": ["???"],
-      "publishDate": "2021-11-01",
-      "pdfSrc": "/newsletters/bba-newsletter-2021-11.pdf",
-      "thumbSrc": "/newsletters/bba-newsletter-2021-11.jpg"
-    },
-    {
-      "topics": [
-        "Imposter Syndrome",
-        "IT Career Tips",
-        "Industry Event w/ Stephan Pawulski"
-      ],
-      "credits": ["???"],
-      "publishDate": "2021-10-01",
-      "pdfSrc": "/newsletters/bba-newsletter-2021-10.pdf",
-      "thumbSrc": "/newsletters/bba-newsletter-2021-10.jpg"
-    }
-  ]
-}
+[
+  {
+    "topics": ["Artificial Intelligence"],
+    "contributors": [
+      "Wajiha Waseem",
+      "Mohitpreet Kaur",
+      "Alyssa Johnson",
+      "Sochimazuru SJ. Noshiri"
+    ],
+    "publishDate": "2023-02",
+    "pdfSrc": "/newsletters/bba-newsletter-2023-02.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2023-02.jpg"
+  },
+  {
+    "topics": ["Cybersecurity"],
+    "contributors": [
+      "Wajiha Waseem",
+      "Mohitpreet Kaur",
+      "Alyssa Johnson",
+      "Sochimazuru SJ. Noshiri"
+    ],
+    "publishDate": "2023-01",
+    "pdfSrc": "/newsletters/bba-newsletter-2023-01.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2023-01.jpg"
+  },
+  {
+    "topics": ["Networking", "Likability", "Directions 2022", "Women in Tech"],
+    "contributors": [
+      "Alyssa Johnson",
+      "Ryan Rutherford",
+      "Prachi Chawla",
+      "Wajiha Waseem"
+    ],
+    "publishDate": "2022-10",
+    "pdfSrc": "/newsletters/bba-newsletter-2022-10.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2022-10.jpg"
+  },
+  {
+    "topics": ["Starting Your First IT Job", "Industry Event w/ James Warren"],
+    "contributors": ["???"],
+    "publishDate": "2022-01",
+    "pdfSrc": "/newsletters/bba-newsletter-2022-01.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2022-01.jpg"
+  },
+  {
+    "topics": ["Women in Tech"],
+    "contributors": ["???"],
+    "publishDate": "2021-12",
+    "pdfSrc": "/newsletters/bba-newsletter-2021-12.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2021-12.jpg"
+  },
+  {
+    "topics": [
+      "Web Accessibility",
+      "RRC Game Dev Program Interview w/ Kyle Geske"
+    ],
+    "contributors": ["???"],
+    "publishDate": "2021-11",
+    "pdfSrc": "/newsletters/bba-newsletter-2021-11.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2021-11.jpg"
+  },
+  {
+    "topics": [
+      "Imposter Syndrome",
+      "IT Career Tips",
+      "Industry Event w/ Stephan Pawulski"
+    ],
+    "contributors": ["???"],
+    "publishDate": "2021-10",
+    "pdfSrc": "/newsletters/bba-newsletter-2021-10.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2021-10.jpg"
+  }
+]

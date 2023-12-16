@@ -27,20 +27,21 @@ export default function InstagramWidget({ title, instagramHandle, feed }) {
       <HeadingBBAStyle>{title}</HeadingBBAStyle>
       <div className="my-4 grid grid-cols-3 gap-4 sm:my-8 sm:grid-cols-4 sm:gap-8 md:my-10 md:gap-10 lg:my-14 lg:gap-14">
         {feed.slice(0, isSmallScreen ? 3 : 4).map((post) => (
-          <div
-            key={post.id}
-            className={
-              'aspect-w-1 aspect-h-1 bg-slate-100 duration-200 ease-linear hover:brightness-75'
-            }
-          >
-            <Link href={post.permalink}>
+          <div key={post.id} className={'aspect-w-1 aspect-h-1'}>
+            <a
+              className="rounded-lg focus:outline-none focus:outline-4 focus:outline-offset-2 focus-visible:outline-brand"
+              href={post.permalink}
+              target="_blank"
+            >
               <Image
                 src={post.thumbnailUrl ?? post.mediaUrl}
                 fill={true}
-                className={'object-cover object-center'}
+                className={
+                  'rounded-lg border border-neutral-300 object-cover object-center shadow-md transition hover:brightness-75 active:scale-[.98]'
+                }
                 alt="Instagram post"
               />
-            </Link>
+            </a>
           </div>
         ))}
       </div>
@@ -48,9 +49,12 @@ export default function InstagramWidget({ title, instagramHandle, feed }) {
         className="text-2xl font-bold text-brand hover:text-brand-400 sm:text-3xl md:text-4xl lg:text-5xl"
         inverted={true}
       >
-        <Link href={`https://www.instagram.com/${instagramHandle}`}>
+        <a
+          href={`https://www.instagram.com/${instagramHandle}`}
+          target="_blank"
+        >
           @{instagramHandle}
-        </Link>
+        </a>
       </HeadingBBAStyle>
     </div>
   );

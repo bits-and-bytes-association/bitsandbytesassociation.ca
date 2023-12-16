@@ -7,10 +7,10 @@ import TopNavigation from '../navigation/TopNavigation';
  */
 export default function Header() {
   return (
-    <header className="bg-light">
+    <header className="bg-light text-xl font-medium text-neutral-900">
       <div
         className={
-          'container mx-auto flex flex-wrap items-center justify-between px-6 py-8 text-xl font-medium'
+          'container mx-auto flex flex-wrap items-center justify-between px-6 py-8'
         }
       >
         {/* Left-aligned nav logo */}

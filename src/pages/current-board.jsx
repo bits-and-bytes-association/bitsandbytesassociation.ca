@@ -1,6 +1,5 @@
-import currentBoard from '@/data/current-board.json';
 import React from 'react';
-import Page from '@/components/common/layout/Page';
+import currentBoard from '@/data/current-board.json';
 
 // Icons
 import InstagramIcon from '@/icons/instagram.svg';
@@ -9,6 +8,8 @@ import GitHubIcon from '@/icons/github.svg';
 import ThreadsIcon from '@/icons/threads.svg';
 import LinkedInIcon from '@/icons/linkedin.svg';
 import XIcon from '@/icons/x.svg';
+import PageContainer from '@/components/common/layout/PageContainer';
+import PageTitle from '@/components/common/layout/PageTitle';
 
 const socialMediaIcons = {
   linkedin: LinkedInIcon,
@@ -21,16 +22,20 @@ const socialMediaIcons = {
 
 export default function CurrentBoardPage() {
   return (
-    <Page
-      title="Current Board"
-      description="Meet the driving force behind our current leadership team. The continous journey of the Bits and Bytes Association is made possible by these students who generously invest their time and passion, actively molding the future of our community."
-    >
+    <PageContainer>
+      <PageTitle title="Current Board" />
+      <p className="mb-12">
+        Meet the driving force behind our current leadership team. The continous
+        journey of the Bits and Bytes Association is made possible by these
+        students who generously invest their time and passion, actively molding
+        the future of our community.
+      </p>
       <div className="grid gap-8 lg:grid-cols-2">
         {currentBoard.map((member) => {
           return (
             <div
               key={member.name}
-              className="items-center rounded-lg border border-neutral-300 bg-neutral-50 shadow-md sm:flex"
+              className="items-center rounded-lg border border-neutral-300 bg-neutral-50 text-base shadow-md sm:flex"
             >
               <img
                 className="w-full sm:w-[225px] sm:rounded-l-lg lg:w-[150px] xl:w-[225px]"
@@ -67,6 +72,6 @@ export default function CurrentBoardPage() {
           );
         })}
       </div>
-    </Page>
+    </PageContainer>
   );
 }

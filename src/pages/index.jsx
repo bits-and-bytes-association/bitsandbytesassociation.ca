@@ -42,6 +42,7 @@ export default function Home({ instaFeed }) {
                     variant="secondary"
                     size="lg"
                     href="https://discord.gg/RXySZQE"
+                    target="_blank"
                   >
                     <Image
                       src="/images/discord-logo-white.svg"
@@ -94,9 +95,12 @@ export default function Home({ instaFeed }) {
               </div>
             </div>
             <div className="basis-3/5">
-              <div className="aspect-w-16 aspect-h-9">
-                <img src="https://placehold.co/1600x900" />
-              </div>
+              <Image
+                src="/images/kickoff-fa2023.jpg"
+                width={1440}
+                height={900}
+                alt="Kickoff group photo"
+              />
             </div>
           </div>
         </div>
