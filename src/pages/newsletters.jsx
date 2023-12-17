@@ -3,12 +3,12 @@ import Image from 'next/image';
 import SearchBar from '@/components/common/ui/SearchBar';
 import PageContainer from '@/components/common/layout/PageContainer';
 import PageTitle from '@/components/common/layout/PageTitle';
-import newsletters from '@/data/newsletters';
+import data from '@/data/newsletters';
 
-export const getStaticProps = async () => {
+export async function getStaticProps() {
   return {
     props: {
-      issues: newsletters
+      newsletters: data
         .map((issue) => ({
           ...issue,
           contributors: issue.contributors.toSorted((a, b) => {
@@ -22,13 +22,13 @@ export const getStaticProps = async () => {
         .toSorted((a, b) => new Date(b.publishDate) - new Date(a.publishDate)),
     },
   };
-};
+}
 
-export default function NewslettersPage({ issues }) {
-  const [displayedIssues, setDisplayedIssues] = useState(issues);
+export default function NewslettersPage({ newsletters }) {
+  const [displayedIssues, setDisplayedIssues] = useState(newsletters);
 
   const onSearchChange = (event) => {
-    const filteredResults = issues.filter((issue) => {
+    const filteredResults = newsletters.filter((issue) => {
       const query = event.target.value.toLowerCase().trim();
       return issue.topics.some((topic) => topic.toLowerCase().includes(query));
     });
@@ -58,20 +58,20 @@ export default function NewslettersPage({ issues }) {
               Latest Issue
             </div>
             <div className="flex flex-row p-8">
-              <a href={issues[0].pdfSrc}>
+              <a href={newsletters[0].pdfSrc}>
                 <Image
                   className="rounded-lg transition hover:brightness-75"
                   width={700}
                   height={900}
                   alt="Newsletter Front Page"
-                  src={issues[0].thumbSrc}
+                  src={newsletters[0].thumbSrc}
                 />
               </a>
-              <div className="flex flex-col gap-6 px-8">
+              <div className="flex flex-col gap-6 pl-8">
                 <div>
                   <div className="text-lg font-bold">Topics</div>
                   <ul className="whitespace-nowrap">
-                    {issues[0].topics.map((topic, index) => (
+                    {newsletters[0].topics.map((topic, index) => (
                       <li key={index}>{topic}</li>
                     ))}
                   </ul>
@@ -79,7 +79,7 @@ export default function NewslettersPage({ issues }) {
                 <div>
                   <div className="text-lg font-bold">Contributors</div>{' '}
                   <ul className="whitespace-nowrap">
-                    {issues[0].contributors.map((contributor, index) => (
+                    {newsletters[0].contributors.map((contributor, index) => (
                       <li key={index}>{contributor}</li>
                     ))}
                   </ul>
@@ -87,10 +87,13 @@ export default function NewslettersPage({ issues }) {
                 <div>
                   <div className="text-lg font-bold">Published</div>
                   <div>
-                    {new Date(issues[0].publishDate).toLocaleString('default', {
-                      month: 'long',
-                      year: 'numeric',
-                    })}
+                    {new Date(newsletters[0].publishDate).toLocaleString(
+                      'default',
+                      {
+                        month: 'long',
+                        year: 'numeric',
+                      },
+                    )}
                   </div>
                 </div>
               </div>
@@ -139,9 +142,9 @@ export default function NewslettersPage({ issues }) {
             ))}
           </tbody>
         </table>
-        {/* {displayedMembers.length === 0 && (
+        {displayedIssues.length === 0 && (
           <p className="py-3 text-center italic">No results found.</p>
-        )} */}
+        )}
       </div>
     </PageContainer>
   );

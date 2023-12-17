@@ -1,40 +1,42 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import SearchBar from '@/components/common/ui/SearchBar';
 import clsx from 'clsx';
 import PageContainer from '@/components/common/layout/PageContainer';
 import PageTitle from '@/components/common/layout/PageTitle';
-import pastExecutives from '@/data/past-leadership';
+import data from '@/data/past-leadership';
 
-export default function PastLeadershipPage() {
-  const [allMembers, setAllMembers] = useState([pastExecutives]);
-  const [displayedMembers, setDisplayedMembers] = useState(pastExecutives);
+export async function getStaticProps() {
+  return {
+    props: {
+      pastLeadership: data.toSorted((a, b) => {
+        // We will compare year and term to sort the past executives. To do this, we assign a value to each term.
+        const termOrder = {
+          winter: 1,
+          spring: 2,
+          fall: 3,
+        };
 
-  // Sorts past executives to show the most recent first.
-  const sortPastExecutives = (pastExecutives) => {
-    return pastExecutives.toSorted((a, b) => {
-      // We will compare year and term to sort the past executives. To do this, we assign a value to each term.
-      const termOrder = {
-        winter: 1,
-        spring: 2,
-        fall: 3,
-      };
+        // Divide the terms value by 10, so that we can add them to the years and compare them.
+        const termOrderA = termOrder[a.term.toLowerCase()] / 10;
+        const termOrderB = termOrder[b.term.toLowerCase()] / 10;
 
-      // Divide the terms value by 10, so that we can add them to the years and compare them.
-      const termOrderA = termOrder[a.term.toLowerCase()] / 10;
-      const termOrderB = termOrder[b.term.toLowerCase()] / 10;
+        // The term order is added to the year to get a total value. The higher the total value, the more recent the term.
+        // E.g. Fall 2023 will have a value of 2023.3, while Winter 2023 will have a value of 2023.1
+        const valueA = a.year + termOrderA;
+        const valueB = b.year + termOrderB;
 
-      // The term order is added to the year to get a total value. The higher the total value, the more recent the term.
-      // E.g. Fall 2023 will have a value of 2023.3, while Winter 2023 will have a value of 2023.1
-      const valueA = a.year + termOrderA;
-      const valueB = b.year + termOrderB;
-
-      return valueB - valueA;
-    });
+        return valueB - valueA;
+      }),
+    },
   };
+}
+
+export default function PastLeadershipPage({ pastLeadership }) {
+  const [displayedMembers, setDisplayedMembers] = useState(pastLeadership);
 
   const onSearchChange = (event) => {
     // Filter the results based on the search bar value.
-    const filteredResults = allMembers.reduce((acc, board) => {
+    const filteredResults = pastLeadership.reduce((acc, board) => {
       const filteredMembers = board.board.filter((member) => {
         const query = event.target.value.toLowerCase().trim();
         return member.name.toLowerCase().includes(query);
@@ -48,12 +50,6 @@ export default function PastLeadershipPage() {
     }, []);
     setDisplayedMembers(filteredResults);
   };
-
-  useEffect(() => {
-    const sortedPastExecutives = sortPastExecutives(pastExecutives);
-    setAllMembers(sortedPastExecutives);
-    setDisplayedMembers(pastExecutives);
-  }, []);
 
   return (
     <PageContainer>
