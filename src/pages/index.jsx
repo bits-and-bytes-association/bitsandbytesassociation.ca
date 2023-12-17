@@ -3,7 +3,10 @@ import Image from 'next/image';
 import Button from '@/components/common/ui/Button';
 import InstagramWidget from '@/components/home/InstagramWidget';
 
-export async function getStaticProps() {
+export async function getServerSideProps({ res }) {
+  // behold.so limits us to 1,200 requests a month. Cache for 1 hour to be safe.
+  res.setHeader('Cache-Control', 'public, s-maxage=3600, must-revalidate');
+
   if (!process.env.BEHOLD_URL) return { props: { instaFeed: [] } };
 
   const response = await fetch(process.env.BEHOLD_URL);
@@ -11,8 +14,6 @@ export async function getStaticProps() {
 
   return {
     props: { instaFeed },
-    // behold.so limits us to 1,200 requests a month. Re-generate at most once per hour to be safe.
-    revalidate: 3600,
   };
 }
 
