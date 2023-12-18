@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import BottomNavigation from '../navigation/BottomNavigation';
+import BottomNav from './BottomNav';
 
 // For copyright notice
 const firstYear = 2023;
@@ -15,7 +15,7 @@ export default function Footer({ data }) {
     <footer className="bg-neutral-800 text-base text-white">
       <div className="container mx-auto px-6">
         <div className="flex flex-row items-center py-6 md:flex-row md:py-12">
-          <BottomNavigation data={data} />
+          <BottomNav data={data} />
           <div className="ml-auto hidden shrink-0 self-center sm:inline">
             <Image
               src="/images/bba-logomark-white.svg"

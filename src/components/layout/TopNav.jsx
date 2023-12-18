@@ -1,14 +1,15 @@
 import { useState } from 'react';
 import Link from 'next/link';
-import Button from '@/components/common/ui/Button';
+import Button from '@/components/Button';
 
+// Icons
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import DiscordIcon from '@/icons/discord.svg';
 import InstagramIcon from '@/icons/instagram.svg';
 import LinkedInIcon from '@/icons/linkedin.svg';
 import RRCIcon from '@/icons/rrc.svg';
 
-export default function TopNavigation() {
+export default function TopNav() {
   /**
    * Stores visibility state for mobile navigation links.
    */

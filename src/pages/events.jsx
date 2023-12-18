@@ -1,6 +1,6 @@
-import PageContainer from '@/components/common/layout/PageContainer';
-import PageTitle from '@/components/common/layout/PageTitle';
-import GoogleCalendarEmbed from '@/components/events/GoogleCalendarEmbed';
+import PageContainer from '@/components/layout/PageContainer';
+import PageTitle from '@/components/PageTitle';
+import GoogleCalendarEmbed from '@/components/GoogleCalendarEmbed';
 
 export default function EventsPage() {
   return (

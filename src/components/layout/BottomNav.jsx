@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export default function BottomNavigation({ data }) {
+export default function BottomNav({ data }) {
   return (
     <nav className="grid grid-cols-[repeat(2,min-content)] gap-y-8 gap-x-20 lg:grid-cols-[repeat(4,min-content)]">
       {data.map(({ columnTitle, links }) => (

@@ -1,6 +1,6 @@
-import Button from '@/components/common/ui/Button';
+import Button from '@/components/Button';
 import Image from 'next/image';
-import HeadingBBAStyle from '@/components/common/ui/HeadingBBAStyle';
+import AdornedHeading from '@/components/AdornedHeading';
 
 export default function Style() {
   return (
@@ -100,13 +100,13 @@ export default function Style() {
 
         {/* Sample Heading component */}
         <div className="my-10">
-          <HeadingBBAStyle>Follow us on Instagram</HeadingBBAStyle>
-          <HeadingBBAStyle
+          <AdornedHeading>Follow us on Instagram</AdornedHeading>
+          <AdornedHeading
             className="text-[2.5rem] font-bold text-brand"
             inverted={true}
           >
             @rrcbba
-          </HeadingBBAStyle>
+          </AdornedHeading>
         </div>
       </div>
     </>

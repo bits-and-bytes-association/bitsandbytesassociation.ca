@@ -1,4 +1,4 @@
-import styles from '@/styles/HeadingBBAStyle.module.css';
+import styles from '@/styles/AdornedHeading.module.css';
 
 /**
  * Component that displays a styled heading with an adornment in one of its sides.

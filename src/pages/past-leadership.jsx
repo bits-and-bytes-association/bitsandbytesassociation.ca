@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import SearchBar from '@/components/common/ui/SearchBar';
+import SearchBar from '@/components/SearchBar';
 import clsx from 'clsx';
-import PageContainer from '@/components/common/layout/PageContainer';
-import PageTitle from '@/components/common/layout/PageTitle';
+import PageContainer from '@/components/layout/PageContainer';
+import PageTitle from '@/components/PageTitle';
 import data from '@/data/past-leadership';
 
 export async function getStaticProps() {

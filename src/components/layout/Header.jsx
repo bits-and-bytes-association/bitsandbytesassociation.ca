@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import TopNavigation from '../navigation/TopNavigation';
+import TopNav from './TopNav';
 
 /**
  * A reusable navigation bar at the top of the page.
@@ -26,7 +26,7 @@ export default function Header() {
         </Link>
 
         {/* Right-aligned navigation */}
-        <TopNavigation />
+        <TopNav />
       </div>
     </header>
   );

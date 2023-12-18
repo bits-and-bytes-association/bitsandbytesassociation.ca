@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import Button from '@/components/common/ui/Button';
-import InstagramWidget from '@/components/home/InstagramWidget';
+import Button from '@/components/Button';
+import InstagramFeed from '@/components/InstagramFeed';
 
 export async function getServerSideProps({ res }) {
   // behold.so limits us to 1,200 requests a month. Cache for 1 hour to be safe.
@@ -110,7 +110,7 @@ export default function Home({ instaFeed }) {
       {/* Instagram section */}
       <section id="instagram" className="md:py-16">
         <div className="container mx-auto px-8">
-          <InstagramWidget
+          <InstagramFeed
             title="Follow us on Instagram"
             instagramHandle="rrcbba"
             feed={instaFeed}

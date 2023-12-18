@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
-import HeadingBBAStyle from '../common/ui/HeadingBBAStyle';
-import Link from 'next/link';
+import AdornedHeading from './AdornedHeading';
 
 /**
  * Component that displays a collection of thumbnails of Instagram posts from the given account.
@@ -24,7 +23,7 @@ export default function InstagramWidget({ title, instagramHandle, feed }) {
 
   return (
     <div className="my-10">
-      <HeadingBBAStyle>{title}</HeadingBBAStyle>
+      <AdornedHeading>{title}</AdornedHeading>
       <div className="my-4 grid grid-cols-3 gap-4 sm:my-8 sm:grid-cols-4 sm:gap-8 md:my-10 md:gap-10 lg:my-14 lg:gap-14">
         {feed.slice(0, isSmallScreen ? 3 : 4).map((post) => (
           <div key={post.id} className={'aspect-w-1 aspect-h-1'}>
@@ -44,14 +43,14 @@ export default function InstagramWidget({ title, instagramHandle, feed }) {
           </div>
         ))}
       </div>
-      <HeadingBBAStyle
+      <AdornedHeading
         className="text-2xl font-bold text-brand hover:text-brand-400 sm:text-3xl md:text-4xl lg:text-5xl"
         inverted={true}
       >
         <a href={`https://www.instagram.com/${instagramHandle}`}>
           @{instagramHandle}
         </a>
-      </HeadingBBAStyle>
+      </AdornedHeading>
     </div>
   );
 }

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import PageContainer from '@/components/common/layout/PageContainer';
-import PageTitle from '@/components/common/layout/PageTitle';
-import Button from '@/components/common/ui/Button';
+import PageContainer from '@/components/layout/PageContainer';
+import PageTitle from '@/components/PageTitle';
+import Button from '@/components/Button';
 
 // Icons
 import {

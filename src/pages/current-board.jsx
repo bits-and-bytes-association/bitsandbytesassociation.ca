@@ -8,8 +8,8 @@ import GitHubIcon from '@/icons/github.svg';
 import ThreadsIcon from '@/icons/threads.svg';
 import LinkedInIcon from '@/icons/linkedin.svg';
 import XIcon from '@/icons/x.svg';
-import PageContainer from '@/components/common/layout/PageContainer';
-import PageTitle from '@/components/common/layout/PageTitle';
+import PageContainer from '@/components/layout/PageContainer';
+import PageTitle from '@/components/PageTitle';
 
 const socialMediaIcons = {
   linkedin: LinkedInIcon,

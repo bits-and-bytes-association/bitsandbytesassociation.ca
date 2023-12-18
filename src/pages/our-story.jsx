@@ -1,5 +1,5 @@
-import PageContainer from '@/components/common/layout/PageContainer';
-import PageTitle from '@/components/common/layout/PageTitle';
+import PageContainer from '@/components/layout/PageContainer';
+import PageTitle from '@/components/PageTitle';
 
 // Icons
 import {

@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Image from 'next/image';
-import SearchBar from '@/components/common/ui/SearchBar';
-import PageContainer from '@/components/common/layout/PageContainer';
-import PageTitle from '@/components/common/layout/PageTitle';
+import SearchBar from '@/components/SearchBar';
+import PageContainer from '@/components/layout/PageContainer';
+import PageTitle from '@/components/PageTitle';
 import data from '@/data/newsletters';
 
 export async function getStaticProps() {
