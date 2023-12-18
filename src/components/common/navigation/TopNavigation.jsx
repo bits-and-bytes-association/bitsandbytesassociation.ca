@@ -38,7 +38,7 @@ export default function TopNavigation() {
       >
         {/* Text links */}
         <ul
-          className={`flex list-none flex-col rounded-lg bg-slate-200 lg:flex-row lg:items-center lg:bg-inherit lg:pt-0`}
+          className={`flex list-none flex-col rounded-lg bg-neutral-200 lg:flex-row lg:items-center lg:bg-inherit lg:pt-0`}
         >
           <TextLink href="/our-story">Our Story</TextLink>
           <TextLink href="/events">Events</TextLink>

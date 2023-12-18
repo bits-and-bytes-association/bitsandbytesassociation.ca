@@ -31,7 +31,6 @@ export default function InstagramWidget({ title, instagramHandle, feed }) {
             <a
               className="rounded-lg focus:outline-none focus:outline-4 focus:outline-offset-2 focus-visible:outline-brand"
               href={post.permalink}
-              target="_blank"
             >
               <Image
                 src={post.thumbnailUrl ?? post.mediaUrl}
@@ -49,10 +48,7 @@ export default function InstagramWidget({ title, instagramHandle, feed }) {
         className="text-2xl font-bold text-brand hover:text-brand-400 sm:text-3xl md:text-4xl lg:text-5xl"
         inverted={true}
       >
-        <a
-          href={`https://www.instagram.com/${instagramHandle}`}
-          target="_blank"
-        >
+        <a href={`https://www.instagram.com/${instagramHandle}`}>
           @{instagramHandle}
         </a>
       </HeadingBBAStyle>

@@ -19,7 +19,7 @@ import {
 export default function VolunteerPage() {
   return (
     <PageContainer>
-      <PageTitle title="Volunteering" />
+      <PageTitle title="Volunteer" />
       <p className="mb-12">
         The Bits and Bytes Association believes in the power of collaboration,
         creativity, and community. As a student-run organization dedicated to
@@ -197,6 +197,7 @@ export default function VolunteerPage() {
             variant="secondary"
             size="lg"
             href="https://discord.gg/RXySZQE"
+            target="_blank"
           >
             <Image
               src="/images/discord-logo-white.svg"

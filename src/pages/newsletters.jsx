@@ -53,14 +53,14 @@ export default function NewslettersPage({ newsletters }) {
           </p>
         </div>
         <div className="basis-1/2">
-          <div className="rounded-lg border border-neutral-800 bg-neutral-800 text-base text-white shadow-md shadow-neutral-800">
+          <div className="rounded-lg bg-neutral-800 text-base text-white shadow-md shadow-neutral-800">
             <div className="border-b border-b-neutral-700 pt-5 pb-3 text-center text-3xl font-bold">
               Latest Issue
             </div>
             <div className="flex flex-row p-8">
               <a href={newsletters[0].pdfSrc}>
                 <Image
-                  className="rounded-lg transition hover:brightness-75"
+                  className="rounded-lg bg-neutral-700 transition hover:brightness-75"
                   width={700}
                   height={900}
                   alt="Newsletter Front Page"
@@ -107,7 +107,7 @@ export default function NewslettersPage({ newsletters }) {
         </h2>
         <SearchBar onChange={onSearchChange} />
       </div>
-      <div className="overflow-x-auto rounded-lg border border-neutral-300 text-base shadow-md">
+      <div className="overflow-x-auto rounded-lg border border-neutral-300 bg-white text-base shadow-md">
         <table className="w-full text-left">
           <thead className="bg-neutral-100 text-neutral-900">
             <tr className="border-b">
@@ -132,7 +132,6 @@ export default function NewslettersPage({ newsletters }) {
                   <a
                     className="text-brand-700 hover:underline"
                     href={issue.pdfSrc}
-                    target="_blank"
                   >
                     {issue.topics.join(', ')}
                   </a>

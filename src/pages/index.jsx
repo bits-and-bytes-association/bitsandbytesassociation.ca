@@ -43,7 +43,6 @@ export default function Home({ instaFeed }) {
                     variant="secondary"
                     size="lg"
                     href="https://discord.gg/RXySZQE"
-                    target="_blank"
                   >
                     <Image
                       src="/images/discord-logo-white.svg"
@@ -97,6 +96,7 @@ export default function Home({ instaFeed }) {
             </div>
             <div className="basis-3/5">
               <Image
+                className="bg-neutral-700"
                 src="/images/kickoff-fa2023.jpg"
                 width={1440}
                 height={900}
