@@ -25,7 +25,7 @@ function NavColumn({ header, children }) {
   return (
     <ul className="flex flex-col whitespace-nowrap">
       <li className="mb-2 flex-initial">
-        <p className="cursor-default text-lg font-bold">{header}</p>
+        <p className="text-lg font-bold">{header}</p>
       </li>
       {children}
     </ul>

@@ -32,13 +32,11 @@ export default function Home({ instaFeed }) {
           />
           <div className="relative z-10 h-full bg-brand-700/80">
             <div className="container mx-auto flex h-full items-center text-white">
-              <div className="flex flex-col gap-4 p-8 md:flex-row">
+              <div className="flex flex-col gap-4 p-8 lg:flex-row">
                 <div className="basis-2/5">
-                  <h1 className="cursor-default whitespace-nowrap text-5xl font-black">
-                    Join the Group!
-                  </h1>
+                  <h1 className="text-5xl font-black">Join the Group!</h1>
                   <Button
-                    className="mt-8 !px-[1.25em] !py-[0.4em]"
+                    className="mt-4 !px-[1.25em] !py-[0.4em] md:mt-8"
                     as={Link}
                     variant="secondary"
                     size="lg"
@@ -78,9 +76,9 @@ export default function Home({ instaFeed }) {
         className="bg-neutral-800 py-8 text-white md:py-32"
       >
         <div className="container mx-auto px-8">
-          <div className="flex flex-col gap-x-20 gap-y-8 md:flex-row">
+          <div className="flex flex-col gap-x-20 gap-y-8 lg:flex-row">
             <div className="flex basis-2/5 flex-col justify-between gap-y-4 md:order-last md:px-0">
-              <h2 className="cursor-default text-5xl font-black">About Us</h2>
+              <h2 className="text-5xl font-black">About Us</h2>
               <p className="text-xl">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
                 pellentesque est id leo fermentum, et gravida odio hendrerit. Ut

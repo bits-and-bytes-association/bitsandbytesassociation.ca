@@ -62,7 +62,7 @@ export default function PastLeadershipPage({ pastLeadership }) {
         who have been instrumental in building the Bits and Bytes Association
         into what it is today.
       </p>
-      <div className="mb-4 flex flex-col items-center justify-between sm:flex-row">
+      <div className="mb-4 flex flex-col justify-between sm:flex-row sm:items-center md:flex-row">
         <h2 className="mb-4 text-2xl font-semibold text-neutral-900 sm:mb-0">
           Members
         </h2>

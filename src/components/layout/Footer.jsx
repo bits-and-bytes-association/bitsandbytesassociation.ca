@@ -29,7 +29,7 @@ export default function Footer({ data }) {
       </div>
       <div className="border-t border-neutral-700 px-6">
         <div className="flex justify-between py-3 sm:justify-center">
-          <div className="flex cursor-default flex-col gap-x-1 text-sm text-gray-400 sm:flex-row">
+          <div className="flex flex-col gap-x-1 text-sm text-gray-400 sm:flex-row">
             <p>
               Original Design by{' '}
               <Link href="#" className="hover:text-white">

@@ -37,7 +37,7 @@ export default function NewslettersPage({ newsletters }) {
 
   return (
     <PageContainer>
-      <div className="mb-20 flex gap-16">
+      <div className="mb-20 flex flex-col gap-16 lg:flex-row">
         <div className="basis-1/2">
           <PageTitle title="Newsletters" />
           <p>
@@ -57,7 +57,7 @@ export default function NewslettersPage({ newsletters }) {
             <div className="border-b border-b-neutral-700 pt-5 pb-3 text-center text-3xl font-bold">
               Latest Issue
             </div>
-            <div className="flex flex-row p-8">
+            <div className="flex flex-col gap-8 p-8 sm:flex-row md:flex-row">
               <a href={newsletters[0].pdfSrc}>
                 <Image
                   className="rounded-lg bg-neutral-700 transition hover:brightness-75"
@@ -67,7 +67,7 @@ export default function NewslettersPage({ newsletters }) {
                   src={newsletters[0].thumbSrc}
                 />
               </a>
-              <div className="flex flex-col gap-6 pl-8">
+              <div className="flex flex-col gap-6">
                 <div>
                   <div className="text-lg font-bold">Topics</div>
                   <ul className="whitespace-nowrap">
@@ -101,7 +101,7 @@ export default function NewslettersPage({ newsletters }) {
           </div>
         </div>
       </div>
-      <div className="mb-4 flex flex-col items-center justify-between sm:flex-row">
+      <div className="mb-4 flex flex-col justify-between sm:flex-row sm:items-center md:flex-row">
         <h2 className="mb-4 text-2xl font-semibold text-neutral-900 sm:mb-0">
           Archive
         </h2>

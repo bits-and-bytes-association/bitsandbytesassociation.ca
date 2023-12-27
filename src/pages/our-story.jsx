@@ -15,7 +15,7 @@ export default function OurStoryPage() {
   return (
     <PageContainer>
       <PageTitle title="Our Story" />
-      <p>
+      <p className="mb-3">
         Fueled by a shared passion for learning, the Bits and Bytes Association
         (BBA) has emerged as a vibrant community dedicated to enhancing
         communication within the Red River College Applied Computer Education
@@ -33,36 +33,30 @@ export default function OurStoryPage() {
       {/* Mission and Vision cards */}
       <section
         id="mission-and-vision"
-        className="mb-32 flex justify-center gap-32"
+        className="mb-32 flex flex-col items-stretch justify-center gap-8 md:flex-row md:gap-32"
       >
-        <div className="flex flex-col items-center gap-4">
-          <div className="max-w-sm grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
-            <RocketLaunchIcon className="mb-5 h-16 w-16" />
-            <div className="mb-1 text-xl font-bold">Mission</div>
-            <p>
-              Cultivate a thriving community through meaningful communication,
-              connecting ACE Department students, staff, and alumni.
-            </p>
-          </div>
+        <div className="flex-1 grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md md:max-w-sm">
+          <RocketLaunchIcon className="mb-5 h-16 w-16" />
+          <div className="mb-1 text-xl font-bold">Mission</div>
+          <p>
+            Cultivate a thriving community through meaningful communication,
+            connecting ACE Department students, staff, and alumni.
+          </p>
         </div>
-        <div className="flex flex-col items-center gap-4">
-          <div className="max-w-sm grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md">
-            <EyeIcon className="mb-5 h-16 w-16" />
-            <div className="mb-1 text-xl font-bold">Vision</div>
-            <p>
-              Establish a distinguished RRC Polytech tech community, uniting
-              students, alumni, and staff with a dedication to high-quality
-              education and enduring relationships within the ACE Department.
-            </p>
-          </div>
+        <div className="flex-1 grow rounded-lg border border-neutral-300 bg-neutral-50 p-5 text-base text-neutral-900 shadow-md md:max-w-sm">
+          <EyeIcon className="mb-5 h-16 w-16" />
+          <div className="mb-1 text-xl font-bold">Vision</div>
+          <p>
+            Establish a distinguished RRC Polytech tech community, uniting
+            students, alumni, and staff with a dedication to high-quality
+            education and enduring relationships within the ACE Department.
+          </p>
         </div>
       </section>
       {/* Goals */}
-      <section id="goals" className="mb-20 flex flex-col">
+      <section id="goals" className="flex flex-col">
         <div className="mb-12 text-center">
-          <div className="cursor-default text-4xl font-black text-neutral-900">
-            Goals
-          </div>
+          <div className="text-4xl font-black text-neutral-900">Goals</div>
           <p className="text-xl text-neutral-500">
             Inspire a meaningful college experience by championing teamwork and
             embracing diversity among ACE students.
