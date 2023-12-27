@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/Button';
 
@@ -16,7 +17,19 @@ export default function TopNav() {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   return (
-    <nav>
+    <nav className="flex flex-wrap items-center justify-between ">
+      {/* Left-aligned nav logo */}
+      <Link href="/">
+        <Image
+          className="ml-2 lg:ml-0"
+          src="/images/bba-logo.svg"
+          alt="Bits and Bytes Association logo"
+          width={250}
+          height={53}
+          priority={true}
+        />
+      </Link>
+
       {/* Hamburger button */}
       <Button
         className="lg:hidden"
