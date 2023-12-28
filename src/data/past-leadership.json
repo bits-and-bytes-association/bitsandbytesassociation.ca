@@ -1,5 +1,27 @@
 [
   {
+    "term": "Fall",
+    "year": 2023,
+    "board": [
+      {
+        "role": "President",
+        "name": "Faye Vaquilar"
+      },
+      {
+        "role": "Vice President",
+        "name": "Binh Nguyen"
+      },
+      {
+        "role": "Secretary",
+        "name": "Sandeep Singh"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Sopuruchi \"Sochi\" Noshiri"
+      }
+    ]
+  },
+  {
     "term": "Winter",
     "year": 2023,
     "board": [
