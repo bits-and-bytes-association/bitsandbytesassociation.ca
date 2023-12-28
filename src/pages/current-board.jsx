@@ -35,11 +35,11 @@ export default function CurrentBoardPage() {
           return (
             <div
               key={member.name}
-              className="items-center rounded-lg border border-neutral-300 bg-neutral-50 text-base shadow-md sm:flex"
+              className="items-center rounded border border-neutral-300 bg-neutral-50 text-base shadow-md sm:flex sm:rounded-lg"
             >
               <img
                 className="w-full sm:w-[225px] sm:rounded-l-lg lg:w-[150px] xl:w-[225px]"
-                src={member.photoUrl}
+                src={member.photoUrl ?? '/images/default-avatar.png'}
                 alt={`${member.name} Avatar`}
               />
               <div className="p-5">

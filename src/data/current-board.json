@@ -3,7 +3,7 @@
     "name": "Faye Vaquilar",
     "program": "Business Information Technology",
     "role": "President",
-    "photoUrl": "https://placehold.co/300",
+    "photoUrl": null,
     "bio": "Leads and directs the BBA's vision and initiatives.",
     "socials": {
       "linkedin": "",
@@ -19,7 +19,7 @@
     "program": "Business Information Technology",
     "role": "Vice President",
     "bio": "Collaborates closely with the President for effective execution of the BBA's goals.",
-    "photoUrl": "https://placehold.co/300",
+    "photoUrl": null,
     "socials": {
       "linkedin": "",
       "github": "",
@@ -34,7 +34,7 @@
     "program": "Business Information Technology",
     "role": "Secretary",
     "bio": "Manages communications and vital administrative tasks behind the scenes.",
-    "photoUrl": "https://placehold.co/300",
+    "photoUrl": null,
     "socials": {
       "linkedin": "",
       "github": "",
@@ -49,7 +49,7 @@
     "program": "Business Information Technology",
     "role": "Treasurer",
     "bio": "Safeguards the BBA's finances, ensuring funding stability for our endeavors.",
-    "photoUrl": "https://placehold.co/300",
+    "photoUrl": null,
     "socials": {
       "linkedin": "",
       "github": "",
