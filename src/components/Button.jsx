@@ -16,9 +16,9 @@ export default function Button({
     {
       'rounded-full border-transparent bg-brand px-[1.7em] py-[0.45em] font-bold text-white hover:bg-brand-400 focus-visible:outline-brand':
         variant === 'primary',
-      'rounded-full border-transparent bg-neutral-800 px-[1.7em] py-[0.45em] font-bold text-white hover:bg-neutral-700 focus-visible:outline-neutral-800':
+      'rounded-full border-transparent bg-neutral-800 px-[1.7em] py-[0.45em] font-bold text-white hover:bg-neutral-700 focus-visible:outline-brand':
         variant === 'secondary',
-      'rounded-full border-brand px-[1.7em] py-[0.45em]  font-semibold text-brand hover:border-transparent hover:bg-brand-400 hover:text-white focus-visible:outline-neutral-800':
+      'rounded-full border-brand px-[1.7em] py-[0.45em] font-semibold text-brand hover:border-transparent hover:bg-brand-400 hover:text-white focus-visible:outline-brand':
         variant === 'outline',
       'rounded-lg border-transparent bg-neutral-800 p-2 font-bold text-white hover:bg-neutral-700 focus-visible:outline-neutral-800':
         variant === 'square',

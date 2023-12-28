@@ -34,9 +34,11 @@ export default function Home({ instaFeed }) {
             <div className="container mx-auto flex h-full items-center text-white">
               <div className="flex flex-col gap-4 p-8 lg:flex-row">
                 <div className="basis-2/5">
-                  <h1 className="text-5xl font-black">Join the Group!</h1>
+                  <h1 className="mb-4 text-5xl font-black md:mb-8">
+                    Join the Group!
+                  </h1>
                   <Button
-                    className="mt-4 !px-[1.25em] !py-[0.4em] md:mt-8"
+                    className="!px-[1.25em] !py-[0.4em]"
                     as={Link}
                     variant="secondary"
                     size="lg"
@@ -54,14 +56,11 @@ export default function Home({ instaFeed }) {
                 <div className="basis-3/5">
                   <p className="text-xl">
                     The Bits and Bytes Association (BBA) was created to improve
-                    communication between students and staff to enhance the
-                    quality of education for Introduction to Business
-                    Information Technology (IBIT), Business Information
-                    Technology (BIT), Business Technology Management (BTM) and
-                    Information Security (IS) programs offered at Red River
-                    College through the Applied Computer Education (ACE)
-                    department. Since its inception in 2015, BBA has grown to
-                    over 100 members today and continues to climb steadily.
+                    communication between students and staff, enhancing the
+                    quality of education for programs offered through the
+                    Applied Computer Education (ACE) department at Red River
+                    College Polytechnic (RRC). Since its inception in 2015, the
+                    BBA has steadily grown to over 150 members today.
                   </p>
                 </div>
               </div>
@@ -77,15 +76,18 @@ export default function Home({ instaFeed }) {
       >
         <div className="container mx-auto px-8">
           <div className="flex flex-col gap-x-20 gap-y-8 lg:flex-row">
-            <div className="flex basis-2/5 flex-col justify-between gap-y-4 md:order-last md:px-0">
-              <h2 className="text-5xl font-black">About Us</h2>
-              <p className="text-xl">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                pellentesque est id leo fermentum, et gravida odio hendrerit. Ut
-                accumsan nunc ligula, facilisis hendrerit elit lobortis quis.
-                Vivamus dignissim, nisi et ultrices volutpat, nulla purus
-                dignissim sapien, eget lobortis sapien nunc ut elit.
-              </p>
+            <div className="flex basis-2/5 flex-col justify-between md:order-last">
+              <div>
+                <h2 className="mb-6 text-5xl font-black">About Us</h2>
+                <p className="mb-4 text-xl">
+                  The BBA is dedicated to sustaining a thriving community
+                  through meaningful communication, inclusive events, alumni and
+                  industry connections, and the sharing of valuable information.
+                  Our aim is to uphold a distinguished RRC Polytech tech
+                  community committed to high-quality education and enduring
+                  relationships within the ACE Department.
+                </p>
+              </div>
               <div>
                 <Button as={Link} href="/our-story" size="lg">
                   Learn More

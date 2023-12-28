@@ -31,16 +31,6 @@ export default function Footer({ data }) {
         <div className="flex justify-between py-3 sm:justify-center">
           <div className="flex flex-col gap-x-1 text-sm text-gray-400 sm:flex-row">
             <p>
-              Original Design by{' '}
-              <Link href="#" className="hover:text-white">
-                @
-                <span className="underline underline-offset-2">
-                  placeholder
-                </span>
-              </Link>
-              .
-            </p>
-            <p>
               Made with ❤️ by our{' '}
               <Link
                 href="#"

@@ -12,7 +12,7 @@ export default function SearchBar({ onChange }) {
       <input
         type="text"
         placeholder="Search"
-        className="text-md w-full rounded-lg border border-neutral-300 bg-neutral-50 p-2 pl-10 text-neutral-900 shadow"
+        className="text-md w-full rounded-lg border border-neutral-300 bg-neutral-50 p-2 pl-10 text-neutral-900 shadow focus:outline-none focus:outline-offset-2 focus-visible:outline-neutral-300"
         onChange={onChange}
       />
     </div>
