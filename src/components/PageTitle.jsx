@@ -6,6 +6,7 @@ export default function PageTitle({ title }) {
       <Head>
         <title>{`${title} - Bits and Bytes Association`}</title>
         <meta
+          key="og:title"
           property="og:title"
           content={`${title} - Bits and Bytes Association`}
         ></meta>

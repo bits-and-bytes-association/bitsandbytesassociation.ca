@@ -22,18 +22,32 @@ export default function App({ Component, pageProps }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
         <meta
+          key="description"
           name="description"
           content="Explore the dynamic tech community of the Bits and Bytes Association (BBA) at Red River College Polytechnic. Established in 2015, the BBA enhances communication within the ACE department, fostering a vibrant community of over 150 members. Join us for inclusive events, industry connections, and a commitment to high-quality education."
         />
-        <meta name="theme-color" content="#6bb7e6" />
-        <meta property="og:url" content="https://bitsandbytesassociation.ca/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Bits and Bytes Association" />
+        <meta key="theme-color" name="theme-color" content="#6bb7e6" />
         <meta
+          key="og:url"
+          property="og:url"
+          content="https://bitsandbytesassociation.ca/"
+        />
+        <meta key="og:type" property="og:type" content="website" />
+        <meta
+          key="og:title"
+          property="og:title"
+          content="Bits and Bytes Association"
+        />
+        <meta
+          key="og:description"
           property="og:description"
           content="Explore the dynamic tech community of the Bits and Bytes Association (BBA) at Red River College Polytechnic. Established in 2015, the BBA enhances communication within the ACE department, fostering a vibrant community of over 150 members. Join us for inclusive events, industry connections, and a commitment to high-quality education."
         />
-        <meta property="og:image" content="/images/og-logo.png" />
+        <meta
+          key="og:image"
+          property="og:image"
+          content="/images/og-logo.png"
+        />
       </Head>
       <div
         className={`${firaSans.variable} flex flex-col font-sans text-xl text-neutral-600`}
