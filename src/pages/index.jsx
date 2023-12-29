@@ -55,12 +55,13 @@ export default function Home({ instaFeed }) {
                 </div>
                 <div className="basis-3/5">
                   <p className="text-xl">
-                    The Bits and Bytes Association (BBA) was created to improve
-                    communication between students and staff, enhancing the
-                    quality of education for programs offered through the
-                    Applied Computer Education (ACE) department at Red River
-                    College Polytechnic (RRC). Since its inception in 2015, the
-                    BBA has steadily grown to over 150 members today.
+                    The Bits and Bytes Association (BBA) is an academic club
+                    that was created to improve communication between students
+                    and staff, enhancing the quality of education for programs
+                    offered through the Applied Computer Education (ACE)
+                    department at Red River College Polytechnic (RRC). Since its
+                    inception in 2015, the BBA has steadily grown to over 150
+                    members today.
                   </p>
                 </div>
               </div>

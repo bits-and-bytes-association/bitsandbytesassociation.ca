@@ -19,12 +19,21 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>Bits and Bytes Association</title>
-        <meta
-          name="description"
-          content="The Bits and Bytes Association is a student group created to bring together students and staff of programs offered in the ACE Department at Red River College. Our goal is to promote communication between students, staff, and industry professionals, as well as provide additional tech-related opportunities to students."
-        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="description"
+          content="Explore the dynamic tech community of the Bits and Bytes Association (BBA) at Red River College Polytechnic. Established in 2015, the BBA enhances communication within the ACE department, fostering a vibrant community of over 150 members. Join us for inclusive events, industry connections, and a commitment to high-quality education."
+        />
+        <meta name="theme-color" content="#6bb7e6" />
+        <meta property="og:url" content="https://bitsandbytesassociation.ca/" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Bits and Bytes Association" />
+        <meta
+          property="og:description"
+          content="Explore the dynamic tech community of the Bits and Bytes Association (BBA) at Red River College Polytechnic. Established in 2015, the BBA enhances communication within the ACE department, fostering a vibrant community of over 150 members. Join us for inclusive events, industry connections, and a commitment to high-quality education."
+        />
+        <meta property="og:image" content="/images/og-logo.png" />
       </Head>
       <div
         className={`${firaSans.variable} flex flex-col font-sans text-xl text-neutral-600`}
