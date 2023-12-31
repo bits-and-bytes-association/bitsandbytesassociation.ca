@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           content="Explore the dynamic tech community of the Bits and Bytes Association (BBA) at Red River College Polytechnic. Established in 2015, the BBA enhances communication within the ACE department, fostering a vibrant community of over 150 members. Join us for inclusive events, industry connections, and a commitment to high-quality education."
         />
-        <meta key="theme-color" name="theme-color" content="#6bb7e6" />
+        <meta key="theme-color" name="theme-color" content="#ffffff" />
         <meta
           key="og:url"
           property="og:url"

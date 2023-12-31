@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Link from 'next/link';
 import Button from '@/components/Button';
@@ -9,19 +10,26 @@ import DiscordIcon from '@/icons/discord.svg';
 import InstagramIcon from '@/icons/instagram.svg';
 import LinkedInIcon from '@/icons/linkedin.svg';
 import RRCIcon from '@/icons/rrc.svg';
+import clsx from 'clsx';
 
 export default function TopNav() {
-  /**
-   * Stores visibility state for mobile navigation links.
-   */
-  const [isCollapsed, setIsCollapsed] = useState(true);
+  const router = useRouter();
+  const [isMenuVisible, setMenuVisible] = useState(false);
+
+  const toggleMenu = () => setMenuVisible(!isMenuVisible);
+  const hideMenu = () => setMenuVisible(false);
+
+  // Hide menu on route change
+  useEffect(() => {
+    router.events.on('routeChangeComplete', hideMenu);
+    return () => router.events.off('routeChangeComplete', hideMenu);
+  }, [router]);
 
   return (
     <nav className="flex flex-wrap items-center justify-between ">
       {/* Left-aligned nav logo */}
       <Link href="/">
         <Image
-          className="ml-2 lg:ml-0"
           src="/images/bba-logo.svg"
           alt="Bits and Bytes Association logo"
           width={250}
@@ -35,24 +43,24 @@ export default function TopNav() {
         className="lg:hidden"
         variant="square"
         size="md"
-        onClick={() => setIsCollapsed(!isCollapsed)}
+        onClick={toggleMenu}
       >
-        {isCollapsed ? (
-          <Bars3Icon className="h-6 w-6" />
-        ) : (
+        {isMenuVisible ? (
           <XMarkIcon className="h-6 w-6" />
+        ) : (
+          <Bars3Icon className="h-6 w-6" />
         )}
       </Button>
 
       {/* Right-aligned nav items */}
       <div
-        className={`mt-3.5 w-full items-center lg:m-0 ${
-          isCollapsed ? 'hidden' : ''
-        } lg:flex lg:w-auto`}
+        className={clsx('mt-3.5 w-full items-center lg:m-0 lg:flex lg:w-auto', {
+          hidden: !isMenuVisible,
+        })}
       >
         {/* Text links */}
         <ul
-          className={`flex list-none flex-col rounded-lg bg-neutral-200 lg:flex-row lg:items-center lg:bg-inherit lg:pt-0`}
+          className={`flex list-none flex-col overflow-hidden rounded-lg border border-neutral-300 bg-neutral-100 shadow-md lg:flex-row lg:items-center lg:border-none lg:bg-inherit lg:pt-0 lg:shadow-none`}
         >
           <TextLink href="/our-story">Our Story</TextLink>
           <TextLink href="/events">Events</TextLink>
@@ -101,13 +109,19 @@ export default function TopNav() {
  * @returns A text link.
  */
 function TextLink({ href, children }) {
+  const router = useRouter();
+
   return (
     <li>
       <Link
         href={href}
-        className={
-          'block rounded-lg p-4 font-normal hover:bg-brand hover:text-white active:bg-brand active:text-white lg:m-3 lg:p-1 lg:hover:bg-inherit lg:hover:text-brand lg:active:bg-inherit lg:active:text-brand'
-        }
+        className={clsx(
+          'block p-4 font-normal active:bg-neutral-200 lg:m-3 lg:bg-inherit lg:p-1 lg:hover:bg-inherit lg:hover:text-brand lg:active:bg-inherit lg:active:text-brand',
+          {
+            'bg-brand text-white lg:text-brand': router.pathname === href,
+            'hover:bg-neutral-200': router.pathname !== href,
+          },
+        )}
       >
         {children}
       </Link>
