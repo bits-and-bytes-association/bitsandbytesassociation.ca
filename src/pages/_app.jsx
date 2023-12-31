@@ -1,4 +1,4 @@
-import { Fira_Sans } from 'next/font/google';
+import { Fira_Sans } from '@next/font/google';
 import Head from 'next/head';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
