@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import Image from 'next/image';
 import BottomNav from './BottomNav';
 
@@ -32,12 +31,12 @@ export default function Footer({ data }) {
           <div className="flex flex-col gap-x-1 text-sm text-gray-400 sm:flex-row">
             <p>
               Made with ❤️ by our{' '}
-              <Link
-                href="#"
+              <a
+                href="https://github.com/bits-and-bytes-association/bitsandbytesassociation.ca"
                 className="underline underline-offset-2 hover:text-white"
               >
                 volunteers
-              </Link>
+              </a>
               .
             </p>
             <p>
