@@ -1,3 +1,5 @@
+import PageContainer from '@/components/layout/PageContainer';
+import PageTitle from '@/components/PageTitle';
 import Button from '@/components/Button';
 import Image from 'next/image';
 import AdornedHeading from '@/components/AdornedHeading';
@@ -5,13 +7,13 @@ import AdornedHeading from '@/components/AdornedHeading';
 export default function Style() {
   return (
     <>
-      {/* Placeholder element */}
-      <div className="container mx-auto px-6 pt-10">
-        {/* Sample buttons */}
-        <p className="my-3 text-3xl font-bold">Buttons</p>
-        <h5 className="mb-2 text-lg">
+      <PageContainer>
+        <PageTitle title="Design System" />
+        {/* Buttons */}
+        <div className="my-3 text-3xl font-bold text-black">Buttons</div>
+        <div className="mb-2 text-lg text-black">
           <b>Variant &quot;primary&quot;</b>
-        </h5>
+        </div>
         <div className="mb-5 flex items-start">
           <Button href="#" size="md" className="mr-4">
             Learn More
@@ -21,9 +23,9 @@ export default function Style() {
           </Button>
         </div>
 
-        <h5 className="mb-2 text-lg">
+        <div className="mb-2 text-lg text-black">
           <b>Variant &quot;outline&quot;</b>
-        </h5>
+        </div>
         <div className="mb-5 flex items-start">
           <Button href="#" variant="outline" size="md" className="mr-4">
             Learn More
@@ -33,9 +35,9 @@ export default function Style() {
           </Button>
         </div>
 
-        <h5 className="mb-2 text-lg">
+        <div className="mb-2 text-lg text-black">
           <b>Variant &quot;secondary&quot;</b>
-        </h5>
+        </div>
         <div className="mb-5 flex items-start">
           <Button variant="secondary" href="#" className="mr-4">
             Learn More
@@ -56,10 +58,10 @@ export default function Style() {
         </div>
 
         {/* Color palette */}
-        <p className="my-4 text-3xl font-bold">Color palette</p>
+        <div className="my-4 text-3xl font-bold text-black">Color palette</div>
         <div className="flex">
           <div
-            className="text-light-font mb-10 mr-10 flex flex-col"
+            className="mb-10 mr-10 flex flex-col text-white"
             style={{
               height: '20em',
               width: '20em',
@@ -108,7 +110,7 @@ export default function Style() {
             @rrcbba
           </AdornedHeading>
         </div>
-      </div>
+      </PageContainer>
     </>
   );
 }
