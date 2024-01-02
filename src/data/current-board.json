@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Sandeep Singh",
+    "program": "Business Information Technology",
+    "role": "President",
+    "photoUrl": "/images/sandeep-avatar.jpg",
+    "bio": "Leads and directs the BBA's vision and initiatives.",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/singhsandeep0/",
+      "github": "https://github.com/sandeepsus"
+    }
+  },
+  {
+    "name": "McCauley Armishaw",
+    "program": "Application Development & Delivery",
+    "role": "Vice President",
+    "bio": "Collaborates closely with the President for effective execution of the BBA's goals.",
+    "photoUrl": "/images/mccauley-avatar.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/mccauley-armishaw-a36a52281/"
+    }
+  },
+  {
+    "name": "Raninder Singh Sidhu",
+    "program": "Business Information Technology",
+    "role": "Secretary",
+    "bio": "Manages communications and vital administrative tasks behind the scenes.",
+    "photoUrl": "/images/raninder-avatar.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/raninder-singh-sidhu-59875425b/"
+    }
+  },
+  {
+    "name": "Rez Christian Gutang",
+    "program": "IT Operations",
+    "role": "Treasurer",
+    "bio": "Safeguards the BBA's finances, ensuring funding stability for our endeavors.",
+    "photoUrl": "/images/rez-avatar.jpg",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/rez-christian-gutang/"
+    }
+  }
+]

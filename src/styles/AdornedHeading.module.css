@@ -1,0 +1,81 @@
+.wrapper {
+  --side-margin: 2.5rem;
+}
+
+.shape-wrapper {
+  position: relative;
+  margin-left: var(--side-margin);
+}
+
+.circle {
+  --size: 0.5em;
+  border-radius: 50%;
+  position: absolute;
+  left: calc(-0.5 * var(--size));
+  height: var(--size);
+  width: var(--size);
+}
+
+.line {
+  height: 0.1em;
+  width: 100%;
+}
+
+/* Styles when the text placement is inverted */
+.invert .text {
+  order: 2;
+}
+
+.invert .shape-wrapper {
+  margin-left: 0;
+  margin-right: var(--side-margin);
+}
+
+.invert .circle {
+  left: auto;
+  right: calc(-0.5 * var(--size));
+}
+
+/* Tailwind sm */
+@media screen and (min-width: 640px) {
+  .wrapper {
+    --side-margin: 3rem;
+  }
+}
+
+/* Tailwind md */
+@media screen and (min-width: 768px) {
+  .wrapper {
+    --side-margin: 4rem;
+  }
+
+  .circle {
+    --size: 0.75em;
+  }
+
+  .line {
+    height: 0.15em;
+  }
+}
+
+/* Tailwind lg */
+@media screen and (min-width: 1024px) {
+  .wrapper {
+    --side-margin: 5rem;
+  }
+
+  .circle {
+    --size: 1em;
+  }
+
+  .line {
+    height: 0.2em;
+  }
+}
+
+/* Tailwind xl */
+@media screen and (min-width: 1280px) {
+  .wrapper {
+    --side-margin: 5rem;
+  }
+}

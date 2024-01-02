@@ -1,0 +1,73 @@
+[
+  {
+    "topics": ["Artificial Intelligence"],
+    "contributors": [
+      "Wajiha Waseem",
+      "Mohitpreet Kaur",
+      "Alyssa Johnson",
+      "Sochimazuru SJ. Noshiri"
+    ],
+    "publishDate": "2023-02",
+    "pdfSrc": "/newsletters/bba-newsletter-2023-02.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2023-02.jpg"
+  },
+  {
+    "topics": ["Cybersecurity"],
+    "contributors": [
+      "Wajiha Waseem",
+      "Mohitpreet Kaur",
+      "Alyssa Johnson",
+      "Sochimazuru SJ. Noshiri"
+    ],
+    "publishDate": "2023-01",
+    "pdfSrc": "/newsletters/bba-newsletter-2023-01.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2023-01.jpg"
+  },
+  {
+    "topics": ["Networking", "Likability", "Directions 2022", "Women in Tech"],
+    "contributors": [
+      "Alyssa Johnson",
+      "Ryan Rutherford",
+      "Prachi Chawla",
+      "Wajiha Waseem"
+    ],
+    "publishDate": "2022-10",
+    "pdfSrc": "/newsletters/bba-newsletter-2022-10.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2022-10.jpg"
+  },
+  {
+    "topics": ["Starting Your First IT Job", "Industry Event w/ James Warren"],
+    "contributors": ["Justin Martinez", "Mikayla Kolansky"],
+    "publishDate": "2022-01",
+    "pdfSrc": "/newsletters/bba-newsletter-2022-01.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2022-01.jpg"
+  },
+  {
+    "topics": ["Women in Tech"],
+    "contributors": ["Justin Martinez", "Mikayla Kolansky"],
+    "publishDate": "2021-12",
+    "pdfSrc": "/newsletters/bba-newsletter-2021-12.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2021-12.jpg"
+  },
+  {
+    "topics": [
+      "Web Accessibility",
+      "RRC Game Dev Program Interview w/ Kyle Geske"
+    ],
+    "contributors": ["Justin Martinez", "Mikayla Kolansky"],
+    "publishDate": "2021-11",
+    "pdfSrc": "/newsletters/bba-newsletter-2021-11.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2021-11.jpg"
+  },
+  {
+    "topics": [
+      "Imposter Syndrome",
+      "IT Career Tips",
+      "Industry Event w/ Stephan Pawulski"
+    ],
+    "contributors": ["Justin Martinez", "Mikayla Kolansky"],
+    "publishDate": "2021-10",
+    "pdfSrc": "/newsletters/bba-newsletter-2021-10.pdf",
+    "thumbSrc": "/newsletters/bba-newsletter-2021-10.jpg"
+  }
+]
