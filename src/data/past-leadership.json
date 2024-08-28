@@ -1,5 +1,27 @@
 [
   {
+    "term": "Winter",
+    "year": 2024,
+    "board": [
+      {
+        "role": "President",
+        "name": "Sandeep Singh"
+      },
+      {
+        "role": "Vice President",
+        "name": "McCauley Armishaw"
+      },
+      {
+        "role": "Secretary",
+        "name": "Raninder Singh Sidhu"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Rez Christian Gutang"
+      }
+    ]
+  },
+  {
     "term": "Fall",
     "year": 2023,
     "board": [
