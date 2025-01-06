@@ -1,5 +1,27 @@
 [
   {
+    "term": "Fall",
+    "year": 2024,
+    "board": [
+      {
+        "role": "President",
+        "name": "Zizhang He"
+      },
+      {
+        "role": "Vice President",
+        "name": "Sara Cabrera"
+      },
+      {
+        "role": "Secretary",
+        "name": "Sheralynne Ladesma"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Lars Anderson"
+      }
+    ]
+  },
+  {
     "term": "Winter",
     "year": 2024,
     "board": [

@@ -1,42 +1,42 @@
 [
   {
-    "name": "Zizhang He",
+    "name": "McCauley Armishaw",
     "program": "Application Development & Delivery",
     "role": "President",
-    "photoUrl": "/images/patrick-avatar.jpg",
+    "photoUrl": "/images/mccauley-avatar.jpg",
     "bio": "Leads and directs the BBA's vision and initiatives.",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/patrickhe43/"
+      "linkedin": "https://www.linkedin.com/in/mccauley-armishaw/"
     }
   },
   {
-    "name": "Sara Cabrera",
-    "program": "Business Information Technology",
+    "name": "Tysen Heck",
+    "program": "Application Development & Delivery",
     "role": "Vice President",
     "bio": "Collaborates closely with the President for effective execution of the BBA's goals.",
-    "photoUrl": "/images/sara-avatar.jpg",
+    "photoUrl": "/images/tysen-avatar.png",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/cabrera-sara/"
+      "linkedin": "https://www.linkedin.com/in/tysenh1/"
     }
   },
   {
-    "name": "Sheralynne Ladesma",
-    "program": "IT Operations",
+    "name": "Abi Vu",
+    "program": "Data Science & Machine Learning",
     "role": "Secretary",
     "bio": "Manages communications and vital administrative tasks behind the scenes.",
     "photoUrl": "/images/sheralynne-avatar.jpg",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/sheralynne-ladesma-a14648164/"
+      "linkedin": "https://www.linkedin.com/in/abi-vu/"
     }
   },
   {
-    "name": "Lars Anderson",
-    "program": "Business Information Technology",
+    "name": "Zachary Lâm",
+    "program": "Application Development & Delivery",
     "role": "Treasurer",
     "bio": "Safeguards the BBA's finances, ensuring funding stability for our endeavors.",
-    "photoUrl": "/images/lars-avatar.jpg",
+    "photoUrl": "",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/anderson-lars/"
+      "linkedin": "https://www.linkedin.com/in/zachary74m/"
     }
   }
 ]
