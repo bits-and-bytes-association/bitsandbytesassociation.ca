@@ -29,7 +29,7 @@ export default function CurrentBoardPage() {
     <PageContainer>
       <PageTitle title="Current Board" />
       <p className="mb-12">
-        Meet the driving force behind our current leadership team. The continous
+        Meet the driving force behind our current leadership team. The continuous
         journey of the Bits and Bytes Association is made possible by these
         students who generously invest their time and passion, actively molding
         the future of our community.
@@ -43,7 +43,12 @@ export default function CurrentBoardPage() {
             >
               <img
                 className="w-full sm:w-[225px] sm:rounded-l-lg lg:w-[150px] xl:w-[225px]"
-                src={(member.photoUrl && member.photoUrl != "") ?? '/images/default-avatar.png'}
+                // src={member.photoUrl ?? '/images/default-avatar.png'}
+                src={
+                  member.photoUrl && member.photoUrl.trim() !== ''
+                    ? member.photoUrl
+                    : '/images/default-avatar.png'
+                }
                 alt={`${member.name} Avatar`}
               />
               <div className="p-5">
