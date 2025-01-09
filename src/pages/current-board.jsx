@@ -7,7 +7,9 @@ import TikTokIcon from '@/icons/tiktok.svg';
 import GitHubIcon from '@/icons/github.svg';
 import ThreadsIcon from '@/icons/threads.svg';
 import LinkedInIcon from '@/icons/linkedin.svg';
+import DiscordIcon from "@/icons/discord.svg"
 import XIcon from '@/icons/x.svg';
+import WebsiteIcon from '@/icons/website.svg'
 import PageContainer from '@/components/layout/PageContainer';
 import PageTitle from '@/components/PageTitle';
 
@@ -18,6 +20,8 @@ const socialMediaIcons = {
   tiktok: TikTokIcon,
   x: XIcon,
   threads: ThreadsIcon,
+  discord: DiscordIcon,
+  website: WebsiteIcon
 };
 
 export default function CurrentBoardPage() {
@@ -39,7 +43,7 @@ export default function CurrentBoardPage() {
             >
               <img
                 className="w-full sm:w-[225px] sm:rounded-l-lg lg:w-[150px] xl:w-[225px]"
-                src={member.photoUrl ?? '/images/default-avatar.png'}
+                src={(member.photoUrl && member.photoUrl != "") ?? '/images/default-avatar.png'}
                 alt={`${member.name} Avatar`}
               />
               <div className="p-5">
@@ -60,7 +64,7 @@ export default function CurrentBoardPage() {
                           className="text-neutral-600 hover:text-neutral-900"
                         >
                           {React.createElement(socialMediaIcons[platform], {
-                            className: 'h-4 w-4',
+                            className: 'h-7 w-7',
                           })}
                         </a>
                       </li>
