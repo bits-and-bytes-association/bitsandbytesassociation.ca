@@ -6,7 +6,8 @@
     "photoUrl": "/images/mccauley-avatar.jpg",
     "bio": "Leads and directs the BBA's vision and initiatives.",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/mccauley-armishaw/"
+      "linkedin": "https://www.linkedin.com/in/mccauley-armishaw/",
+      "github": "https://github.com/marmishaw14"
     }
   },
   {
@@ -18,7 +19,7 @@
     "socials": {
       "linkedin": "https://www.linkedin.com/in/tysenh1/",
       "github": "https://github.com/tysenh1",
-      "discord": "something idk",
+      "discord": "@gv_kevin",
       "website": "https://tysenh1.github.io/my-portfolio/"
     }
   },
@@ -27,7 +28,7 @@
     "program": "Data Science & Machine Learning",
     "role": "Secretary",
     "bio": "Manages communications and vital administrative tasks behind the scenes.",
-    "photoUrl": "",
+    "photoUrl": "/images/abi-avatar.png",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/abi-vu/"
     }
@@ -37,7 +38,7 @@
     "program": "Application Development & Delivery",
     "role": "Treasurer",
     "bio": "Safeguards the BBA's finances, ensuring funding stability for our endeavors.",
-    "photoUrl": "",
+    "photoUrl": "/images/zachary-avatar.png",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/zachary74m/"
     }

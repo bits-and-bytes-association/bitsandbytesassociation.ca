@@ -62,18 +62,42 @@ export default function CurrentBoardPage() {
                 </p>
                 <ul className="flex space-x-4">
                   {Object.entries(member.socials).map(([platform, url]) => {
-                    return (
-                      <li key={`member-${member.name}-${platform}`}>
-                        <a
-                          href={url}
-                          className="text-neutral-600 hover:text-neutral-900"
+                    if (platform == "discord") {
+                      return (
+                        <li
+                          key={`member-${member.name}-${platform}`}
+                          className={'relative [&_span]:hover:block'}
                         >
-                          {React.createElement(socialMediaIcons[platform], {
-                            className: 'h-7 w-7',
-                          })}
-                        </a>
-                      </li>
-                    );
+                          <span
+                            className={
+                              'absolute -top-10 left-1/2 z-10 hidden w-auto -translate-x-1/2 transform whitespace-nowrap bg-black text-white rounded-md px-2 py-1' 
+                            }
+                          >
+                            {url}
+                          </span>
+                          <div className="text-neutral-600 hover:text-neutral-900">
+                            {React.createElement(socialMediaIcons[platform], {
+                              className: 'h-7 w-7',
+                            })}
+                          </div>
+                        </li>
+                      );
+                    } else {
+                      return (
+                        <li key={`member-${member.name}-${platform}`}>
+                          <a
+                            href={url}
+                            className="text-neutral-600 hover:text-neutral-900"
+                            target={"_blank"}
+                          >
+                            {React.createElement(socialMediaIcons[platform], {
+                              className: 'h-7 w-7',
+                            })}
+                          </a>
+                        </li>
+                      );
+                    }
+                    
                   })}
                 </ul>
               </div>
