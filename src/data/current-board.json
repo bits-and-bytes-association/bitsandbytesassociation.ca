@@ -3,7 +3,7 @@
     "name": "McCauley Armishaw",
     "program": "Application Development & Delivery",
     "role": "President",
-    "photoUrl": "/images/mccauley-avatar.jpg",
+    "photoUrl": "/images/mccauley-avatar.png",
     "bio": "Leads and directs the BBA's vision and initiatives.",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/mccauley-armishaw/",
@@ -30,7 +30,8 @@
     "bio": "Manages communications and vital administrative tasks behind the scenes.",
     "photoUrl": "/images/abi-avatar.png",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/abi-vu/"
+      "linkedin": "https://www.linkedin.com/in/abi-vu/",
+      "discord": "@abivu711"
     }
   },
   {
