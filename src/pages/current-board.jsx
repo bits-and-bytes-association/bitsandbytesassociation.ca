@@ -43,7 +43,7 @@ export default function CurrentBoardPage() {
             >
               <img
                 // className="w-full sm:w-[225px] sm:rounded-l-lg lg:w-[150px] xl:w-[225px]"
-                className="h-full sm:h-[225px] sm:w-[225px] sm:rounded-l-lg lg:h-[150px] lg:w-[150px] xl:h-[225px] xl:w-[225px]"
+                className="w-full sm:h-[225px] sm:w-[225px] sm:rounded-l-lg lg:h-[150px] lg:w-[150px] xl:h-[225px] xl:w-[225px]"
                 // src={member.photoUrl ?? '/images/default-avatar.png'}
                 src={
                   member.photoUrl && member.photoUrl.trim() !== ''
