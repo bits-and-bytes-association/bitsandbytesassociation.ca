@@ -10,8 +10,7 @@ export async function getServerSideProps({ res }) {
   if (!process.env.BEHOLD_URL) return { props: { instaFeed: [] } };
 
   const response = await fetch(process.env.BEHOLD_URL);
-  const responseJson = await response.json()
-  const instaFeed = responseJson.posts;
+  const instaFeed = await response.json();
 
   return {
     props: { instaFeed },
