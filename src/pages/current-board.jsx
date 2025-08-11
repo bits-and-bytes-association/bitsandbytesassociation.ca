@@ -34,7 +34,7 @@ export default function CurrentBoardPage() {
         students who generously invest their time and passion, actively molding
         the future of our community.
       </p>
-      <div className="grid gap-8 lg:grid-cols-2">
+      <div className="grid gap-8 lg:grid-cols-1.75">
         {currentBoard.map((member) => {
           return (
             <div
@@ -57,7 +57,7 @@ export default function CurrentBoardPage() {
                   {member.name}
                 </div>
                 <div className="text-neutral-600">{member.program}</div>
-                <div className="text-neutral-600">{member.role}</div>
+                <div className="font-bold text-neutral-600">{member.role}</div>
                 <p className="mt-3 mb-4 font-light text-neutral-800">
                   {member.bio}
                 </p>
