@@ -7,7 +7,9 @@
     "bio": "Leads and directs the BBA's vision and initiatives.",
     "socials": {
       "linkedin": "https://www.linkedin.com/in/mccauley-armishaw/",
-      "github": "https://github.com/marmishaw14"
+      "github": "https://github.com/marmishaw14",
+      "discord": "@fr3sh",
+      "x": "https://x.com/mccauleycodes"
     }
   },
   {
@@ -24,24 +26,36 @@
     }
   },
   {
-    "name": "Abi Vu",
-    "program": "Data Science & Machine Learning",
+    "name": "Edraque Maglaque",
+    "program": "Application Development & Delivery",
     "role": "Secretary",
     "bio": "Manages communications and vital administrative tasks behind the scenes.",
-    "photoUrl": "/images/abi-avatar.png",
+    "photoUrl": "/images/edraque-avatar.png",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/abi-vu/",
-      "discord": "@abivu711"
+      "linkedin": "https://www.linkedin.com/in/edraque-maglaque/",
+      "discord": "@makizer0"
     }
   },
   {
-    "name": "Zachary Lâm",
+    "name": "Edward Rivera",
     "program": "Application Development & Delivery",
     "role": "Treasurer",
     "bio": "Safeguards the BBA's finances, ensuring funding stability for our endeavors.",
-    "photoUrl": "/images/zachary-avatar.png",
+    "photoUrl": "/images/edward-avatar.png",
     "socials": {
-      "linkedin": "https://www.linkedin.com/in/zachary74m/"
+      "linkedin": "https://www.linkedin.com/in/edward-rivera-e1213/",
+      "github": "https://github.com/edwrdrvera",
+      "website": "https://www.riveraea.dev/"
+    }
+  },
+  {
+    "name": "Ghazal Erfani",
+    "program": "IT Operations",
+    "role": "Promotions Coordinator",
+    "bio": "Leads the club's event promotions through social media, posters, and other creative outreach.",
+    "photoUrl": "/images/ghazal-avatar.png",
+    "socials": {
+      "linkedin": "https://www.linkedin.com/in/ghazal-e-80727b2a1/"
     }
   }
 ]

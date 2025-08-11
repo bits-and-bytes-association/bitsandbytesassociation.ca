@@ -1,4 +1,25 @@
-[
+[  {
+    "term": "Winter",
+    "year": 2025,
+    "board": [
+      {
+        "role": "President",
+        "name": "McCauley Armishaw"
+      },
+      {
+        "role": "Vice President",
+        "name": "Tysen Heck"
+      },
+      {
+        "role": "Secretary",
+        "name": "Abi Vu"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Zachary Lam"
+      }
+    ]
+  },
   {
     "term": "Fall",
     "year": 2024,

@@ -25,7 +25,7 @@ export default function Home({ instaFeed }) {
         <div className="relative overflow-hidden md:h-[38rem]">
           <Image
             className="z-0 object-cover"
-            src="/images/tech-table.jpg"
+            src="/images/kickoff-fa2023.jpg"
             alt=""
             fill
             priority
@@ -33,7 +33,7 @@ export default function Home({ instaFeed }) {
           <div className="relative z-10 h-full bg-brand-700/80">
             <div className="container mx-auto flex h-full items-center text-white">
               <div className="flex flex-col gap-4 p-8 lg:flex-row">
-                <div className="basis-2/5">
+                <div className="basis-5/5">
                   <h1 className="mb-4 text-5xl font-black md:mb-8">
                     Join the Group!
                   </h1>
@@ -61,7 +61,8 @@ export default function Home({ instaFeed }) {
                     offered through the Applied Computer Education (ACE)
                     department at Red River College Polytechnic (RRC). Since its
                     inception in 2015, the BBA has steadily grown to over 150
-                    members today.
+                    members today. Fall 2025 marks the 10th anniversary since
+                    the club's inception. 
                   </p>
                 </div>
               </div>
@@ -81,7 +82,7 @@ export default function Home({ instaFeed }) {
               <div>
                 <h2 className="mb-6 text-5xl font-black">About Us</h2>
                 <p className="mb-4 text-xl">
-                  The BBA is dedicated to sustaining a thriving community
+                  For over 10 years, the BBA has dedicated to sustaining a thriving community
                   through meaningful communication, inclusive events, alumni and
                   industry connections, and the sharing of valuable information.
                   Our aim is to uphold a distinguished RRC Polytech tech
@@ -98,7 +99,7 @@ export default function Home({ instaFeed }) {
             <div className="basis-3/5">
               <Image
                 className="bg-neutral-700"
-                src="/images/kickoff-fa2023.jpg"
+                src="/images/bba_co_op_night_winter_2025.jpg"
                 width={1440}
                 height={900}
                 alt="Kickoff group photo"

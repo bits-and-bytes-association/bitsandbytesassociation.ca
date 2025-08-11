@@ -12,7 +12,7 @@ export default function EventsPage() {
         For details, head over to our Discord channel where we post our event
         announcements. Join us to create and be a part of memorable moments
         within our academic journey!
-      </p>
+      </p>    
       <div className="max-w-3xl rounded-lg border border-[#bcc8f3] bg-[#e3e9ff] p-5 shadow-md">
         <GoogleCalendarEmbed src="Yml0c2J5dGVzYXNzb2NpYXRpb25AZ21haWwuY29t" />
       </div>
