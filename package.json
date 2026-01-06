@@ -10,9 +10,9 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",
-    "clsx": "^2.0.0",
-    "next": "13.1.6",
     "@next/font": "13.1.6",
+    "clsx": "^2.0.0",
+    "next": "^13.5.11",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-responsive": "^9.0.2"
