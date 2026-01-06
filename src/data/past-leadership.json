@@ -1,4 +1,30 @@
 [  {
+    "term": "Fall",
+    "year": 2025,
+    "board": [
+      {
+        "role": "President",
+        "name": "McCauley Armishaw"
+      },
+      {
+        "role": "Vice President",
+        "name": "Tysen Heck"
+      },
+      {
+        "role": "Secretary",
+        "name": "Edraque Maglaque"
+      },
+      {
+        "role": "Treasurer",
+        "name": "Edward Rivera"
+      },
+      {
+        "role": "Promotions Coordinator",
+        "name": "Ghazal Erfani"
+      }
+    ]
+  },
+    {
     "term": "Winter",
     "year": 2025,
     "board": [
