@@ -1,4 +1,4 @@
-import { Fira_Sans } from 'next/font/google';
+import { firaSans } from '@lib/fonts/fonts';
 import Head from 'next/head';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -6,7 +6,7 @@ import footerLinks from '@/data/footer-links.json';
 
 import '@/styles/globals.css';
 
-const firaSans = Fira_Sans({
+const firaSans = firaSans({
   style: ['normal', 'italic'],
   weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
   subsets: ['latin'],
