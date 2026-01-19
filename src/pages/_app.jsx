@@ -1,4 +1,4 @@
-import { firaSans } from '@lib/fonts/fonts';
+import { firaSans } from '@/lib/fonts/fonts';
 import Head from 'next/head';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
