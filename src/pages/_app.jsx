@@ -6,14 +6,6 @@ import footerLinks from '@/data/footer-links.json';
 
 import '@/styles/globals.css';
 
-const firaSans = firaSans({
-  style: ['normal', 'italic'],
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-fira-sans',
-});
-
 export default function App({ Component, pageProps }) {
   return (
     <>
