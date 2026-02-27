@@ -12,6 +12,7 @@ import AdornedHeading from './AdornedHeading';
 export default function InstagramWidget({ title, instagramHandle, feed }) {
   const [isMounted, setIsMounted] = useState(false); // Using state to prevent hydration issues that can be caused by the useMediaQuery hook
   const isSmallScreen = useMediaQuery({ maxWidth: '640px' });
+  const posts = Array.isArray(feed) ? feed : [];
 
   useEffect(() => {
     setIsMounted(true);
@@ -25,7 +26,7 @@ export default function InstagramWidget({ title, instagramHandle, feed }) {
     <div className="my-10">
       <AdornedHeading>{title}</AdornedHeading>
       <div className="my-4 grid grid-cols-3 gap-4 sm:my-8 sm:grid-cols-4 sm:gap-8 md:my-10 md:gap-10 lg:my-14 lg:gap-14">
-        {feed.slice(0, isSmallScreen ? 3 : 4).map((post) => (
+        {posts.slice(0, isSmallScreen ? 3 : 4).map((post) => (
           <div key={post.id} className={'aspect-w-1 aspect-h-1'}>
             <a
               className="rounded-lg focus:outline-none focus:outline-4 focus:outline-offset-2 focus-visible:outline-brand"
