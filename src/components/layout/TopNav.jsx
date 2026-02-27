@@ -65,6 +65,7 @@ export default function TopNav() {
           <TextLink href="/our-story">Our Story</TextLink>
           <TextLink href="/events">Events</TextLink>
           <TextLink href="/volunteer">Volunteer</TextLink>
+          <TextLink href="/current-board">Current Board</TextLink>
           <li className="border-t border-t-neutral-300 lg:border-none">
             <ul className="mx-3.5 my-4 flex flex-row items-center justify-around gap-6 sm:justify-start lg:mt-0 lg:mb-0 lg:ml-12">
               {/* Discord */}
