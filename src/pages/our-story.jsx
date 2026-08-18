@@ -18,13 +18,13 @@ export default function OurStoryPage() {
       <p className="mb-3">
         Fueled by a shared passion for learning, the Bits and Bytes Association
         (BBA) has emerged as a vibrant community dedicated to enhancing
-        communication within the Red River College Applied Computer Education
+        communication within the Red River College Polytech's Applied Computer Education
         (ACE) department. Our journey began in 2015, guided by a collective
         ambition to elevate the educational experience across ACE programs.
       </p>
       <p className="mb-12">
         From its modest start, the BBA has evolved into a lively community of
-        over 150 members, establishing itself not only among current students
+        hundreds of members, establishing itself not only among current students
         and staff but also resonating with alumni and industry professionals.
         Join us in shaping the narrative of educational excellence and be a part
         of our continuing growth and impact!
