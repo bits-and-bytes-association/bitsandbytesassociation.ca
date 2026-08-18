@@ -7,9 +7,9 @@ import TikTokIcon from '@/icons/tiktok.svg';
 import GitHubIcon from '@/icons/github.svg';
 import ThreadsIcon from '@/icons/threads.svg';
 import LinkedInIcon from '@/icons/linkedin.svg';
-import DiscordIcon from "@/icons/discord.svg"
+import DiscordIcon from '@/icons/discord.svg';
 import XIcon from '@/icons/x.svg';
-import WebsiteIcon from '@/icons/website.svg'
+import WebsiteIcon from '@/icons/website.svg';
 import PageContainer from '@/components/layout/PageContainer';
 import PageTitle from '@/components/PageTitle';
 
@@ -21,7 +21,7 @@ const socialMediaIcons = {
   x: XIcon,
   threads: ThreadsIcon,
   discord: DiscordIcon,
-  website: WebsiteIcon
+  website: WebsiteIcon,
 };
 
 export default function CurrentBoardPage() {
@@ -36,6 +36,13 @@ export default function CurrentBoardPage() {
       </p>
       <div className="grid gap-8 lg:grid-cols-1.75">
         {currentBoard.map((member) => {
+          const socialsEntries = Object.entries(member.socials ?? {}).filter(
+            ([platform, url]) =>
+              socialMediaIcons[platform] &&
+              typeof url === 'string' &&
+              url.trim() !== '',
+          );
+
           return (
             <div
               key={member.name}
@@ -62,7 +69,7 @@ export default function CurrentBoardPage() {
                   {member.bio}
                 </p>
                 <ul className="flex space-x-4">
-                  {Object.entries(member.socials).map(([platform, url]) => {
+                  {socialsEntries.map(([platform, url]) => {
                     if (platform == 'discord') {
                       return (
                         <li
