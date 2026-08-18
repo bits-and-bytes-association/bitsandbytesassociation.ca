@@ -1,4 +1,31 @@
-[  {
+[
+  {
+    "term": "Winter",
+    "year": 2026,
+    "board": [
+      {
+        "role": "President",
+        "name": "Dean Martin"
+      },
+      {
+        "role": "Vice President",
+        "name": "Harjot Singh Sarna"
+      },
+      {
+        "role": "Secretary",
+        "name": "Allendale Nato"
+      },
+      {
+        "role": "Treasurer",
+        "name": "McCauley Armishaw"
+      },
+      {
+        "role": "Promotions Coordinator",
+        "name": "Gian Torres"
+      }
+    ]
+  },
+  {
     "term": "Fall",
     "year": 2025,
     "board": [
@@ -24,7 +51,7 @@
       }
     ]
   },
-    {
+  {
     "term": "Winter",
     "year": 2025,
     "board": [
