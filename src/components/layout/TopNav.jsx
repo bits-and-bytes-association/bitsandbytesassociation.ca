@@ -91,7 +91,7 @@ export default function TopNav() {
 
               {/* RRC */}
               <SocialLink
-                href="https://www.rrc.ca/explore/computer-and-information-systems-technology/"
+                href="https://www.rrc.ca/explore/information-technology/"
                 Icon={RRCIcon}
                 alt="Red River College Polytechnic logo"
               />

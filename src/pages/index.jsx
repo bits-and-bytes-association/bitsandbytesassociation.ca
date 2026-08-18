@@ -67,9 +67,7 @@ export default function Home({ instaFeed }) {
                     and staff, enhancing the quality of education for programs
                     offered through the Applied Computer Education (ACE)
                     department at Red River College Polytechnic (RRC). Since its
-                    inception in 2015, the BBA has steadily grown to over 150
-                    members today. Fall 2025 marks the 10th anniversary since
-                    the club's inception. 
+                    inception in 2015, the BBA has had hundreds of members.
                   </p>
                 </div>
               </div>
